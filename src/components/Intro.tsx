@@ -5,12 +5,18 @@ const Intro = () => {
   return (
     <Element name="intro" className="h-screen p-5">
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center">
-        <div>
-          <span className="text-2xl pr-4">Make it More</span>
-          <span className="text-5xl">Appealing,</span>
+        <div className="mb-4">
+          <div className="box"></div>
+          <span className="text-4xl pr-4 font-thin">Make it More</span>
+          <span className="text-6xl font-bold">Appealing,</span>
         </div>
-        <span style={{ display: "block" }}>들여다보게 만들다</span>
-        <p>한 번 더 들여다보게 만드는 홈페이지를 만들겠습니다.</p>
+        <span style={{ display: "block" }} className="box-02 text-lg mb-24">
+          들여다보게 만들다,
+        </span>
+        <p className="font-light">
+          한 번 더 <b className="font-semibold">들여다보게 만드는 웹사이트를</b>{" "}
+          만들겠습니다.
+        </p>
       </div>
     </Element>
   );

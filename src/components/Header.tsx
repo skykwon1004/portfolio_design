@@ -17,12 +17,12 @@ const Header: React.FC<OwnProps> = ({
     <header
       className={`fixed inset-x-0 top-0 z-50 left-0 flex items-center justify-between p-6 text-xl border-solid border-b ${
         darkMode
-          ? "bg-neutral-800 text-white border-neutral-700"
+          ? "bg-neutral-900 text-white border-neutral-700"
           : "bg-white text-slate-950 border-neutral-200"
       }`}
     >
-      <h1>EunJin.</h1>
-      <nav className="flex items-center justify-center gap-6">
+      <h1 className="font-black">EunJin.</h1>
+      <nav className="flex items-center justify-center gap-6 font-medium">
         <ul className="flex cursor-pointer gap-6">
           <li>
             <Link
