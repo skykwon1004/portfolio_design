@@ -8,11 +8,11 @@
 
 html {
   background: #fff;
-  color: #222;
+  color: rgb(2 6 23);
   font-family: "Inter", "Roboto", "Noto Sans KR", sans-serif;
 }
 
 html.dark {
-  background: #222;
+  background-color: rgb(38 38 38);
   color: #fff;
 }

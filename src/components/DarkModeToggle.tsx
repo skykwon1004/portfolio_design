@@ -1,17 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
-const DarkModeToggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
+interface OwnProps {
+  darkMode: boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+  toggleDarkMode: () => void;
+}
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    if (!darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  };
-
+const DarkModeToggle: React.FC<OwnProps> = ({ darkMode, toggleDarkMode }) => {
   return (
     <div className="flex justify-center items-center">
       <button

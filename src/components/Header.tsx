@@ -2,13 +2,29 @@ import React from "react";
 import { Link } from "react-scroll";
 import DarkModeToggle from "./DarkModeToggle";
 
-const Header = () => {
+interface OwnProps {
+  darkMode: boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+  toggleDarkMode: () => void;
+}
+
+const Header: React.FC<OwnProps> = ({
+  darkMode,
+  setDarkMode,
+  toggleDarkMode,
+}) => {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 left-0 text-2xl font-normal">
-      <nav className="flex items-center justify-between flex-wrap p-6">
-        <h1>EunJin.</h1>
-        <ul className="flex cursor-pointer">
-          <li className="mr-8">
+    <header
+      className={`fixed inset-x-0 top-0 z-50 left-0 flex items-center justify-between p-6 text-xl border-solid border-b ${
+        darkMode
+          ? "bg-neutral-800 text-white border-neutral-700"
+          : "bg-white text-slate-950 border-neutral-200"
+      }`}
+    >
+      <h1>EunJin.</h1>
+      <nav className="flex items-center justify-center gap-6">
+        <ul className="flex cursor-pointer gap-6">
+          <li>
             <Link
               activeClass="active"
               to="intro"
@@ -20,7 +36,7 @@ const Header = () => {
               Intro
             </Link>
           </li>
-          <li className="mr-8">
+          <li>
             <Link
               activeClass="active"
               to="experience"
@@ -32,7 +48,7 @@ const Header = () => {
               Experience
             </Link>
           </li>
-          <li className="mr-8">
+          <li>
             <Link
               activeClass="active"
               to="project"
@@ -44,7 +60,7 @@ const Header = () => {
               Project
             </Link>
           </li>
-          <li className="mr-8">
+          <li>
             <Link
               activeClass="active"
               to="skill"
@@ -56,7 +72,7 @@ const Header = () => {
               Skill
             </Link>
           </li>
-          <li className="mr-8">
+          <li>
             <Link
               activeClass="active"
               to="education"
@@ -68,7 +84,7 @@ const Header = () => {
               Education
             </Link>
           </li>
-          <li className="mr-8">
+          <li>
             <Link
               activeClass="active"
               to="contact"
@@ -81,7 +97,11 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <DarkModeToggle />
+        <DarkModeToggle
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          toggleDarkMode={toggleDarkMode}
+        />
       </nav>
     </header>
   );
