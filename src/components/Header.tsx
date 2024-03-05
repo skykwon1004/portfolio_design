@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
+import DarkModeToggle from "./DarkModeToggle";
 
-const Header = ({ modal, setModal, toggleModal }) => {
+const Header = () => {
   return (
     <header className="fixed inset-x-0 top-0 z-50 left-0 text-2xl font-normal">
       <nav className="flex items-center justify-between flex-wrap p-6">
+        <h1>EunJin.</h1>
         <ul className="flex cursor-pointer">
           <li className="mr-8">
             <Link
@@ -79,6 +81,7 @@ const Header = ({ modal, setModal, toggleModal }) => {
             </Link>
           </li>
         </ul>
+        <DarkModeToggle />
       </nav>
     </header>
   );

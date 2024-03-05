@@ -3,9 +3,9 @@ import { Element } from "react-scroll";
 
 const Experience = () => {
   return (
-    <Element name="experience">
+    <Element name="experience" className="h-screen">
       <div>
-        <h1>News</h1>
+        <h1>dddNews</h1>
         <p>This is the news section.</p>
       </div>
     </Element>

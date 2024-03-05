@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 
 const Skill = () => {
   return (
-    <Element name="skill">
+    <Element name="skill" className="h-screen">
       <div>
         <h1>Intro</h1>
         <p>This is the home section.</p>
