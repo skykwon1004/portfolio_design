@@ -15,15 +15,20 @@ const Header: React.FC<OwnProps> = ({
 }) => {
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 left-0 flex items-center justify-between p-6 text-xl border-solid border-b ${
+      className={`fixed inset-x-0 top-0 z-50 left-0 flex items-center justify-between p-6 text-xl border-solid border-b  ${
         darkMode
-          ? "bg-neutral-900 text-white border-neutral-700"
-          : "bg-white text-slate-950 border-neutral-200"
+          ? "backdrop-blur-sm text-gray-50 border-neutral-700"
+          : "backdrop-blur-sm text-slate-950 border-neutral-200"
       }`}
+      style={{
+        backgroundColor: darkMode
+          ? "  rgb(23, 23, 23, 0.5)"
+          : " rgba(255, 255, 255, 0.5)",
+      }}
     >
       <h1 className="font-black">EunJin.</h1>
       <nav className="flex items-center justify-center gap-6 font-medium">
-        <ul className="flex cursor-pointer gap-6">
+        <ul className="flex cursor-pointer gap-10">
           <li>
             <Link
               activeClass="active"
