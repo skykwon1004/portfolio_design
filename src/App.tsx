@@ -27,7 +27,7 @@ const App: React.FC = () => {
         toggleDarkMode={toggleDarkMode}
       />
       <Intro />
-      <Experience />
+      <Experience darkMode={darkMode} />
       <Project />
       <Skill />
       <Education />

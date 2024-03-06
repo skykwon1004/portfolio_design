@@ -26,7 +26,7 @@ const Header: React.FC<OwnProps> = ({
           : " rgba(255, 255, 255, 0.5)",
       }}
     >
-      <h1 className="font-black">EunJin.</h1>
+      <h1 className="font-black text-2xl">EunJin.</h1>
       <nav className="flex items-center justify-center gap-6 font-medium">
         <ul className="flex cursor-pointer gap-10">
           <li>

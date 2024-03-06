@@ -21,7 +21,7 @@ const Intro = () => {
         </p>
       </div>
       <div className="flex-1 img-wapper">
-        <figure className="img h-96" style={{ borderRadius: "60px" }}>
+        <figure className="img h-96">
           <img src="/img/me.jpg" alt="" />
         </figure>
         <div className="box-03"></div>
