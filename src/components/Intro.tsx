@@ -1,15 +1,15 @@
 import React from "react";
 import { Element } from "react-scroll";
+import { IoIosArrowRoundDown } from "react-icons/io";
 
 const Intro = () => {
   return (
-    <Element name="intro" className="h-screen flex inner">
-      <div className="flex flex-col justify-center items-center flex-1">
+    <Element name="intro" className="h-screen flex">
+      <div className="intro-content-left flex flex-col justify-center items-center flex-1">
         <div className="box-wapper mb-4">
           <div className="box"></div>
-          {/* <span className="text-4xl pr-4 font-thin">Make it More</span> */}
-          <p className="text-4xl font-thin">Make it More</p>
-          <p className="text-6xl font-semibold">Appealing,</p>
+          <strong className="text-5xl font-thin block">Make it More</strong>
+          <strong className="text-7xl font-semibold block">Appealing,</strong>
         </div>
         <p className="box-02 text-lg mb-32"></p>
         <p className="font-light text-lg">
@@ -21,10 +21,13 @@ const Intro = () => {
         </p>
       </div>
       <div className="flex-1 img-wapper">
-        <figure className="img h-96">
+        <figure className="img">
           <img src="/img/me.jpg" alt="" />
         </figure>
         <div className="box-03"></div>
+      </div>
+      <div className="scroll-dwon">
+        <IoIosArrowRoundDown />
       </div>
     </Element>
   );
