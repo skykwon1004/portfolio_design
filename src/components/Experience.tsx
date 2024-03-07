@@ -12,7 +12,7 @@ const Experience: React.FC<OwnProps> = ({ darkMode }) => {
         <div className="experience-wapper inner">
           <h2 className="text-5xl font-bold mb-4">Experience</h2>
           <p className="mb-10 text-lg">
-            다양한 업무 경험을 바탕으로 서비스를 개발하겠습니다.
+            다양한 업무 경험을 바탕으로 서비스를 개발하였습니다.
           </p>
           <div
             className="experience-content-wapper"
@@ -23,7 +23,7 @@ const Experience: React.FC<OwnProps> = ({ darkMode }) => {
             // }}
           >
             <div
-              className="experience-content"
+              className="experience-content shadow-sm"
               style={{
                 backgroundColor: darkMode
                   ? "rgb(51, 51, 51, 0.5)"
@@ -58,7 +58,7 @@ const Experience: React.FC<OwnProps> = ({ darkMode }) => {
               </ul>
             </div>
             <div
-              className="experience-content"
+              className="experience-content shadow-sm"
               style={{
                 backgroundColor: darkMode
                   ? "rgb(51, 51, 51, 0.5)"
@@ -75,7 +75,7 @@ const Experience: React.FC<OwnProps> = ({ darkMode }) => {
                   탑스타는 프리미엄 해외 명품 편집샵 온라인 쇼핑몰 입니다.
                 </span>
               </div>
-              <ul>
+              <ul className="dot">
                 <li>퍼블리싱 및 자사 사이트 유지보수</li>
                 <li>
                   Photoshop을 활용한 상세 페이지, 홍보 페이지, 웹 디자인 작업
