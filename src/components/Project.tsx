@@ -89,7 +89,25 @@ const Project = () => {
       status: "개발중",
       modalContent: {
         title: "About Movie",
-        date: "2023.11. ~ 개발중",
+        date: "2023.03.08 ~ 2023.03.14",
+        features: [
+          "데이터 시각화를 위한 대시보드, 차트 기능 구현",
+          "회원가입/로그인시 유효성 검사 기능 구현",
+        ],
+      },
+    },
+    {
+      title: "부산 맛집 지도",
+      description:
+        "공공데이터 API를 이용하여 부산 맛집을 지도에서 한 번에 볼 수 있도록 만든 서비스입니다.",
+      link: "https://skykwon1004.github.io/react_busan_restauran/",
+      image: "/img/busan_food_01.jpg",
+      gifImage: "/img/petcare_08_g.gif",
+      technologies: ["#HTML", "#JQuery", "#CSS", "#그누보드"],
+      status: "개발중",
+      modalContent: {
+        title: "부산 맛집 지도",
+        date: "2023.03.08 ~ 2023.03.14",
         features: [
           "데이터 시각화를 위한 대시보드, 차트 기능 구현",
           "회원가입/로그인시 유효성 검사 기능 구현",
@@ -147,8 +165,8 @@ const Project = () => {
       <div className="project">
         <div className="project-wapper inner">
           <div>
-            <h2 className="text-5xl font-bold mb-4">Project</h2>
-            <p className="mb-10 text-lg">주요 프로젝트만 모아 놓았습니다.</p>
+            <h2 className="text-6xl font-bold mb-4">Project</h2>
+            <p className="mb-10 text-xl">주요 프로젝트만 모아 놓았습니다.</p>
           </div>
           <div className="project-content-wapper mb-16">
             {projectData.slice(0, showMoreProjects ? undefined : 4).map(
@@ -179,7 +197,7 @@ const Project = () => {
                       <span className="project-text-box-number block mb-8">
                         {`0${index + 1}`}
                       </span>
-                      <strong className="text-5xl font-bold block mb-4">
+                      <strong className="text-4xl font-bold block mb-4">
                         {item.title}
                       </strong>
                       <p className="mb-8">{item.description}</p>
@@ -216,10 +234,10 @@ const Project = () => {
             )}
           </div>
           {!showMoreProjects && (
-            <div className="show-more-button">
+            <div className="show-more-button from-white">
               <button className="btn-more" onClick={handleShowMoreProjects}>
-                더 보기
-                <IoIosAdd />
+                더 보기 ...
+                {/* <IoIosAdd /> */}
               </button>
             </div>
           )}
