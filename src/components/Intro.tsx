@@ -4,7 +4,7 @@ import { IoIosArrowRoundDown } from "react-icons/io";
 
 const Intro = () => {
   return (
-    <Element name="intro" className="h-screen flex">
+    <Element name="intro" className="intro h-screen flex">
       <div className="intro-content-left flex flex-col justify-center items-center flex-1">
         <div className="box-wapper mb-4">
           <div className="box"></div>

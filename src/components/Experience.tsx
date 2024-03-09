@@ -10,10 +10,12 @@ const Experience: React.FC<OwnProps> = ({ darkMode }) => {
     <Element name="experience">
       <div className="experience">
         <div className="experience-wapper inner">
-          <h2 className="text-6xl font-bold mb-4">Experience</h2>
-          <p className="mb-10 text-xl">
-            다양한 업무 경험을 바탕으로 서비스를 개발하였습니다.
-          </p>
+          <div>
+            <h2 className="text-6xl font-bold mb-4">Experience</h2>
+            <p className="mb-10 text-xl">
+              다양한 업무 경험을 바탕으로 서비스를 개발하였습니다.
+            </p>
+          </div>
           <div
             className="experience-content-wapper"
             style={{
