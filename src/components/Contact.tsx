@@ -26,7 +26,14 @@ const Contact = () => {
                   Email : skykwon1004@gmail.com
                 </span>
                 <span className="block">
-                  Github : https://github.com/skykwon1004
+                  Github :{" "}
+                  <a
+                    href="https://github.com/skykwon1004"
+                    target="_blank"
+                    className="underline underline-offset-4"
+                  >
+                    https://github.com/skykwon1004
+                  </a>
                 </span>
               </div>
             </div>

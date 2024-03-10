@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Project from "./components/Project";
@@ -32,6 +33,7 @@ const App: React.FC = () => {
       <Skill />
       <Education />
       <Contact />
+      <Footer />
     </>
   );
 };

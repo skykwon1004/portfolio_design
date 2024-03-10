@@ -13,6 +13,7 @@ html {
   color: rgb(23 23 23);
   font-family: "Poppins", "Red Hat Display", "Pretendard", "Roboto",
     "Noto Sans KR", sans-serif;
+  word-break: keep-all;
 }
 
 html.dark {
@@ -32,6 +33,31 @@ body {
 
 .red {
   outline: 1px solid red;
+}
+
+.point-text {
+  display: inline-block;
+  background: #f8d10a;
+  padding: 0 1px 0 1px;
+  font-weight: 500;
+}
+
+.dot>li {
+  display: block;
+  position: relative;
+  padding: 0 0 0 12px;
+}
+
+.dot>li::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  z-index: auto;
+  width: 3px;
+  height: 3px;
+  background: #777;
+  border-radius: 50%;
 }
 
 .box {
@@ -326,24 +352,6 @@ body {
   margin: 0 auto 96px auto;
 }
 
-.dot>li {
-  display: block;
-  position: relative;
-  padding: 0 10px;
-}
-
-.dot>li::before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 0;
-  z-index: auto;
-  width: 3px;
-  height: 3px;
-  background: #777;
-  border-radius: 50%;
-}
-
 /* skill */
 .skill-list>.skill-front>.skill-list-item>span>img {
   width: 20px;
@@ -364,6 +372,10 @@ body {
 }
 
 /* education */
+.education {
+  background: rgb(249, 249, 249, 0.5);
+}
+
 .education-content-left {
   /* outline: 1px solid red; */
 }
@@ -387,10 +399,15 @@ body {
 }
 
 /* contact */
+.contact-content-wapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .contact-content {
   background: #f8d10a;
-  padding: 100px 80px;
+  padding: 100px 120px 100px 140px;
   border-radius: 30px;
   box-shadow: 3px 3px 20px rgba(235, 228, 31, 0.35);
   ;
@@ -423,4 +440,16 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* footer */
+.footer {
+  background-color: rgb(23 23 23);
+  color: #979aa3;
+}
+
+.footer-wapper {
+  width: 1360px;
+  margin: 0 auto;
+  padding: 40px;
 }
