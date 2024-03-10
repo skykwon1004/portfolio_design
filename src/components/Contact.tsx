@@ -1,8 +1,10 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import useDarkModeStore from "../zustand/useDarkModeStore";
 
 const Contact = () => {
+  const { darkMode } = useDarkModeStore();
   return (
     <Element name="contact">
       <div className="contact">
@@ -13,11 +15,21 @@ const Contact = () => {
           </div>
           <div className="contact-content-wapper">
             <div className="contact-content flex justify-between gap-14">
-              <div className="contact-content-left flex-1">
+              <div
+                className="contact-content-left flex-1"
+                style={{
+                  color: darkMode ? "rgb(27 29 31)" : " rgb(27 29 31)",
+                }}
+              >
                 <strong className="text-5xl block mb-2">Contact & Links</strong>
                 <strong className="text-5xl">Thank You!</strong>
               </div>
-              <div className="contact-content-right flex-1">
+              <div
+                className="contact-content-right flex-1"
+                style={{
+                  color: darkMode ? "rgb(27 29 31)" : " rgb(27 29 31)",
+                }}
+              >
                 <span className="contact-icon">
                   <BsFillTelephoneFill />
                 </span>

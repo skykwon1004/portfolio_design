@@ -1,11 +1,10 @@
 import React from "react";
 import { Element } from "react-scroll";
+import useDarkModeStore from "../zustand/useDarkModeStore";
 
-interface OwnProps {
-  darkMode: boolean;
-}
+const Experience: React.FC = () => {
+  const { darkMode } = useDarkModeStore();
 
-const Experience: React.FC<OwnProps> = ({ darkMode }) => {
   return (
     <Element name="experience">
       <div className="experience">
@@ -26,11 +25,11 @@ const Experience: React.FC<OwnProps> = ({ darkMode }) => {
           >
             <div
               className="experience-content"
-              // style={{
-              //   backgroundColor: darkMode
-              //     ? "rgb(51, 51, 51, 0.5)"
-              //     : " rgb(249, 249, 249,0.5)",
-              // }}
+              style={{
+                borderBottom: darkMode
+                  ? "1px solid rgb(51, 51, 51, 0.5)"
+                  : "1px solid #f2f2f2",
+              }}
             >
               <div className="flex justify-between">
                 <figure>

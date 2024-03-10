@@ -1,9 +1,12 @@
 import React from "react";
-import useDarkModeStore from "../zustand/useDarkModeStore";
 
-const DarkModeToggle: React.FC = () => {
-  const { darkMode, toggleDarkMode } = useDarkModeStore();
+interface OwnProps {
+  darkMode: boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+  toggleDarkMode: () => void;
+}
 
+const DarkModeToggle: React.FC<OwnProps> = ({ darkMode, toggleDarkMode }) => {
   return (
     <div className="flex justify-center items-center">
       <button

@@ -9,20 +9,23 @@
 @tailwind utilities;
 
 html {
-  background: #fff;
-  color: rgb(23 23 23);
   font-family: "Poppins", "Red Hat Display", "Pretendard", "Roboto",
     "Noto Sans KR", sans-serif;
   word-break: keep-all;
 }
 
-html.dark {
-  background-color: rgb(23 23 23);
-  color: rgb(249 250 251);
-}
-
 body {
   overflow-x: hidden;
+}
+
+.white {
+  background: #fff;
+  color: rgb(23 23 23);
+}
+
+.dark {
+  background: rgb(27 29 31);
+  color: rgb(232 235 237);
 }
 
 .inner {
@@ -190,13 +193,9 @@ body {
   border-radius: 10px;
 }
 
-.experience-content>div>:nth-child(2) {
+.experience-content>div> :nth-child(2) {
   /* outline: 1px solid red; */
   flex: 0.7;
-}
-
-.experience-content:first-child {
-  border-bottom: 1px solid #f2f2f2;
 }
 
 /* Project */
@@ -254,7 +253,7 @@ body {
   transform: translate(-50%, -50%);
   width: 44px;
   height: 44px;
-  background: #333;
+  background: #000;
   border-radius: 50%;
 }
 
@@ -277,10 +276,11 @@ body {
   font-weight: 500;
 }
 
+/* 
 .btn:hover {
-  background: #333;
-  color: #fff;
-}
+  background: #f8d80a;
+  filter: brightness(2);
+} */
 
 .show-more-button {
   display: flex;
@@ -410,9 +410,7 @@ body {
   padding: 100px 120px 100px 140px;
   border-radius: 30px;
   box-shadow: 3px 3px 20px rgba(235, 228, 31, 0.35);
-  ;
   align-items: center;
-
 }
 
 .contact-icon {
@@ -452,4 +450,22 @@ body {
   width: 1360px;
   margin: 0 auto;
   padding: 40px;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.scroll-top>button {
+  width: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 24px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }

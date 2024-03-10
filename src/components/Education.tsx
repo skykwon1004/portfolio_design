@@ -1,10 +1,19 @@
 import React from "react";
 import { Element } from "react-scroll";
+import useDarkModeStore from "../zustand/useDarkModeStore";
 
 const Education = () => {
+  const { darkMode } = useDarkModeStore();
   return (
     <Element name="education">
-      <div className="education">
+      <div
+        className="education"
+        style={{
+          backgroundColor: darkMode
+            ? "rgb(51, 51, 51, 0.5)"
+            : " rgb(249, 249, 249,0.5)",
+        }}
+      >
         <div className="education-wapper inner">
           <div>
             <h2 className="text-5xl font-bold mb-4">Education</h2>

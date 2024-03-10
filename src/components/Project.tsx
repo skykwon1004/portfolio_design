@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import { IoIosArrowRoundForward, IoIosClose, IoIosAdd } from "react-icons/io";
+import useDarkModeStore from "../zustand/useDarkModeStore";
 
 const Project = () => {
+  const { darkMode } = useDarkModeStore();
   const [showModal, setShowModal] = useState(false);
   const [activeProjectIndex, setActiveProjectIndex] = useState(-1);
   const [isHoveredArray, setIsHoveredArray] = useState([false, false]);
@@ -162,7 +164,14 @@ const Project = () => {
 
   return (
     <Element name="project">
-      <div className="project">
+      <div
+        className="project"
+        style={{
+          backgroundColor: darkMode
+            ? "rgb(51, 51, 51, 0.5)"
+            : " rgb(249, 249, 249,0.5)",
+        }}
+      >
         <div className="project-wapper inner">
           <div>
             <h2 className="text-6xl font-bold mb-4">Project</h2>
@@ -175,7 +184,14 @@ const Project = () => {
                 index // 변경
               ) => (
                 <div key={index} className="project-content shadow-sm">
-                  <figure className="project-img-box">
+                  <figure
+                    className="project-img-box"
+                    style={{
+                      backgroundColor: darkMode
+                        ? "#32343a"
+                        : " rgb(249, 249, 249,0.5)",
+                    }}
+                  >
                     <img
                       src={
                         isHoveredArray[index] // index 변경
@@ -186,7 +202,13 @@ const Project = () => {
                       className=""
                     />
                   </figure>
-                  <div className="project-text-box-link">
+                  <div
+                    className="project-text-box-link"
+                    style={{
+                      backgroundColor: darkMode ? "rgba(51, 51, 51, 1)" : "",
+                      borderRadius: "0 0 30px 30px",
+                    }}
+                  >
                     {" "}
                     {/* 모달 오픈 핸들러 추가 */}
                     <div
@@ -211,7 +233,12 @@ const Project = () => {
                           className="btn-link"
                           onClick={() => handleModalOpen(index)}
                         >
-                          <button className="btn">
+                          <button
+                            className="btn"
+                            style={{
+                              color: darkMode ? "rgb(23 23 23)" : "",
+                            }}
+                          >
                             Read More <IoIosArrowRoundForward />
                           </button>
                         </div>
@@ -221,7 +248,12 @@ const Project = () => {
                             className="btn-link"
                             target="_blank"
                           >
-                            <button className="btn">
+                            <button
+                              className="btn"
+                              style={{
+                                color: darkMode ? "rgb(23 23 23)" : "",
+                              }}
+                            >
                               Go Site <IoIosArrowRoundForward />
                             </button>
                           </a>
@@ -235,7 +267,13 @@ const Project = () => {
           </div>
           {!showMoreProjects && (
             <div className="show-more-button from-white">
-              <button className="btn-more" onClick={handleShowMoreProjects}>
+              <button
+                className="btn-more"
+                onClick={handleShowMoreProjects}
+                style={{
+                  backgroundColor: darkMode ? "rgb(23 23 23)" : "",
+                }}
+              >
                 더 보기 ...
                 {/* <IoIosAdd /> */}
               </button>

@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
@@ -9,21 +8,29 @@ import Intro from "./components/Intro";
 import Project from "./components/Project";
 import ScrollTop from "./components/ScrollTop";
 import Skill from "./components/Skill";
-import useDarkModeStore from "./zustand/useDarkModeStore";
 
 const App: React.FC = () => {
-  const [darkMode] = useDarkModeStore((state) => [state.darkMode]);
-  const [isClient, setIsClient] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
-  // 클라이언트 사이드에서만 실행되도록 설정
-  if (typeof window !== "undefined" && !isClient) setIsClient(true);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    if (!darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
 
   return (
-    <div className={darkMode ? "dark" : "white"}>
-      <Header />
+    <>
+      <Header
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+        toggleDarkMode={toggleDarkMode}
+      />
       <main>
         <Intro />
-        <Experience />
+        <Experience darkMode={darkMode} />
         <Project />
         <Skill />
         <Education />
@@ -31,7 +38,7 @@ const App: React.FC = () => {
       </main>
       <Footer />
       <ScrollTop />
-    </div>
+    </>
   );
 };
 
