@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Element } from "react-scroll";
-import { IoIosArrowRoundForward, IoIosClose, IoIosAdd } from "react-icons/io";
+import { IoIosArrowRoundForward } from "react-icons/io";
 import useDarkModeStore from "../zustand/useDarkModeStore";
+import Modal from "./Modal";
+import projectData from "./projectData";
 
 const Project = () => {
   const { darkMode } = useDarkModeStore();
@@ -9,114 +11,6 @@ const Project = () => {
   const [activeProjectIndex, setActiveProjectIndex] = useState(-1);
   const [isHoveredArray, setIsHoveredArray] = useState([false, false]);
   const [showMoreProjects, setShowMoreProjects] = useState(false); // 추가
-
-  // 각 섹션에 대한 데이터 객체 배열
-  const projectData = [
-    {
-      title: "AAT",
-      description:
-        "빅데이터를 분석하여 최적의 수익 실현 타이밍에 매매를 도와주는 인공지능 서비스 웹사이트 입니다.",
-      link: "",
-      image: "/img/aat_01.jpg",
-      gifImage: "/img/petcare_08_g.gif",
-      technologies: ["#React", "#TypeScript", "#Redux-toolkit", "#SCSS"],
-      status: "개발중",
-      modalContent: {
-        title: "AAT",
-        date: "2023.11. ~ 개발중",
-        features: [
-          "데이터 시각화를 위한 대시보드, 차트 기능 구현",
-          "회원가입/로그인시 유효성 검사 기능 구현",
-        ],
-      },
-    },
-    {
-      title: "PetCare Lab",
-      description:
-        "스마트 배변판으로 반려동물의 소변검사를 통해집에서 건강상태를 손쉽게 진단할 수 있는 펫케어 서비스 웹사이트 입니다.",
-      link: "https://petcarelab.net/",
-      image: "/img/petcare_08_g01.jpg",
-      gifImage: "/img/petcare_08_g.gif",
-      technologies: ["#React", "#JavaScript", "#SCSS"],
-      status: "개발중",
-      modalContent: {
-        title: "PetCare Lab",
-        date: "2023.11. ~ 개발중",
-        features: ["ddd한 대시보드, 차트 기능 구현", "ddd 기능 구현"],
-      },
-    },
-    {
-      title: "Ai-Dapps",
-      description: "Ai-Dapps 공식 홈페이지 입니다.",
-      link: "http://ai-dapps.com/",
-      image: "/img/aidapps_01.jpg",
-      gifImage: "/img/petcare_08_g.gif",
-      technologies: ["#HTML", "#JavaScript", "#CSS", "#그누보드"],
-      status: "개발중",
-      modalContent: {
-        title: "Ai-Dapps",
-        date: "2023.11. ~ 개발중",
-        features: [
-          "데이터 시각화를 위한 대시보드, 차트 기능 구현",
-          "회원가입/로그인시 유효성 검사 기능 구현",
-        ],
-      },
-    },
-    {
-      title: "ILSHIN",
-      description:
-        "기존의 일신방직 홈페이지를 UI/UX를 개선하여 리뉴얼한 홈페이지입니다.",
-      link: "http://skykwon1004.dothome.co.kr/",
-      image: "/img/ilshin_01.jpg",
-      gifImage: "/img/petcare_08_g.gif",
-      technologies: ["#HTML", "#JQuery", "#CSS", "#그누보드"],
-      status: "개발중",
-      modalContent: {
-        title: "ILSHIN",
-        date: "2023.11. ~ 개발중",
-        features: [
-          "데이터 시각화를 위한 대시보드, 차트 기능 구현",
-          "회원가입/로그인시 유효성 검사 기능 구현",
-        ],
-      },
-    },
-    {
-      title: "About Movie",
-      description:
-        "영화 Open API를 활용하여 영화를 장르별로 구분하고 영화 검색이 가능한 서비스입니다.",
-      link: "http://skykwon1004.dothome.co.kr/",
-      image: "/img/am_01.jpg",
-      gifImage: "/img/petcare_08_g.gif",
-      technologies: ["#HTML", "#JQuery", "#CSS", "#그누보드"],
-      status: "개발중",
-      modalContent: {
-        title: "About Movie",
-        date: "2023.03.08 ~ 2023.03.14",
-        features: [
-          "데이터 시각화를 위한 대시보드, 차트 기능 구현",
-          "회원가입/로그인시 유효성 검사 기능 구현",
-        ],
-      },
-    },
-    {
-      title: "부산 맛집 지도",
-      description:
-        "공공데이터 API를 이용하여 부산 맛집을 지도에서 한 번에 볼 수 있도록 만든 서비스입니다.",
-      link: "https://skykwon1004.github.io/react_busan_restauran/",
-      image: "/img/busan_food_01.jpg",
-      gifImage: "/img/petcare_08_g.gif",
-      technologies: ["#HTML", "#JQuery", "#CSS", "#그누보드"],
-      status: "개발중",
-      modalContent: {
-        title: "부산 맛집 지도",
-        date: "2023.03.08 ~ 2023.03.14",
-        features: [
-          "데이터 시각화를 위한 대시보드, 차트 기능 구현",
-          "회원가입/로그인시 유효성 검사 기능 구현",
-        ],
-      },
-    },
-  ];
 
   useEffect(() => {
     if (showModal) {
@@ -223,9 +117,18 @@ const Project = () => {
                         {item.title}
                       </strong>
                       <p className="mb-8">{item.description}</p>
-                      <ul className="flex gap-5 text-gray-400 mb-8">
+                      <ul className="flex gap-2 text-gray-500 mb-8">
                         {item.technologies.map((tech, techIndex) => (
-                          <li key={techIndex}>{tech}</li>
+                          <li
+                            key={techIndex}
+                            className="bg-gray-100 px-2 py-0.5 rounded"
+                            style={{
+                              backgroundColor: darkMode ? "#1f1f1f" : "",
+                              color: darkMode ? "rgb(209 213 219)" : "",
+                            }}
+                          >
+                            {tech}
+                          </li>
                         ))}
                       </ul>
                       <div className="project-btn-wapper">
@@ -282,41 +185,13 @@ const Project = () => {
         </div>
       </div>
       {showModal && activeProjectIndex !== -1 && (
-        <div className="modal" onClick={handleModalClose}>
-          <div
-            className="modal-content-wapper"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <span className="close" onClick={handleModalClose}>
-              <IoIosClose />
-            </span>
-            <div className="modal-content">
-              <div className="modal-content-title">
-                <strong className="text-6xl block mb-4">
-                  {projectData[activeProjectIndex]?.modalContent?.title}
-                </strong>
-                <span className="block mb-12">
-                  {projectData[activeProjectIndex]?.modalContent?.date}
-                </span>
-                <img
-                  src={projectData[activeProjectIndex].image}
-                  alt=""
-                  className="modal-project-item-img shadow-md mb-20"
-                />
-              </div>
-              <strong className="block text-2xl font-black mb-4">
-                주요 기능 및 특징
-              </strong>
-              <ul className="dot">
-                {projectData[activeProjectIndex]?.modalContent?.features.map(
-                  (feature, index) => (
-                    <li key={index}>{feature}</li>
-                  )
-                )}
-              </ul>
-            </div>
-          </div>
-        </div>
+        <Modal
+          showModal={showModal}
+          handleModalClose={handleModalClose}
+          projectData={projectData}
+          activeProjectIndex={activeProjectIndex}
+          darkMode={darkMode}
+        />
       )}
     </Element>
   );
