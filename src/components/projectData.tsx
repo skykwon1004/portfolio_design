@@ -35,6 +35,9 @@ const projectData = [
         "반응형 웹 개발 및 크로스 브라우징 개발",
       ],
       skill: ["Vite", "React", "TypeScript", "Redux Toolkit", "SCSS"],
+      screen: ["메인", "로그인", "나의 자산", "고객센터"],
+      image: ["/img/aat_01.jpg", "/img/am_01.jpg", "/img/aidapps_01.jpg"],
+      screenText: ["ㅇㄴㅇㅁㅇㄴㅇ", "ㅇㅇㅇㅇㅇ", "ㅇㅇㅇㅇㅇㅇㅈㅈ"],
     },
   },
   {
@@ -51,6 +54,7 @@ const projectData = [
       date: "2023.11. ~ 개발중",
       features: ["ddd한 대시보드, 차트 기능 구현", "ddd 기능 구현"],
       skill: ["Vite", "React", "TypeScript", "Redux Toolkit", "SCSS"],
+      pages: [],
     },
   },
   {
