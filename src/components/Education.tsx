@@ -16,15 +16,19 @@ const Education = () => {
       >
         <div className="education-wapper inner">
           <div>
-            <h2 className="text-5xl font-bold mb-4">Education</h2>
-            <p className="mb-10 text-xl">개발자 양성과정을 수료했습니다.</p>
+            <h2 className="text-5xl font-bold mb-4 max-md:text-3xl max-md:mb-2">
+              Education
+            </h2>
+            <p className="mb-10 text-xl max-md:text-lg max-md:mb-6">
+              개발자 양성과정을 수료했습니다.
+            </p>
           </div>
-          <div className="education-content-wapper flex gap-14">
+          <div className="education-content-wapper flex gap-14 max-md:flex-col max-md:gap:10">
             <div className="education-content-left flex-1">
               <img src="/img/e-bg-01.jpg" alt="" />
             </div>
             <div className="education-content-right flex-1">
-              <ul className="mb-10 dot">
+              <ul className="mb-10 dot max-md:mb-5">
                 <span className="block text-gray-400 font-light">
                   그린컴퓨터아카데미 (2022.11 ~ 2023.04)
                 </span>

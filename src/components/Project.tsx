@@ -68,8 +68,12 @@ const Project = () => {
       >
         <div className="project-wapper inner">
           <div>
-            <h2 className="text-6xl font-bold mb-4">Project</h2>
-            <p className="mb-10 text-xl">주요 프로젝트만 모아 놓았습니다.</p>
+            <h2 className="text-6xl font-bold mb-4 max-md:text-3xl max-md:mb-2">
+              Project
+            </h2>
+            <p className="mb-10 text-xl max-md:text-lg max-md:mb-6">
+              주요 프로젝트만 모아 놓았습니다.
+            </p>
           </div>
           <div className="project-content-wapper mb-16">
             {projectData.slice(0, showMoreProjects ? undefined : 4).map(
@@ -100,7 +104,6 @@ const Project = () => {
                     className="project-text-box-link"
                     style={{
                       backgroundColor: darkMode ? "rgba(51, 51, 51, 1)" : "",
-                      borderRadius: "0 0 30px 30px",
                     }}
                   >
                     {" "}
@@ -113,11 +116,11 @@ const Project = () => {
                       <span className="project-text-box-number block mb-8">
                         {`0${index + 1}`}
                       </span>
-                      <strong className="text-4xl font-bold block mb-4">
+                      <strong className="text-4xl font-bold block mb-4 max-md:text-2xl">
                         {item.title}
                       </strong>
                       <p className="mb-8">{item.description}</p>
-                      <ul className="flex gap-2 text-gray-500 mb-8">
+                      <ul className="flex gap-2 text-gray-500 mb-8 max-md:grid max-md:grid-cols-2">
                         {item.technologies.map((tech, techIndex) => (
                           <li
                             key={techIndex}

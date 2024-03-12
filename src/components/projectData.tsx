@@ -95,12 +95,11 @@ const projectData = [
         "반응형",
       ],
       image: [
-        "/img/petcare_08_g01.jpg",
+        "/img/petcare_09_g.gif",
         "/img/petcare_08_g.gif",
-        "/img/aat_03.jpg",
-        "/img/aat_07.jpg",
-        "/img/aat_05.jpg",
-        "/img/aat_13.jpg",
+        "/img/petcare_03.jpg",
+        "/img/petcare_04.jpg",
+        "/img/petcare_07.jpg",
       ],
       screenText: [
         "<react-intl> 라이브러리를 활용하여 <다국어 서비스>를 구현했습니다.",
@@ -112,20 +111,22 @@ const projectData = [
     },
   },
   {
-    title: "MBTCs",
-    description: "Ai-Dapps 공식 홈페이지 입니다.",
-    link: "https://mbtcsuper.com/",
-    image: "/img/mbtcs_01.jpg",
-    gifImage: "/img/petcare_08_g.gif",
+    title: "Chat FID",
+    description:
+      "용도에 따라 사용자의 맞춤형 데이터를 학습하여 챗봇으로 제공하는 문서기반 인공지능 서비스 웹사이트 입니다.",
+    link: "http://ai-chatfid.co.kr/",
+    image: "/img/fid_01.jpg",
+    gifImage: "/img/fid_02_g.gif",
     technologies: ["#React", "#JavaScript", "#SCSS", "#반응형"],
     modalContent: {
-      title: "MBTCs",
+      title: "Chat FID",
       date: "2023.5. ~ 2023.5.",
       team: "팀 구성 : 프론트엔드 1명, 디자이너 1명, 기획자 1명",
       description:
-        "스마트 배변판으로 반려동물의 소변검사를 통해집에서 건강상태를 손쉽게 진단할 수 있는 펫케어 서비스 웹사이트 입니다.",
+        "원페이지 스크롤 형태의 플랫폼 소개 웹사이트 입니다. react-intl 라이브러리를 사용하여 다국어 서비스를 구현해 볼 수 있었습니다. 또한 react-slick 라이브러리와 aos 라이브러리를 사용하여 다양한 동적인 요소를 구현했습니다. github와 연동되는 호스팅 플랫폼 Netlify를 활용하여 웹사이트를 손쉽게 배포하고 유지 보수할 수 있었습니다.",
       link: "https://mbtcsuper.com/",
       features: [
+        "react-intl을 활용한 다국어 구현(KOR, ENG)",
         "GNB 메뉴 클릭 시 특정 컴포넌트로 스크롤 이동하는 기능 구현",
         "aos을 활용한 스크롤 애니메이션 구현",
         "react-slick을 활용한 슬라이드 구현",
@@ -141,8 +142,8 @@ const projectData = [
         "반응형",
       ],
       image: [
-        "/img/petcare_08_g01.jpg",
-        "/img/petcare_08_g.gif",
+        "/img/fid_01.jpg",
+        "/img/fid_02_g.gif",
         "/img/aat_03.jpg",
         "/img/aat_07.jpg",
         "/img/aat_05.jpg",
@@ -163,17 +164,16 @@ const projectData = [
       "기존의 일신방직 홈페이지를 UI/UX를 개선하여 리뉴얼한 홈페이지입니다.",
     link: "http://skykwon1004.dothome.co.kr/",
     image: "/img/ilshin_01.jpg",
-    gifImage: "/img/petcare_08_g.gif",
-    technologies: ["#HTML", "#JQuery", "#CSS", "#그누보드", "#반응형"],
-    status: "개발중",
+    gifImage: "/img/ilshin_09_g.gif",
+    technologies: ["#HTML", "#CSS", "#JQuery", "#그누보드", "#반응형"],
     modalContent: {
       title: "ILSHIN",
-      date: "2023.11. ~ 개발중",
+      date: "2022.02. ~ 2022.02.",
       features: [
         "데이터 시각화를 위한 대시보드, 차트 기능 구현",
         "회원가입/로그인시 유효성 검사 기능 구현",
       ],
-      skill: ["Vite", "React", "TypeScript", "Redux Toolkit", "SCSS"],
+      skill: ["HTML", "CSS", "JQuery", "그누보드", "반응형"],
     },
   },
   {
@@ -184,7 +184,6 @@ const projectData = [
     image: "/img/am_01.jpg",
     gifImage: "/img/petcare_08_g.gif",
     technologies: ["#React", "#JavaScript", "#SCSS"],
-    status: "개발중",
     modalContent: {
       title: "About Movie",
       date: "2023.03.08 ~ 2023.03.14",
@@ -203,7 +202,6 @@ const projectData = [
     image: "/img/busan_food_01.jpg",
     gifImage: "/img/petcare_08_g.gif",
     technologies: ["#React", "#JavaScript", "#SCSS"],
-    status: "개발중",
     modalContent: {
       title: "부산 맛집 지도",
       date: "2023.03.08 ~ 2023.03.14",

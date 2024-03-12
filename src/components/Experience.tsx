@@ -10,8 +10,10 @@ const Experience: React.FC = () => {
       <div className="experience">
         <div className="experience-wapper inner">
           <div>
-            <h2 className="text-6xl font-bold mb-4">Experience</h2>
-            <p className="mb-10 text-xl">
+            <h2 className="text-6xl font-bold mb-4 max-md:text-3xl max-md:mb-2">
+              Experience
+            </h2>
+            <p className="mb-10 text-xl max-md:text-lg max-md:mb-6">
               다양한 업무 경험을 바탕으로 서비스를 개발하였습니다.
             </p>
           </div>
@@ -31,8 +33,8 @@ const Experience: React.FC = () => {
                   : "1px solid #f2f2f2",
               }}
             >
-              <div className="flex justify-between">
-                <figure>
+              <div className="flex justify-between max-md:flex-col">
+                <figure className="max-md:flex max-md:items-center max-md:justify-center max-md:mb-4">
                   <img src="/img/ai-logo.jpg" alt="" />
                 </figure>
                 <div>
@@ -69,8 +71,8 @@ const Experience: React.FC = () => {
               //     : " rgb(249, 249, 249,0.5)",
               // }}
             >
-              <div className="flex justify-between">
-                <figure>
+              <div className="flex justify-between max-md:flex-col">
+                <figure className="max-md:flex max-md:items-center max-md:justify-center max-md:mb-4">
                   <img src="/img/top-logo.jpg" alt="" />
                 </figure>
                 <div>

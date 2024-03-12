@@ -7,13 +7,15 @@ const Skill = () => {
       <div className="skill">
         <div className="skill-wapper inner">
           <div>
-            <h2 className="text-5xl font-bold mb-4">Skill</h2>
-            <p className="mb-10 text-xl">
+            <h2 className="text-5xl font-bold mb-4 max-md:text-3xl max-md:mb-2">
+              Skill
+            </h2>
+            <p className="mb-10 text-xl max-md:text-lg max-md:mb-6">
               새로운 기술 스택에 관심을 가지며 꾸준히 공부하고 있습니다.
             </p>
           </div>
-          <div className="skill-list flex gap-10 justify-between">
-            <div className="skill-front flex gap-14">
+          <div className="skill-list flex gap-10 justify-between max-md:flex-col">
+            <div className="skill-front flex gap-14 max-md:gap-4">
               <div className="skill-list-item">
                 <strong className="block mb-4 text-xl">Front-End</strong>
                 <span className="block flex gap-3 items-center mb-2">
@@ -22,7 +24,7 @@ const Skill = () => {
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
                   <img src="/img/skill-logo-02.png" alt="" />
-                  Redux-Toolkit
+                  Redux
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
                   <img src="/img/skill-logo-03.png" alt="" />
