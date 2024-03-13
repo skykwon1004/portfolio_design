@@ -7,7 +7,7 @@ const DarkModeToggle: React.FC = () => {
   return (
     <div className="flex justify-center items-center">
       <button
-        className={`px-4 py-2 ${
+        className={`px-4 py-2 z-10 max-md:px-2 ${
           darkMode ? "bg-gray-200 text-gray-800" : "bg-gray-800 text-white"
         } rounded-md shadow-md focus:outline-none`}
         onClick={toggleDarkMode}
