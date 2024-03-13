@@ -23,13 +23,22 @@ const Header: React.FC = () => {
           ? "backdrop-blur-sm text-gray-50 border-neutral-700"
           : "backdrop-blur-sm text-slate-950 border-neutral-200"
       }`}
+      style={{
+        backgroundColor: darkMode
+          ? "rgb(27, 29, 31, 0.5)"
+          : " rgb(255, 255, 255,0.5)",
+      }}
     >
       <h1 className="font-black text-2xl z-10">EunJin.</h1>
       <div className="flex gap-6 max-md:gap-3">
         <nav
           className={`${isMenuOpen ? "block" : "hidden"} md:flex font-medium`}
         >
-          <ul className="flex gap-6 cursor-pointer max-md:flex-col max-md:text-right">
+          <ul
+            className={`flex gap-6 cursor-pointer max-md:flex-col max-md:text-right ${
+              darkMode ? "max-md:bg-stone-900" : "max-md:bg-white"
+            }`}
+          >
             <li>
               <Link
                 activeClass="active"

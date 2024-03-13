@@ -40,7 +40,7 @@ html {
 }
 
 nav.block>ul {
-  background: #fff;
+  /* background: #fff; */
   padding: 100px 50px 50px;
   position: fixed;
   right: 0;
