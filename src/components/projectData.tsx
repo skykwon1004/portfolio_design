@@ -60,7 +60,7 @@ const projectData = [
     description:
       "스마트 배변판으로 반려동물의 소변검사를 통해집에서 건강상태를 손쉽게 진단할 수 있는 펫케어 서비스 웹사이트 입니다.",
     link: "https://petcarelab.net/",
-    image: "/img/petcare_08_g01.jpg",
+    image: "/img/petcare_01.jpg",
     gifImage: "/img/petcare_08_g.gif",
     technologies: ["팀", "React", "다국어", "반응형"],
     modalContent: {
@@ -187,7 +187,7 @@ const projectData = [
       "영화 Open API를 활용하여 영화를 장르별로 구분하고 영화 검색이 가능한 서비스입니다.",
     link: "https://skykwon1004.github.io/react_AM_movie/",
     image: "/img/am_01.jpg",
-    gifImage: "/img/petcare_08_g.gif",
+    gifImage: "/img/am_05_g.gif",
     technologies: ["솔로", "Axios", "SCSS"],
     modalContent: {
       title: "About Movie",
@@ -214,7 +214,7 @@ const projectData = [
         "로딩페이지",
       ],
       image: [
-        "/img/fid_03_g.gif",
+        "/img/am_05_g.gif",
         "/img/am_02.jpg",
         "/img/am_02.jpg",
         "/img/am_03.jpg",
@@ -235,7 +235,7 @@ const projectData = [
       "공공데이터 API를 이용하여 부산 맛집을 지도에서 한 번에 볼 수 있도록 만든 서비스입니다.",
     link: "https://skykwon1004.github.io/react_busan_restauran/",
     image: "/img/busan_food_01.jpg",
-    gifImage: "/img/petcare_08_g.gif",
+    gifImage: "/img/busan_food_04_g.gif",
     technologies: ["솔로", "공공데이터", "Axios", "Map Api"],
     modalContent: {
       title: "부산 맛집 지도",
@@ -253,11 +253,10 @@ const projectData = [
       skill: ["React", "JavaScript", "SCSS", "GSAP", "Github"],
       screen: ["카테고리 분류", "KakaoMap API", "디테일페이지", "댓글"],
       image: [
-        "/img/fid_03_g.gif",
-        "/img/am_02.jpg",
-        "/img/am_02.jpg",
-        "/img/am_03.jpg",
-        "/img/am_04.jpg",
+        "/img/busan_food_04_g.gif",
+        "/img/busan_food_01.jpg",
+        "/img/busan_food_02.jpg",
+        "/img/busan_food_03.jpg",
       ],
       screenText: [
         "<react-intl> 라이브러리를 활용하여 <다국어 서비스>를 구현했습니다.",

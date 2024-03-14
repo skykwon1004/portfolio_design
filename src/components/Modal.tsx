@@ -34,27 +34,34 @@ const Modal = ({
     <div className="modal" onClick={handleModalClose}>
       <div className="modal" onClick={handleModalClose}>
         <div
-          className="modal-content-wapper"
+          className="modal-content-wapper max-md:max-w-full"
           onClick={(e) => e.stopPropagation()}
           style={{
             backgroundColor: darkMode ? "rgba(51, 51, 51)" : "",
           }}
         >
-          <span className="close" onClick={handleModalClose}>
-            <IoIosClose />
-          </span>
           <div
-            className="link-wapper flex flex-col items-center justify-items-center gap-2"
-            style={linkStyle}
+            className="modal-bnt"
+            style={{
+              backgroundColor: darkMode ? "rgba(51, 51, 51)" : "",
+            }}
           >
-            <a href={link} target="_blank" className="link">
-              <IoIosLink />
-            </a>
-            <span>사이트 바로가기</span>
+            <div className="close" onClick={handleModalClose}>
+              <IoIosClose />
+            </div>
+            <div
+              className="link-wapper flex flex-col items-center justify-items-center gap-2"
+              style={linkStyle}
+            >
+              <a href={link} target="_blank" className="link">
+                <IoIosLink />
+              </a>
+              <span className="max-md:hidden">사이트 바로가기</span>
+            </div>
           </div>
           <div className="modal-content">
             <div className="modal-content-title">
-              <strong className="text-6xl block mb-8">
+              <strong className="text-6xl block mb-8 max-md:text-4xl">
                 {projectData[activeProjectIndex]?.modalContent?.title}
               </strong>
               <span className="block mb-1 font-semibold">
@@ -70,7 +77,7 @@ const Modal = ({
               />
             </div>
             <p
-              className="modal-desc mb-20 text-xl text-center font-medium"
+              className="modal-desc mb-20 text-xl text-center font-medium max-md:text-lg"
               style={{
                 borderBottom: darkMode ? "1px solid rgb(64 64 64)" : "",
               }}
@@ -81,7 +88,7 @@ const Modal = ({
               <strong className="block text-2xl font-black mb-4">
                 사용 기술 및 언어
               </strong>
-              <ul className="flex gap-2 text-gray-500">
+              <ul className="flex gap-2 text-gray-500 max-md:flex-col">
                 {projectData[activeProjectIndex]?.modalContent?.skill.map(
                   (skill, index) => (
                     <li
@@ -114,7 +121,7 @@ const Modal = ({
               <strong className="block text-2xl font-black mb-4">
                 작업화면
               </strong>
-              <ul className="flex gap-2 mb-8 text-gray-500">
+              <ul className="flex gap-2 mb-8 text-gray-500 max-md:flex-col">
                 {projectData[activeProjectIndex]?.modalContent?.screen.map(
                   (tab, index) => (
                     <li

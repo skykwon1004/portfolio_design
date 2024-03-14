@@ -15,10 +15,6 @@ html {
   overflow-x: hidden;
 }
 
-/* body {
-  overflow-x: hidden;
-} */
-
 .white {
   background: #fff;
   color: rgb(23 23 23);
@@ -30,9 +26,11 @@ html {
 }
 
 .inner {
+  max-width: 1360px;
   width: 1360px;
   margin: 0 auto;
   padding: 100px 40px;
+  width: 100%;
 }
 
 .red {
@@ -40,7 +38,6 @@ html {
 }
 
 nav.block>ul {
-  /* background: #fff; */
   padding: 100px 50px 50px;
   position: fixed;
   right: 0;
@@ -85,6 +82,11 @@ nav.block::before {
   border-radius: 50%;
 }
 
+/* intro */
+.intro {
+  position: relative;
+}
+
 .box {
   position: relative;
   inset: 0 0 0 100%;
@@ -93,7 +95,7 @@ nav.block::before {
   height: 30px;
   background: #f8d10a;
   border-radius: 50%;
-  z-index: -1;
+
 }
 
 .box::before {
@@ -177,7 +179,6 @@ nav.block::before {
   position: absolute;
   bottom: 50px;
   left: 50%;
-  transform: translate(-50%, 0);
   font-size: 38px;
   opacity: 0.4;
   animation: scroll-down 2.5s infinite;
@@ -185,12 +186,12 @@ nav.block::before {
 
 @keyframes scroll-down {
   0% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 
   100% {
     opacity: 0.2;
-    transform: translateY(20px);
+    transform: translate(-50%, 20px);
   }
 }
 
@@ -226,6 +227,7 @@ nav.block::before {
 }
 
 .project-content-wapper {
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -242,7 +244,7 @@ nav.block::before {
 
 .project-img-box>img {
   width: 100%;
-  height: auto;
+  height: 274px;
   border-radius: 30px 30px 0 0;
   overflow: hidden;
   object-fit: cover;
@@ -535,6 +537,16 @@ nav.block::before {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+@media not all and (min-width: 1280px) {
+  .project-content-wapper {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* ----- 반응형 ----- */
 @media not all and (min-width: 768px) {
   .inner {
     width: 100%;
@@ -542,19 +554,107 @@ nav.block::before {
     padding: 80px 20px;
   }
 
+  .box {
+    position: relative;
+    inset: 0 0 0 100%;
+    transform: translate(-50%, 50%);
+    width: 30px;
+    height: 30px;
+    background: #f8d10a;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .box::before {
+    content: "";
+    position: absolute;
+    inset: -25px -25px auto auto;
+    z-index: -1;
+    width: 80px;
+    height: 80px;
+    background: #f8d10a;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: scale-up 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+
+  @keyframes scale-up {
+    100% {
+      opacity: 0.2;
+      transform: translate(0, 0) scale(0.3);
+    }
+  }
+
+  .box-02 {
+    position: relative;
+  }
+
+  .box-02::after {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(0, 150%);
+    content: "";
+    width: 1px;
+    height: 30px;
+    background: #ddd;
+  }
+
   .intro-content-left {
     margin: 0 0 0 0;
     padding: 20px;
   }
 
+  .img-wapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+    padding: 20px;
+  }
+
+  .img-wapper::before {
+    display: none;
+  }
+
+  .img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    filter: grayscale(100%);
+    border-radius: 400px 400px 0 0;
+  }
+
+  .box-03 {
+    position: absolute;
+    right: -20px;
+    bottom: -50px;
+    width: auto;
+    height: auto;
+    background: #f8d10a;
+    border-radius: 50%;
+    opacity: 60%;
+  }
+
+
   .scroll-dwon {
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 38px;
     opacity: 0.4;
     animation: scroll-down 2.5s infinite;
+  }
+
+  @keyframes scroll-down {
+    0% {
+      transform: translate(-50%, 0);
+    }
+
+    100% {
+      opacity: 0.2;
+      transform: translate(-50%, 20px);
+    }
   }
 
   .experience-content-wapper {
@@ -693,10 +793,10 @@ nav.block::before {
     top: 20px;
     left: 0;
     background: #fff;
-    width: calc(100% - 200px);
+    width: calc(100% - 40px);
     max-height: calc(100vh - 40px);
     margin: 0 auto;
-    padding: 200px;
+    padding: 120px 20px;
     overflow-y: scroll;
     /* scrollbar-width: none; */
   }
@@ -706,26 +806,38 @@ nav.block::before {
     /* Webkit(Chrome, Safari)용 스크롤바 숨김 */
   }
 
-  .modal-content {
-    display: flex;
-    flex-direction: column;
+  .modal-bnt {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    width: calc(100% - 40px);
+    height: 80px;
+    background: #fff;
+    z-index: 999;
   }
 
   .close {
-    position: fixed;
-    top: 60px;
-    right: 200px;
-    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translate(0, -50%);
+    font-size: 50px;
     cursor: pointer;
     opacity: 0.5;
   }
 
   .link-wapper {
-    position: fixed;
-    bottom: 50px;
-    right: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(0, -50%);
     cursor: pointer;
     opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    width: 44px;
+    height: 44px;
   }
 
   .link {
@@ -734,11 +846,16 @@ nav.block::before {
     align-items: center;
     justify-content: center;
     background: rgb(31, 31, 31);
-    width: 60px;
-    height: 60px;
+    width: 44px;
+    height: 44px;
     color: #ddd;
-    font-size: 30px;
+    font-size: 22px;
     border-radius: 50%;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
   }
 
   .modal-content-title {
@@ -754,7 +871,7 @@ nav.block::before {
 
   .modal-desc {
     border-bottom: 1px solid #ddd;
-    padding: 80px 250px;
+    padding: 20px;
     position: relative;
   }
 
