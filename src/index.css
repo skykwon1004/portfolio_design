@@ -27,7 +27,6 @@ html {
 
 .inner {
   max-width: 1360px;
-  width: 1360px;
   margin: 0 auto;
   padding: 100px 40px;
   width: 100%;
@@ -37,7 +36,8 @@ html {
   outline: 1px solid red;
 }
 
-nav.block>ul {
+/* 테블릿 모바일 햄버거 버튼 */
+nav.block > ul {
   padding: 100px 50px 50px;
   position: fixed;
   right: 0;
@@ -64,13 +64,13 @@ nav.block::before {
   font-weight: 500;
 }
 
-.dot>li {
+.dot > li {
   display: block;
   position: relative;
   padding: 0 0 0 12px;
 }
 
-.dot>li::before {
+.dot > li::before {
   content: "";
   position: absolute;
   top: 12px;
@@ -85,6 +85,10 @@ nav.block::before {
 /* intro */
 .intro {
   position: relative;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 100px 40px;
+  width: 100%;
 }
 
 .box {
@@ -95,7 +99,6 @@ nav.block::before {
   height: 30px;
   background: #f8d10a;
   border-radius: 50%;
-
 }
 
 .box::before {
@@ -133,7 +136,7 @@ nav.block::before {
 }
 
 .intro-content-left {
-  margin: 0 0 0 120px;
+  padding: 0 20px;
 }
 
 .img-wapper {
@@ -141,7 +144,8 @@ nav.block::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 120px 0 0;
+  /* margin: 0 120px 0 0; */
+  padding: 0;
 }
 
 .img-wapper::before {
@@ -211,12 +215,12 @@ nav.block::before {
   padding: 60px 0 0 0;
 }
 
-.experience-content>div>figure>img {
+.experience-content > div > figure > img {
   width: 280px;
   border-radius: 10px;
 }
 
-.experience-content>div> :nth-child(2) {
+.experience-content > div > :nth-child(2) {
   /* outline: 1px solid red; */
   flex: 0.7;
 }
@@ -242,7 +246,7 @@ nav.block::before {
   border-radius: 30px 30px 0 0;
 }
 
-.project-img-box>img {
+.project-img-box > img {
   width: 100%;
   height: 274px;
   border-radius: 30px 30px 0 0;
@@ -258,7 +262,7 @@ nav.block::before {
 }
 
 .project-text-box {
-  padding: 60px 50px 50px 50px;
+  padding: 50px;
 }
 
 .project-text-box-number {
@@ -420,21 +424,21 @@ nav.block::before {
 }
 
 /* skill */
-.skill-list>.skill-front>.skill-list-item>span>img {
+.skill-list > .skill-front > .skill-list-item > span > img {
   width: 20px;
   height: 20px;
 }
 
-.skill-list>.skill-front>span>img {
+.skill-list > .skill-front > span > img {
   width: 20px;
   height: 20px;
 }
 
-.skill-list>.skill-front>.skill-list-item>span {
+.skill-list > .skill-front > .skill-list-item > span {
   font-size: 18px;
 }
 
-.skill-list>.skill-front>span {
+.skill-list > .skill-front > span {
   font-size: 18px;
 }
 
@@ -447,7 +451,7 @@ nav.block::before {
   /* outline: 1px solid red; */
 }
 
-.education-content-left>img {
+.education-content-left > img {
   height: 500px;
   overflow: hidden;
   object-fit: cover;
@@ -460,7 +464,7 @@ nav.block::before {
   justify-content: center;
 }
 
-.education-content-right>ul:nth-child(1) {
+.education-content-right > ul:nth-child(1) {
   border-bottom: 1px solid #ddd;
   padding: 0 0 40px 0;
 }
@@ -500,7 +504,7 @@ nav.block::before {
   border-radius: 50%;
 }
 
-.contact-icon>svg {
+.contact-icon > svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -525,7 +529,7 @@ nav.block::before {
   right: 20px;
 }
 
-.scroll-top>button {
+.scroll-top > button {
   width: 68px;
   height: 68px;
   display: flex;
@@ -538,6 +542,39 @@ nav.block::before {
 }
 
 @media not all and (min-width: 1280px) {
+  .img {
+    width: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    filter: grayscale(100%);
+    border-radius: 400px 400px 0 0;
+  }
+
+  .experience-content-wapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 40px;
+  }
+
+  .experience-content:nth-child(1) {
+    padding: 0 0 40px 0;
+  }
+
+  .experience-content:nth-child(2) {
+    padding: 40px 0 0 0;
+  }
+
+  .experience-content > div > figure > img {
+    width: 250px;
+    border-radius: 10px;
+  }
+
+  .experience-content > div > :nth-child(2) {
+    /* outline: 1px solid red; */
+    flex: 0.7;
+  }
+
   .project-content-wapper {
     max-width: 100%;
     display: grid;
@@ -636,7 +673,6 @@ nav.block::before {
     opacity: 60%;
   }
 
-
   .scroll-dwon {
     position: absolute;
     bottom: 20px;
@@ -672,12 +708,12 @@ nav.block::before {
     padding: 40px 0 0 0;
   }
 
-  .experience-content>div>figure>img {
+  .experience-content > div > figure > img {
     width: 200px;
     border-radius: 10px;
   }
 
-  .experience-content>div> :nth-child(2) {
+  .experience-content > div > :nth-child(2) {
     /* outline: 1px solid red; */
     flex: 0.7;
   }
@@ -703,7 +739,7 @@ nav.block::before {
     border-radius: 20px 20px 0 0;
   }
 
-  .project-img-box>img {
+  .project-img-box > img {
     width: 100%;
     height: auto;
     border-radius: 20px 20px 0 0;
@@ -896,11 +932,11 @@ nav.block::before {
   }
 
   /* education */
-  .education-content-left>img {
+  .education-content-left > img {
     height: 50%;
   }
 
-  .education-content-right>ul:nth-child(1) {
+  .education-content-right > ul:nth-child(1) {
     border-bottom: 1px solid #ddd;
     padding: 0 0 20px 0;
   }
@@ -940,10 +976,28 @@ nav.block::before {
     border-radius: 50%;
   }
 
-  .contact-icon>svg {
+  .contact-icon > svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .scroll-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .scroll-top > button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   }
 }

@@ -51,10 +51,10 @@ const Project = () => {
     setShowModal(false);
   };
 
-  const handleShowMoreProjects = () => {
-    // 추가
-    setShowMoreProjects(true);
-  };
+  // const handleShowMoreProjects = () => {
+  //   // 추가
+  //   setShowMoreProjects(true);
+  // };
 
   return (
     <Element name="project">
@@ -75,8 +75,8 @@ const Project = () => {
               주요 프로젝트만 모아 놓았습니다.
             </p>
           </div>
-          <div className="project-content-wapper mb-16">
-            {projectData.slice(0, showMoreProjects ? undefined : 4).map(
+          <div className="project-content-wapper">
+            {projectData.slice(0, showMoreProjects ? undefined : 6).map(
               (
                 item,
                 index // 변경
@@ -113,14 +113,31 @@ const Project = () => {
                       onMouseEnter={() => handleMouseEnter(index)} // index 추가
                       onMouseLeave={() => handleMouseLeave(index)} // index 추가
                     >
-                      <span className="project-text-box-number block mb-8">
+                      {/* <span className="project-text-box-number block mb-8">
                         {`0${index + 1}`}
-                      </span>
+                      </span> */}
                       <strong className="text-4xl font-bold block mb-4 max-md:text-2xl">
                         {item.title}
                       </strong>
-                      <p className="mb-8">{item.description}</p>
-                      <ul className="flex gap-2 text-gray-500 mb-8 max-md:grid max-md:grid-cols-2">
+                      <p className="mb-8 min-h-12">{item.description}</p>
+                      {/* <p className="mb-8 min-h-12">{item.contribution}</p> */}
+                      <ul className="flex gap-2 text-gray-500 font-medium mb-2 max-md:grid max-md:grid-cols-2">
+                        {item.contribution.map(
+                          (contribution, contributionIndex) => (
+                            <li
+                              key={contributionIndex}
+                              className="bg-gray-100 px-2 py-0.5 rounded"
+                              style={{
+                                backgroundColor: darkMode ? "#1f1f1f" : "",
+                                color: darkMode ? "rgb(209 213 219)" : "",
+                              }}
+                            >
+                              {contribution}
+                            </li>
+                          )
+                        )}
+                      </ul>
+                      <ul className="flex gap-2 text-gray-500 font-medium mb-8 max-md:grid max-md:grid-cols-2">
                         {item.technologies.map((tech, techIndex) => (
                           <li
                             key={techIndex}
@@ -171,7 +188,7 @@ const Project = () => {
               )
             )}
           </div>
-          {!showMoreProjects && (
+          {/* {!showMoreProjects && (
             <div className="show-more-button from-white">
               <button
                 className="btn-more"
@@ -181,10 +198,9 @@ const Project = () => {
                 }}
               >
                 더 보기 ...
-                {/* <IoIosAdd /> */}
               </button>
             </div>
-          )}
+          )} */}
         </div>
       </div>
       {showModal && activeProjectIndex !== -1 && (

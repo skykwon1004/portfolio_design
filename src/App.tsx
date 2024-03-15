@@ -12,7 +12,9 @@ import Skill from "./components/Skill";
 import useDarkModeStore from "./zustand/useDarkModeStore";
 
 const App: React.FC = () => {
-  const [darkMode] = useDarkModeStore((state) => [state.darkMode]);
+  const [darkMode] = useDarkModeStore((state: { darkMode: any }) => [
+    state.darkMode,
+  ]);
   const [isClient, setIsClient] = useState(false);
 
   // 클라이언트 사이드에서만 실행되도록 설정

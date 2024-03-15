@@ -18,7 +18,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-10 left-0 flex items-center p-6 text-xl border-solid border-b justify-between max-md:p-4 ${
+      className={`fixed inset-x-0 top-0 z-10 left-0 flex items-center p-6 text-xl border-solid border-b justify-between max-xl:p-4 ${
         darkMode
           ? "backdrop-blur-sm text-gray-50 border-neutral-700"
           : "backdrop-blur-sm text-slate-950 border-neutral-200"
@@ -30,13 +30,13 @@ const Header: React.FC = () => {
       }}
     >
       <h1 className="font-black text-2xl z-10">EunJin.</h1>
-      <div className="flex gap-6 max-md:gap-3">
+      <div className="flex gap-6 max-xl:gap-3">
         <nav
-          className={`${isMenuOpen ? "block" : "hidden"} md:flex font-medium`}
+          className={`${isMenuOpen ? "block" : "hidden"} xl:flex font-medium`}
         >
           <ul
-            className={`flex gap-6 cursor-pointer max-md:flex-col max-md:text-right ${
-              darkMode ? "max-md:bg-stone-900" : "max-md:bg-white"
+            className={`flex gap-6 cursor-pointer max-xl:flex-col max-xl:text-right ${
+              darkMode ? "max-xl:bg-stone-900" : "max-xl:bg-white"
             }`}
           >
             <li>
@@ -119,7 +119,7 @@ const Header: React.FC = () => {
             </li>
           </ul>
         </nav>
-        <button className="block md:hidden z-10" onClick={toggleMenu}>
+        <button className="block xl:hidden z-10" onClick={toggleMenu}>
           {isMenuOpen ? <FaX /> : <FaBars />}
         </button>
         <DarkModeToggle />

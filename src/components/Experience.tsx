@@ -33,8 +33,8 @@ const Experience: React.FC = () => {
                   : "1px solid #f2f2f2",
               }}
             >
-              <div className="flex justify-between max-md:flex-col">
-                <figure className="max-md:flex max-md:items-center max-md:justify-center max-md:mb-4">
+              <div className="flex justify-between max-xl:flex-col">
+                <figure className="max-xl:flex max-xl:items-center max-xl:justify-center max-xl:mb-4">
                   <img src="/img/ai-logo.jpg" alt="" />
                 </figure>
                 <div>
@@ -71,8 +71,8 @@ const Experience: React.FC = () => {
               //     : " rgb(249, 249, 249,0.5)",
               // }}
             >
-              <div className="flex justify-between max-md:flex-col">
-                <figure className="max-md:flex max-md:items-center max-md:justify-center max-md:mb-4">
+              <div className="flex justify-between max-xl:flex-col">
+                <figure className="max-xl:flex max-xl:items-center max-xl:justify-center max-xl:mb-4">
                   <img src="/img/top-logo.jpg" alt="" />
                 </figure>
                 <div>
