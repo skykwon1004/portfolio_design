@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Element } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Skill = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Element name="skill">
       <div className="skill">
@@ -14,7 +19,11 @@ const Skill = () => {
               새로운 기술 스택에 관심을 가지며 꾸준히 공부하고 있습니다.
             </p>
           </div>
-          <div className="skill-list flex gap-10 justify-between max-md:flex-col">
+          <div
+            className="skill-list flex gap-10 justify-between max-md:flex-col"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
             <div className="skill-front flex gap-14 max-md:gap-4">
               <div className="skill-list-item">
                 <strong className="block mb-4 text-xl">Front-End</strong>

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Element } from "react-scroll";
 import useDarkModeStore from "../zustand/useDarkModeStore";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Experience: React.FC = () => {
   const { darkMode } = useDarkModeStore();
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <Element name="experience">
@@ -19,6 +25,8 @@ const Experience: React.FC = () => {
           </div>
           <div
             className="experience-content-wapper"
+            data-aos="fade-up"
+            data-aos-duration="1400"
             style={{
               backgroundColor: darkMode
                 ? "rgb(51, 51, 51, 0.5)"

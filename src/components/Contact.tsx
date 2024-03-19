@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Element } from "react-scroll";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import useDarkModeStore from "../zustand/useDarkModeStore";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const { darkMode } = useDarkModeStore();
   return (
     <Element name="contact">
@@ -17,7 +22,11 @@ const Contact = () => {
               같이 일하고 싶은 동료가 되겠습니다.
             </p>
           </div>
-          <div className="contact-content-wapper">
+          <div
+            className="contact-content-wapper"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
             <div className="contact-content flex justify-between gap-14 max-md:flex-col">
               <div
                 className="contact-content-left flex-1"

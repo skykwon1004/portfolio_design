@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Element } from "react-scroll";
 import useDarkModeStore from "../zustand/useDarkModeStore";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Education = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const { darkMode } = useDarkModeStore();
   return (
     <Element name="education">
@@ -23,7 +29,11 @@ const Education = () => {
               개발자 양성과정을 수료했습니다.
             </p>
           </div>
-          <div className="education-content-wapper flex gap-14 max-md:flex-col max-md:gap:10">
+          <div
+            className="education-content-wapper flex gap-14 max-md:flex-col max-md:gap:10"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
             <div className="education-content-left flex-1">
               <img src="/img/e-bg-01.jpg" alt="" />
             </div>

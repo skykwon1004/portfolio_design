@@ -4,6 +4,8 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import useDarkModeStore from "../zustand/useDarkModeStore";
 import Modal from "./Modal";
 import projectData from "./projectData";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Project = () => {
   const { darkMode } = useDarkModeStore();
@@ -11,6 +13,9 @@ const Project = () => {
   const [activeProjectIndex, setActiveProjectIndex] = useState(-1);
   const [isHoveredArray, setIsHoveredArray] = useState([false, false]);
   // const [showMoreProjects, setShowMoreProjects] = useState(false);
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   useEffect(() => {
     if (showModal) {
@@ -82,7 +87,12 @@ const Project = () => {
                 item,
                 index // 변경
               ) => (
-                <div key={index} className="project-content shadow-sm">
+                <div
+                  key={index}
+                  className="project-content shadow-sm"
+                  data-aos="fade-up"
+                  data-aos-duration="1400"
+                >
                   <figure
                     className="project-img-box"
                     style={{
