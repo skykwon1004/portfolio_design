@@ -2,20 +2,27 @@ import React, { useEffect, useState } from "react";
 import { IoIosClose, IoIosLink } from "react-icons/io";
 import useDarkModeStore from "../zustand/useDarkModeStore";
 
-const Modal = ({
+interface ModalProps {
+  showModal: boolean;
+  handleModalClose: () => void;
+  projectData: any[]; // projectData의 타입에 따라 수정해야 합니다.
+  activeProjectIndex: number;
+  darkMode: boolean;
+}
+
+const Modal: React.FC<ModalProps> = ({
   showModal,
   handleModalClose,
   projectData,
   activeProjectIndex,
 }) => {
-  const [activeTab, setActiveTab] = useState("screen1"); // 초기 탭 상태를 "screen1"로 설정
+  const [activeTab, setActiveTab] = useState<string>("screen1");
 
-  const handleTabChange = (tab) => {
+  const handleTabChange = (tab: string) => {
     setActiveTab(tab);
   };
 
   useEffect(() => {
-    // 모달이 열릴 때마다 첫 번째 탭 이미지를 활성화
     setActiveTab("screen1");
   }, [showModal]);
 
@@ -90,7 +97,7 @@ const Modal = ({
               </strong>
               <ul className="flex gap-2 text-gray-500 max-md:flex-col">
                 {projectData[activeProjectIndex]?.modalContent?.skill.map(
-                  (skill, index) => (
+                  (skill: string, index: number) => (
                     <li
                       key={index}
                       className="bg-gray-100 px-2 py-0.5 rounded"
@@ -111,7 +118,7 @@ const Modal = ({
               </strong>
               <ul className="dot">
                 {projectData[activeProjectIndex]?.modalContent?.features.map(
-                  (feature, index) => (
+                  (feature: string, index: number) => (
                     <li key={index}>{feature}</li>
                   )
                 )}
@@ -123,7 +130,7 @@ const Modal = ({
               </strong>
               <ul className="flex gap-2 mb-8 text-gray-500 max-md:flex-col">
                 {projectData[activeProjectIndex]?.modalContent?.screen.map(
-                  (tab, index) => (
+                  (tab: string, index: number) => (
                     <li
                       key={index}
                       className={`${
@@ -140,7 +147,7 @@ const Modal = ({
               </ul>
               <div>
                 {projectData[activeProjectIndex]?.modalContent?.screenText.map(
-                  (text, index) => (
+                  (text: string, index: number) => (
                     <div key={index}>
                       {activeTab === `screen${index + 1}` && (
                         <div className="flex flex-col items-center">
@@ -154,7 +161,6 @@ const Modal = ({
                               className="modal-project-item-img shadow-md"
                             />
                           </figure>
-                          {/* HTML 태그를 사용하여 페이지네이션을 bold로 강조 */}
                           <span
                             className="block"
                             dangerouslySetInnerHTML={{
@@ -179,3 +185,4 @@ const Modal = ({
 };
 
 export default Modal;
+``;

@@ -10,7 +10,7 @@ const Project = () => {
   const [showModal, setShowModal] = useState(false);
   const [activeProjectIndex, setActiveProjectIndex] = useState(-1);
   const [isHoveredArray, setIsHoveredArray] = useState([false, false]);
-  const [showMoreProjects, setShowMoreProjects] = useState(false); // 추가
+  // const [showMoreProjects, setShowMoreProjects] = useState(false);
 
   useEffect(() => {
     if (showModal) {
@@ -76,7 +76,8 @@ const Project = () => {
             </p>
           </div>
           <div className="project-content-wapper">
-            {projectData.slice(0, showMoreProjects ? undefined : 6).map(
+            {projectData.map(
+              // {projectData.slice(0, showMoreProjects ? undefined : 6).map(
               (
                 item,
                 index // 변경
