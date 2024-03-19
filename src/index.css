@@ -927,3 +927,9 @@ nav.block::before {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   }
 }
+
+@media not all and (min-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+}
