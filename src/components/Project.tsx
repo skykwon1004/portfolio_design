@@ -80,7 +80,7 @@ const Project = () => {
               주요 프로젝트만 모아 놓았습니다.
             </p>
           </div>
-          <div className="project-content-wapper">
+          <div className="project-content-wapper max-w-full grid grid-cols-2">
             {projectData.map(
               // {projectData.slice(0, showMoreProjects ? undefined : 6).map(
               (
@@ -162,9 +162,9 @@ const Project = () => {
                           </li>
                         ))}
                       </ul>
-                      <div className="project-btn-wapper">
+                      <div className="project-btn-wapper flex gap-2.5">
                         <div
-                          className="btn-link"
+                          className="btn-link inline-block"
                           onClick={() => handleModalOpen(index)}
                         >
                           <button

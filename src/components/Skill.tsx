@@ -64,7 +64,7 @@ const Skill = () => {
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
                   <img src="/img/skill-logo-09.png" alt="" />
-                  StyleComponent
+                  StyledComponents
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
                   <img src="/img/skill-logo-10.png" alt="" />

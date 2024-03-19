@@ -9,10 +9,10 @@ const Intro = () => {
         <div className="intro-content-left flex flex-col justify-center items-center flex-1">
           <div className="box-wapper mb-4 max-xl:mt-10">
             <div className="box"></div>
-            <strong className="text-5xl font-thin block max-md:text-4xl">
+            <strong className="text-5xl font-thin block max-md:text-3xl">
               Make it More
             </strong>
-            <strong className="text-7xl font-semibold block max-md:text-6xl">
+            <strong className="text-7xl font-semibold block max-md:text-5xl">
               Appealing,
             </strong>
           </div>
@@ -25,9 +25,9 @@ const Intro = () => {
             매력적인 웹사이트를 만들겠습니다.
           </p>
         </div>
-        <div className="flex-1 img-wapper">
+        <div className="img-wapper flex flex-1 items-center justify-center">
           <figure className="img">
-            <img src="/img/me.jpg" alt="" />
+            <img src="/img/me.jpg" alt="프로필 사진" />
           </figure>
           <div className="box-03"></div>
         </div>
