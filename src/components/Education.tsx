@@ -37,8 +37,15 @@ const Education = () => {
             <div className="education-content-left flex-1">
               <img src="/img/e-bg-01.jpg" alt="" />
             </div>
-            <div className="education-content-right flex-1">
-              <ul className="mb-10 dot max-md:mb-5">
+            <div className="education-content-right flex-1 flex flex-col justify-center">
+              <ul
+                className="mb-10 dot max-md:mb-5"
+                style={{
+                  borderBottom: darkMode
+                    ? "1px solid rgb(64 64 64)"
+                    : "1px solid #ddd",
+                }}
+              >
                 <span className="block text-gray-400 font-light">
                   그린컴퓨터아카데미 (2022.11 ~ 2023.04)
                 </span>

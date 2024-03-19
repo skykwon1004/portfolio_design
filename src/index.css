@@ -414,14 +414,7 @@ nav.block::before {
   object-fit: cover;
 }
 
-.education-content-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .education-content-right>ul:nth-child(1) {
-  border-bottom: 1px solid #ddd;
   padding: 0 0 40px 0;
 }
 
