@@ -29,7 +29,7 @@ const Intro = () => {
           <figure className="img">
             <img src="/img/me.jpg" alt="" />
           </figure>
-          <div className="box-03 max-xl:hidden"></div>
+          <div className="box-03"></div>
         </div>
         <div className="scroll-dwon max-xl:hidden">
           <IoIosArrowRoundDown />
