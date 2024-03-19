@@ -599,8 +599,7 @@ nav.block::before {
     gap: 30px;
   }
 }
-
-@media not all and (min-width: 768px) {
+@media not all and (min-width: 1280px) {
   .box-03 {
     position: absolute;
     right: -30px;
