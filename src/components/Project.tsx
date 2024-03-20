@@ -87,12 +87,7 @@ const Project = () => {
                 item,
                 index // 변경
               ) => (
-                <div
-                  key={index}
-                  className="project-content shadow-sm"
-                  data-aos="fade-up"
-                  data-aos-duration="1400"
-                >
+                <div key={index} className="project-content shadow-sm">
                   <figure
                     className="project-img-box"
                     style={{
