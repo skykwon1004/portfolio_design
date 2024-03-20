@@ -1,7 +1,6 @@
 # 권은진 포트폴리오
-- 포켓몬 리스트를 확인하고 카드 클릭 시 원하는 포켓몬의 정보를 알 수 있습니다.
 - **`작업 기간 :`** 24.03 - 진행 중
-- **`배포 링크 :`** [링크](https://portfolio-eunjin.netlify.app/)
+- **`배포 링크 :`** [링크](https://portfolio-eunjin.netlify.app/){:target="_blank"}
 <!-- - **`Figma 구상도 :`** [디자인 시안](https://www.figma.com/file/1Gmg1R2fYyPPrbyeWpOkWa/%ED%8F%AC%EC%BC%93%EB%AA%AC-%EB%8F%84%EA%B0%90?type=design&node-id=0%3A1&mode=design&t=hblSPKcI41uNVdQo-1) -->
 - **`Stack` :** Vite, React, TypeScript, Zustand, Tailwind
 
@@ -14,7 +13,7 @@
 ## 작업 사항
 - TypeScript 써서 만들어 보기
 - `Vite` 활용해 Webpack 기반 서버에 비해 응답성이 뛰어난 개발 경험
-- `zustand`활용해 다크모드/라이트모드 구현
+- `Zustand`활용해 다크모드/라이트모드 구현
 - `Tailwind CSS`를 활용해 일관된 스타일의 반응형 작업
 - `react-scroll`라이브러리 활용해 header의 각 nav 메뉴로 스크롤 이동하게 구현
 

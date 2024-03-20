@@ -9,19 +9,19 @@ const Intro = () => {
     <Element name="intro">
       <div className="intro">
         <div className="intro-content h-screen flex flex-col items-center justify-center">
-          <div className="box-03 max-xl:hidden">
+          <div className="box-03">
             <img src="/img/ex-01.png" alt="" />
           </div>
-          <div className="box-04 max-xl:hidden">
+          <div className="box-04 ">
             <img src="/img/ex-02.png" alt="" />
           </div>
           <div className="intro-content-left flex flex-col justify-center items-center mb-16">
             <div className="box-wapper mb-4 max-xl:mt-10">
               {/* <div className="box"></div> */}
-              <strong className="text-5xl font-thin max-md:text-3xl text-animate mb-2 mx-4">
+              <strong className="text-5xl font-thin max-md:text-3xl max-md:block max-md:text-center text-animate mb-2 mx-4">
                 Make it More
               </strong>
-              <strong className="text-7xl font-semibold max-md:text-5xl text-animate">
+              <strong className="text-7xl font-semibold max-md:text-5xl max-md:block  max-md:text-center text-animate">
                 Appealing,
               </strong>
             </div>
@@ -129,9 +129,9 @@ const Intro = () => {
             <p className="font-light text-xl max-md:text-base text-center">
               웹디자이너 경험과 프론트엔드 개발 경험을 바탕으로
             </p>
-            <p className="font-light text-xl max-md:text-base text-center max-xl:mb-24">
-              한 번 더 <b className="font-semibold">들여다보게 만드는 </b>{" "}
-              매력적인 웹사이트를 만들겠습니다.
+            <p className="font-light text-xl max-md:text-base text-center">
+              한 번 더 들여다보게 만드는{" "}
+              <b className="font-semibold">매력적인 웹사이트를</b> 만들겠습니다.
             </p>
           </div>
           <div className="scroll-dwon">

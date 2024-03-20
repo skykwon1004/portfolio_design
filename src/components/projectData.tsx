@@ -9,12 +9,14 @@ interface ModalContent {
   screen: string[];
   image: string[];
   screenText: string[];
+  github: string;
 }
 
 interface Project {
   title: string;
   description: string;
   link: string;
+
   image: string;
   gifImage: string;
   technologies: string[];
@@ -39,6 +41,7 @@ const projectData: Project[] = [
       description:
         "백엔드와의 협업을 경험하면서 ESLint, Prettier, Git 등을 활용하여 프론트엔드와 백엔드 간의 코드 품질을 유지하고 협업 시 발생할 수 있는 문제에 대비하는 경험을 할 수 있었습니다. TypeScript를 사용하여 더욱 견고한 코드베이스를 구축하고, 타입 시스템을 통해 버그를 사전에 방지하고자 노력했습니다. 또한 프로젝트의 복잡한 구조로 인해 Redux Toolkit 라이브러리를 도입하여 상태 관리를 보다 효율적으로 처리했습니다.",
       link: "",
+      github: "",
       features: [
         "JWT 토큰을 이용해서 로그인 인증 구현",
         "로그인 여부에 따른 리다이렉트 구현",
@@ -94,6 +97,7 @@ const projectData: Project[] = [
       description:
         "원페이지 스크롤 형태의 플랫폼 소개 웹사이트 입니다. react-intl 라이브러리를 사용하여 다국어 서비스를 구현해 볼 수 있었습니다. 또한 react-slick 라이브러리와 AOS 라이브러리를 사용하여 다양한 동적인 요소를 구현했습니다. github와 연동되는 호스팅 플랫폼 Netlify를 활용하여 웹사이트를 손쉽게 배포하고 유지 보수할 수 있었습니다.",
       link: "https://petcarelab.net/",
+      github: "",
       features: [
         "react-intl을 활용한 다국어 구현(KOR, ENG)",
         "GNB 메뉴 클릭 시 특정 컴포넌트로 스크롤 이동하는 기능 구현",
@@ -143,6 +147,7 @@ const projectData: Project[] = [
       description:
         "그누보드를 활용하여 개발한 멀티페이지 홈페이지의 유지보수를 담당하였습니다. 처음에는 한국어 버전만 존재했으나, 영어 버전 사이트도 추가하여 다국어 서비스를 제공할 수 있도록 구현하였습니다. Swiper 라이브러리를 활용하여 슬라이드를 구현하였고, AOS라이브러리를 활용하여 스크롤 높이에 반응하는 동적인 동작을 구현했습니다.",
       link: "https://ai-dapps.com/",
+      github: "",
       features: [
         "그누보드를 사용하여 다국어 구현(KOR, ENG)",
         "그누보드를 사용하여 멀티페이지 홈페이지 제작",
@@ -186,6 +191,7 @@ const projectData: Project[] = [
       description:
         "기존 일신방직 웹사이트의 UI/UX를 개선하여 리뉴얼하였습니다. 그누보드를 사용하여 멀티페이지 홈페이지를 (모든 메뉴 클릭 가능)제작했습니다. 게시판에 글 작성이 가능하며 게시판 글을 추출해서 메인페이지 뉴스섹션에 최신글을 자동으로 불러옵니다.",
       link: "http://skykwon1004.dothome.co.kr/",
+      github: "",
       features: [
         "기존 일신방직 사이트를 디자인 및 UI/UX 개선하여 리뉴얼",
         "그누보드를 사용하여 멀티페이지 홈페이지 제작",
@@ -226,6 +232,7 @@ const projectData: Project[] = [
       description:
         "Axios를 사용하여 영화 데이터 API를 가져와서 영화사이트를 제작했습니다. React의 react-router-dom을 사용하여 영화를 클릭하면 디테일 페이지로 이동합니다. 장르별로 영화리스트를 구분하였고, 검색 기능이 가능합니다. 디자인은 영화 사이트에서 많이 쓰는 다크컬러를 메인으로 하고 포인트 컬러 하나만 써서 강조를 주었습니다.",
       link: "https://skykwon1004.github.io/react_AM_movie/",
+      github: "https://github.com/skykwon1004/react_AM_movie",
       features: [
         "Axios를 사용하여 영화 데이터 API를 가져오기",
         "메인비주얼에는 최신 업로드 순으로 데이터 불러오게 구현",
@@ -283,6 +290,7 @@ const projectData: Project[] = [
       description:
         "Axios를 사용하여 공공데이터 API를 가져와서 부산맛집지도 사이트를 제작했습니다. kakao-maps api를 이용하여 맛집을 지도에 표시해 줍니다. 부산의 구,군 별로 리스트를 만들었고 레스토랑을 클릭하면 레스토랑의 정보를 보여줍니다.",
       link: "https://skykwon1004.github.io/react_busan_restauran/",
+      github: "",
       features: [
         "KakaoMap API를 이용하여 맛집을 지도에 표시",
         "부산의 구,군 별로 카테고리를 분류",

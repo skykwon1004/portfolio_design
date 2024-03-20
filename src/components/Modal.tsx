@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { IoIosClose, IoIosLink } from "react-icons/io";
+import { IoIosClose, IoIosLink, IoLogoGithub } from "react-icons/io";
 import useDarkModeStore from "../zustand/useDarkModeStore";
 
 interface ModalProps {
@@ -33,8 +33,13 @@ const Modal: React.FC<ModalProps> = ({
   const { darkMode } = useDarkModeStore();
 
   const link = projectData[activeProjectIndex]?.modalContent?.link;
+  const github = projectData[activeProjectIndex]?.modalContent?.github;
   const linkStyle = {
     display: link && link !== "" ? "flex" : "none",
+  };
+
+  const githubStyle = {
+    display: github && github !== "" ? "flex" : "none",
   };
 
   return (
@@ -59,14 +64,30 @@ const Modal: React.FC<ModalProps> = ({
             <div className="close" onClick={handleModalClose}>
               <IoIosClose />
             </div>
-            <div
-              className="link-wapper flex flex-col items-center justify-items-center gap-2"
-              style={linkStyle}
-            >
-              <a href={link} target="_blank" className="link">
-                <IoIosLink />
-              </a>
-              <span className="max-xl:hidden">사이트 바로가기</span>
+            <div className="link-wapper flex flex-col items-center justify-items-center max-xl:flex-row max-xl:gap-2">
+              <div
+                className="flex flex-col items-center justify-items-center gap-2 mb-5 max-xl:mb-0"
+                style={githubStyle}
+              >
+                <a href={github} target="_blank" className="link">
+                  <IoLogoGithub />
+                </a>
+                <span className="mb-5 max-xl:hidden">GitHub 바로가기</span>
+              </div>
+              <div
+                className="flex flex-col items-center justify-items-center gap-2"
+                style={linkStyle}
+              >
+                <a
+                  href={link}
+                  target="_blank"
+                  className="link"
+                  style={linkStyle}
+                >
+                  <IoIosLink />
+                </a>
+                <span className="max-xl:hidden">사이트 바로가기</span>
+              </div>
             </div>
           </div>
           <div className="modal-content flex flex-col">
