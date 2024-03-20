@@ -9,10 +9,10 @@ const Intro = () => {
         <div className="intro-content-left flex flex-col justify-center items-center flex-1">
           <div className="box-wapper mb-4 max-xl:mt-10">
             <div className="box"></div>
-            <strong className="text-5xl font-thin block max-md:text-3xl">
+            <strong className="text-5xl font-thin block max-md:text-3xl text-animate">
               Make it More
             </strong>
-            <strong className="text-7xl font-semibold block max-md:text-5xl">
+            <strong className="text-7xl font-semibold block max-md:text-5xl text-animate">
               Appealing,
             </strong>
           </div>

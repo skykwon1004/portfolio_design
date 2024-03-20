@@ -88,6 +88,7 @@ nav.block::before {
   margin: 0 auto;
   padding: 100px 0;
   width: 100%;
+  /* background: #f8d10a; */
 }
 
 .box {
@@ -132,6 +133,22 @@ nav.block::before {
   width: 1px;
   height: 30px;
   background: #ddd;
+}
+
+.text-animate {
+  animation: slideInFromBottom 1.5s ease-out;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .intro-content-left {
@@ -320,6 +337,11 @@ nav.block::before {
   margin: 0 auto;
   padding: 200px;
   overflow-y: scroll;
+}
+
+.modal-bnt {
+  position: fixed;
+  top: 0;
 }
 
 .close {
@@ -696,7 +718,7 @@ nav.block::before {
     position: fixed;
     top: 0;
     left: 20px;
-    border-bottom: 1px solid rgb(158, 158, 158);
+    /* border-bottom: 1px solid rgb(158, 158, 158); */
     width: calc(100% - 40px);
     height: 80px;
     background: #fff;
@@ -816,6 +838,12 @@ nav.block::before {
 }
 
 @media not all and (min-width: 768px) {
+  .inner {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    width: 100%;
+  }
 
   /* intro */
   .box-03 {
@@ -842,7 +870,6 @@ nav.block::before {
   .education-content-left>img {
     height: 50%;
   }
-
 
   /* contact */
   .contact-content {

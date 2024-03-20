@@ -64,9 +64,7 @@ const Experience: React.FC = () => {
                   <li>
                     사이트의 SEO를 향상시키기 위해 오픈 그래프 메타데이터를 설정
                   </li>
-                  <li>
-                    Netlify를 사용하여 GitHub를 통해 웹 프로젝트를 배포 작업
-                  </li>
+                  <li>Netlify를 사용하여 정적 웹 페이지 배포 작업</li>
                   <li>Github을 기반으로 하는 소스 코드 및 버전 관리</li>
                 </ul>
               </div>

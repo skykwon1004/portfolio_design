@@ -51,6 +51,9 @@ const Modal: React.FC<ModalProps> = ({
             className="modal-bnt"
             style={{
               backgroundColor: darkMode ? "rgba(51, 51, 51)" : "",
+              borderBottom: darkMode
+                ? "1px solid rgb(64, 64, 64) "
+                : "1px solid rgb(158, 158, 158)",
             }}
           >
             <div className="close" onClick={handleModalClose}>
@@ -63,7 +66,7 @@ const Modal: React.FC<ModalProps> = ({
               <a href={link} target="_blank" className="link">
                 <IoIosLink />
               </a>
-              <span className="max-md:hidden">사이트 바로가기</span>
+              <span className="max-xl:hidden">사이트 바로가기</span>
             </div>
           </div>
           <div className="modal-content flex flex-col">
@@ -164,6 +167,11 @@ const Modal: React.FC<ModalProps> = ({
                               }
                               alt=""
                               className="modal-project-item-img shadow-md"
+                              style={{
+                                border: darkMode
+                                  ? "1px solid rgb(64 64 64)"
+                                  : "1px solid rgb(231, 231, 231)",
+                              }}
                             />
                           </figure>
                           <span
