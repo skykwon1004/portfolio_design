@@ -1,38 +1,142 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { IoIosArrowRoundDown } from "react-icons/io";
+import useDarkModeStore from "../zustand/useDarkModeStore";
 
 const Intro = () => {
+  const { darkMode } = useDarkModeStore();
   return (
     <Element name="intro">
-      <div className="intro h-screen flex max-xl:flex-col max-xl:items-center max-xl:justify-center max-xl:h-auto">
-        <div className="intro-content-left flex flex-col justify-center items-center flex-1">
-          <div className="box-wapper mb-4 max-xl:mt-10">
-            <div className="box"></div>
-            <strong className="text-5xl font-thin block max-md:text-3xl text-animate">
-              Make it More
-            </strong>
-            <strong className="text-7xl font-semibold block max-md:text-5xl text-animate">
-              Appealing,
-            </strong>
+      <div className="intro">
+        <div className="intro-content h-screen flex flex-col items-center justify-center">
+          <div className="box-03 max-xl:hidden">
+            <img src="/img/ex-01.png" alt="" />
           </div>
-          <p className="box-02 text-lg mb-32"></p>
-          <p className="font-light text-xl max-md:text-base text-center">
-            웹디자이너 경험과 프론트엔드 개발 경험을 바탕으로
-          </p>
-          <p className="font-light text-xl max-md:text-base text-center max-xl:mb-24">
-            한 번 더 <b className="font-semibold">들여다보게 만드는 </b>{" "}
-            매력적인 웹사이트를 만들겠습니다.
-          </p>
-        </div>
-        <div className="img-wapper flex flex-1 items-center justify-center">
-          <figure className="img">
-            <img src="/img/me.jpg" alt="프로필 사진" />
-          </figure>
-          <div className="box-03"></div>
-        </div>
-        <div className="scroll-dwon max-xl:hidden">
-          <IoIosArrowRoundDown />
+          <div className="box-04 max-xl:hidden">
+            <img src="/img/ex-02.png" alt="" />
+          </div>
+          <div className="intro-content-left flex flex-col justify-center items-center mb-16">
+            <div className="box-wapper mb-4 max-xl:mt-10">
+              <div className="box"></div>
+              <strong className="text-5xl font-thin block max-md:text-3xl text-animate mb-2">
+                Make it More
+              </strong>
+              <strong className="text-7xl font-semibold max-md:text-5xl text-animate">
+                Appealing,
+              </strong>
+            </div>
+          </div>
+          <div className="img-wapper flex flex-col items-center justify-center mb-16">
+            <div className="item mb-5">
+              <span
+                className="i-03"
+                style={{
+                  background: darkMode
+                    ? "linear-gradient(90deg, rgba(133,133,133,1) 0%, rgba(52,52,52,1) 100%)"
+                    : "linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(255, 255, 255, 1) 100%)",
+                  border: darkMode ? "1px solid #605f5f" : "1px solid #f5f5f5",
+                }}
+              >
+                PUBLISHER
+              </span>
+              <span
+                className="i-04"
+                style={{
+                  border: darkMode
+                    ? "1px solid rgb(64,64,64)"
+                    : "1px solid #999",
+                }}
+              >
+                FRONT-END
+              </span>
+              <span
+                className="i-01"
+                style={{
+                  border: darkMode ? "1px solid #a1a1a1" : "1px solid #999",
+                }}
+              >
+                DEVELOPER
+              </span>
+              <span
+                className="i-02"
+                style={{
+                  backgroundColor: darkMode ? "#454545" : " #f9f9f9",
+                }}
+              >
+                FRONT-END
+              </span>
+              <span
+                className="i-03"
+                style={{
+                  background: darkMode
+                    ? "linear-gradient(90deg, rgba(133,133,133,1) 0%, rgba(52,52,52,1) 100%)"
+                    : "linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(255, 255, 255, 1) 100%)",
+                  border: darkMode ? "1px solid #605f5f" : "1px solid #f5f5f5",
+                }}
+              >
+                PUBLISHER
+              </span>
+            </div>
+            <div className="item">
+              <span
+                className="i-02"
+                style={{
+                  backgroundColor: darkMode ? "#454545" : " #f9f9f9",
+                }}
+              >
+                FRONT-END
+              </span>
+              <span
+                className="i-03"
+                style={{
+                  background: darkMode
+                    ? "linear-gradient(90deg, rgba(133,133,133,1) 0%, rgba(52,52,52,1) 100%)"
+                    : "linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(255, 255, 255, 1) 100%)",
+                  border: darkMode ? "1px solid #605f5f" : "1px solid #f5f5f5",
+                }}
+              >
+                PUBLISHER
+              </span>
+              <span
+                className="i-04"
+                style={{
+                  border: darkMode
+                    ? "1px solid rgb(64,64,64)"
+                    : "1px solid #999",
+                }}
+              >
+                FRONT-END
+              </span>
+              <span
+                className="i-01"
+                style={{
+                  border: darkMode ? "1px solid #a1a1a1" : "1px solid #999",
+                }}
+              >
+                DEVELOPER
+              </span>
+              <span
+                className="i-02"
+                style={{
+                  backgroundColor: darkMode ? "#454545" : " #f9f9f9",
+                }}
+              >
+                FRONT-END
+              </span>
+            </div>
+          </div>
+          <div className="text-wapper">
+            <p className="font-light text-xl max-md:text-base text-center">
+              웹디자이너 경험과 프론트엔드 개발 경험을 바탕으로
+            </p>
+            <p className="font-light text-xl max-md:text-base text-center max-xl:mb-24">
+              한 번 더 <b className="font-semibold">들여다보게 만드는 </b>{" "}
+              매력적인 웹사이트를 만들겠습니다.
+            </p>
+          </div>
+          <div className="scroll-dwon">
+            <IoIosArrowRoundDown />
+          </div>
         </div>
       </div>
     </Element>

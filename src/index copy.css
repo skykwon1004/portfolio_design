@@ -32,7 +32,7 @@ html {
 }
 
 .red {
-  outline: 1px solid rgb(31, 31, 31);
+  outline: 1px solid red;
 }
 
 /* 테블릿 모바일 햄버거 버튼 */
@@ -82,10 +82,17 @@ nav.block::before {
 }
 
 /* intro */
+.intro-wapper {
+  background: #f8d10a;
+}
+
 .intro {
   position: relative;
+  max-width: 1360px;
   margin: 0 auto;
+  padding: 100px 0;
   width: 100%;
+  /* background: #f8d10a; */
 }
 
 .box {
@@ -118,111 +125,84 @@ nav.block::before {
   }
 }
 
-.img-wapper {
-  max-width: 100%;
+.box-02 {
   position: relative;
 }
 
-/* .box-03 {
+.box-02::after {
   position: absolute;
-  top: 70%;
-  right: -10%;
-  transform: translate(0, 0);
-  width: 400px;
-  height: 400px;
-  background: rgb(248, 209, 10);
-  background: radial-gradient(circle, rgba(248, 209, 10, 1) 0%, rgba(255, 255, 255, 1) 100%);
-  border-radius: 50%;
-  opacity: 60%;
-  transform: rotate(-45deg);
-} */
-
-/* .box-04 {
-  position: absolute;
-  top: -10%;
-  left: -5%;
-  transform: translate(0, 0);
-  width: 300px;
-  height: 300px;
-  background: rgb(248, 209, 10);
-  background: radial-gradient(circle, rgba(248, 209, 10, 1) 0%, rgba(255, 255, 255, 1) 100%);
-  border-radius: 50%;
-  opacity: 50%;
-} */
-
-.box-03 {
-  position: absolute;
-  bottom: 3%;
-  right: 5%;
-  width: 160px;
-  padding: 0 !important;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  inset: 50% auto auto 50%;
+  transform: translate(0, 150%);
+  content: "";
+  width: 1px;
+  height: 30px;
+  background: #ddd;
 }
 
-.box-04 {
-  position: absolute;
-  top: 3%;
-  left: 5%;
-  width: 280px;
-  padding: 0 !important;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+.text-animate {
+  animation: slideInFromBottom 1.5s ease-out;
 }
 
-@keyframes spin {
+@keyframes slideInFromBottom {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(100%);
+    opacity: 0;
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
-.item {
-  display: flex;
-  gap: 15px;
+.intro-content-left {
+  padding: 0 20px;
 }
 
-.item>span {
-  display: block;
-  border-radius: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.img-wapper {
+  position: relative;
 }
 
-.i-01 {
-  padding: 10px 50px;
-  font-weight: 300;
+.img {
+  position: relative;
 }
 
-.i-02 {
-  font-weight: 700;
-  padding: 10px 100px;
+.img::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -55%);
+  content: "";
+  border-radius: 400px 400px 0 0;
+  border: 1px solid rgb(248, 209, 10, 0.4);
+  width: 100%;
+  height: 600px;
 }
 
-.i-03 {
-  padding: 10px 50px;
+.img>img {
+  width: 500px;
+  object-fit: cover;
+  overflow: hidden;
+  filter: grayscale(100%);
+  border-radius: 400px 400px 0 0;
 }
 
-.i-04 {
-  font-size: 14px;
-  padding: 10px 20px;
-  font-weight: 500;
+.box-03 {
+  position: absolute;
+  right: -30px;
+  bottom: -150px;
+  width: 300px;
+  height: 300px;
+  background: #f8d10a;
+  border-radius: 50%;
+  opacity: 60%;
 }
 
 .scroll-dwon {
   position: absolute;
   bottom: 50px;
   left: 50%;
-  font-size: 40px;
+  font-size: 38px;
   opacity: 0.4;
   animation: scroll-down 2.5s infinite;
 }
@@ -532,6 +512,10 @@ nav.block::before {
 @media not all and (min-width: 1280px) {
 
   /* intro */
+  .intro {
+    padding: 100px 40px;
+  }
+
   .intro-content-left {
     padding: 0 40px;
   }
@@ -547,6 +531,17 @@ nav.block::before {
     border: 1px solid rgb(248, 209, 10, 0.4);
     width: 100%;
     height: 550px;
+  }
+
+  .box-03 {
+    position: absolute;
+    right: -100px;
+    bottom: -150px;
+    width: 200px;
+    height: 200px;
+    background: #f8d10a;
+    border-radius: 50%;
+    opacity: 60%;
   }
 
   .experience-content-wapper {
@@ -852,6 +847,18 @@ nav.block::before {
     margin: 0 auto;
     padding: 100px 20px;
     width: 100%;
+  }
+
+  /* intro */
+  .box-03 {
+    position: absolute;
+    right: -50px;
+    bottom: -80px;
+    width: 150px;
+    height: 150px;
+    background: #f8d10a;
+    border-radius: 50%;
+    opacity: 60%;
   }
 
   /* skill */
