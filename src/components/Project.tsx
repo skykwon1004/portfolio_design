@@ -11,7 +11,9 @@ const Project = () => {
   const { darkMode } = useDarkModeStore();
   const [showModal, setShowModal] = useState(false);
   const [activeProjectIndex, setActiveProjectIndex] = useState(-1);
-  const [isHoveredArray, setIsHoveredArray] = useState([false, false]);
+  const [isHoveredArray, setIsHoveredArray] = useState(
+    Array(projectData.length).fill(false)
+  ); // 초기 상태를 모두 false로 설정
   // const [showMoreProjects, setShowMoreProjects] = useState(false);
   useEffect(() => {
     AOS.init();
@@ -87,7 +89,12 @@ const Project = () => {
                 item,
                 index // 변경
               ) => (
-                <div key={index} className="project-content shadow-sm">
+                <div
+                  key={index}
+                  className="project-content shadow-sm"
+                  data-aos="fade-up"
+                  data-aos-duration="1400"
+                >
                   <figure
                     className="project-img-box"
                     style={{
