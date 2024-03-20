@@ -17,8 +17,8 @@ const Intro = () => {
           </div>
           <div className="intro-content-left flex flex-col justify-center items-center mb-16">
             <div className="box-wapper mb-4 max-xl:mt-10">
-              <div className="box"></div>
-              <strong className="text-5xl font-thin block max-md:text-3xl text-animate mb-2">
+              {/* <div className="box"></div> */}
+              <strong className="text-5xl font-thin max-md:text-3xl text-animate mb-2 mx-4">
                 Make it More
               </strong>
               <strong className="text-7xl font-semibold max-md:text-5xl text-animate">
@@ -37,7 +37,7 @@ const Intro = () => {
                   border: darkMode ? "1px solid #605f5f" : "1px solid #f5f5f5",
                 }}
               >
-                PUBLISHER
+                Publisher
               </span>
               <span
                 className="i-04"
@@ -47,7 +47,7 @@ const Intro = () => {
                     : "1px solid #999",
                 }}
               >
-                FRONT-END
+                Designer
               </span>
               <span
                 className="i-01"
@@ -55,7 +55,7 @@ const Intro = () => {
                   border: darkMode ? "1px solid #a1a1a1" : "1px solid #999",
                 }}
               >
-                DEVELOPER
+                Developer
               </span>
               <span
                 className="i-02"
@@ -63,7 +63,7 @@ const Intro = () => {
                   backgroundColor: darkMode ? "#454545" : " #f9f9f9",
                 }}
               >
-                FRONT-END
+                FrontEnd
               </span>
               <span
                 className="i-03"
@@ -74,7 +74,7 @@ const Intro = () => {
                   border: darkMode ? "1px solid #605f5f" : "1px solid #f5f5f5",
                 }}
               >
-                PUBLISHER
+                &#127752;
               </span>
             </div>
             <div className="item">
@@ -84,7 +84,7 @@ const Intro = () => {
                   backgroundColor: darkMode ? "#454545" : " #f9f9f9",
                 }}
               >
-                FRONT-END
+                FrontEnd
               </span>
               <span
                 className="i-03"
@@ -95,7 +95,7 @@ const Intro = () => {
                   border: darkMode ? "1px solid #605f5f" : "1px solid #f5f5f5",
                 }}
               >
-                PUBLISHER
+                Publisher
               </span>
               <span
                 className="i-04"
@@ -105,7 +105,7 @@ const Intro = () => {
                     : "1px solid #999",
                 }}
               >
-                FRONT-END
+                &#127775;
               </span>
               <span
                 className="i-01"
@@ -113,7 +113,7 @@ const Intro = () => {
                   border: darkMode ? "1px solid #a1a1a1" : "1px solid #999",
                 }}
               >
-                DEVELOPER
+                Developer
               </span>
               <span
                 className="i-02"
@@ -121,7 +121,7 @@ const Intro = () => {
                   backgroundColor: darkMode ? "#454545" : " #f9f9f9",
                 }}
               >
-                FRONT-END
+                Designer
               </span>
             </div>
           </div>
