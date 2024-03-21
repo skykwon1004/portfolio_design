@@ -20,7 +20,6 @@ const Modal: React.FC<ModalProps> = ({
 
   const handleTabChange = (tab: string) => {
     setActiveTab(tab);
-    console.log(imageLoading);
   };
 
   useEffect(() => {

@@ -166,7 +166,7 @@ nav.block::before {
   position: absolute;
   top: 3%;
   left: 5%;
-  width: 280px;
+  width: 250px;
   padding: 0 !important;
   animation-name: spin;
   animation-duration: 5000ms;

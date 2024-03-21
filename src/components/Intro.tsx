@@ -9,21 +9,21 @@ const Intro = () => {
     <Element name="intro">
       <div className="intro">
         <div className="intro-content h-screen flex flex-col items-center justify-center">
-          <div className="box-03">
-            <img src="/img/ex-01.png" alt="" />
-          </div>
-          <div className="box-04 ">
-            <img src="/img/ex-02.png" alt="" />
-          </div>
-          <div className="intro-content-left flex flex-col justify-center items-center mb-16">
+          <div className="intro-content-left flex flex-col justify-center items-center mb-16 max-md:mb-10">
             <div className="box-wapper mb-4 max-xl:mt-10">
               {/* <div className="box"></div> */}
-              <strong className="text-5xl font-thin max-md:text-3xl max-md:block max-md:text-center text-animate mb-2 mx-4">
+              <strong className="text-5xl font-thin max-md:text-3xl max-xl:block max-md:text-center text-animate mb-2 mx-4">
                 Make it More
               </strong>
-              <strong className="text-7xl font-semibold max-md:text-5xl max-md:block  max-md:text-center text-animate">
+              <strong className="text-7xl font-semibold max-md:text-5xl max-xl:block  max-md:text-center text-animate">
                 Appealing,
               </strong>
+            </div>
+            <div className="box-03">
+              <img src="/img/ex-01.png" alt="" />
+            </div>
+            <div className="box-04 ">
+              <img src="/img/ex-02.png" alt="" />
             </div>
           </div>
           <div className="img-wapper flex flex-col items-center justify-center mb-16">
