@@ -75,7 +75,7 @@ const Project = () => {
                         : " rgb(249, 249, 249,0.5)",
                     }}
                   >
-                    <img src={item.image} alt="" className="" />
+                    <img src={item.image} alt={item.title} className="" />
                   </figure>
                   <div
                     className="project-text-box-link"

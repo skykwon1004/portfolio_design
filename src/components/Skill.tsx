@@ -28,23 +28,23 @@ const Skill = () => {
               <div className="skill-list-item">
                 <strong className="block mb-4 text-xl">Front-End</strong>
                 <span className="block flex gap-3 items-center mb-2">
-                  <img src="/img/skill-logo-01.png" alt="" />
+                  <img src="/img/skill-logo-01.png" alt="React 로고" />
                   React
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
-                  <img src="/img/skill-logo-02.png" alt="" />
+                  <img src="/img/skill-logo-02.png" alt="Redux 로고" />
                   Redux
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
-                  <img src="/img/skill-logo-03.png" alt="" />
+                  <img src="/img/skill-logo-03.png" alt="TypeScript 로고" />
                   TypeScript
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
-                  <img src="/img/skill-logo-04.png" alt="" />
+                  <img src="/img/skill-logo-04.png" alt="JavaScript 로고" />
                   JavaScript
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
-                  <img src="/img/skill-logo-05.png" alt="" />
+                  <img src="/img/skill-logo-05.png" alt="JQuery 로고" />
                   JQuery
                 </span>
               </div>
@@ -53,23 +53,26 @@ const Skill = () => {
                   Front-End
                 </strong>
                 <span className="block flex gap-3 items-center mb-2">
-                  <img src="/img/skill-logo-06.png" alt="" />
+                  <img src="/img/skill-logo-06.png" alt="HTML 로고" />
                   HTML
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
-                  <img src="/img/skill-logo-07.png" alt="" />
+                  <img src="/img/skill-logo-07.png" alt="CSS 로고" />
                   CSS
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
-                  <img src="/img/skill-logo-08.png" alt="" />
+                  <img src="/img/skill-logo-08.png" alt="SASS 로고" />
                   SASS
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
-                  <img src="/img/skill-logo-09.png" alt="" />
+                  <img
+                    src="/img/skill-logo-09.png"
+                    alt="StyledComponents 로고"
+                  />
                   StyledComponents
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
-                  <img src="/img/skill-logo-10.png" alt="" />
+                  <img src="/img/skill-logo-10.png" alt="Gnuboard 로고" />
                   Gnuboard
                 </span>
               </div>
@@ -77,30 +80,33 @@ const Skill = () => {
             <div className="skill-front">
               <strong className="block mb-4 text-xl">Design</strong>
               <span className="block flex gap-3 items-center mb-2">
-                <img src="/img/skill-logo-11.png" alt="" />
+                <img src="/img/skill-logo-11.png" alt="Figma 로고" />
                 Figma
               </span>
               <span className="block flex gap-3 items-center mb-2">
-                <img src="/img/skill-logo-12.png" alt="" />
+                <img
+                  src="/img/skill-logo-12.png"
+                  alt="Adobe Illustrator 로고"
+                />
                 Adobe Illustrator
               </span>
               <span className="block flex gap-3 items-center mb-2">
-                <img src="/img/skill-logo-13.png" alt="" />
+                <img src="/img/skill-logo-13.png" alt="Adobe Potoshop 로고" />
                 Adobe Potoshop
               </span>
             </div>
             <div className="skill-front">
               <strong className="block mb-4 text-xl">Cooperation</strong>
               <span className="block flex gap-3 items-center mb-2">
-                <img src="/img/skill-logo-14.png" alt="" />
+                <img src="/img/skill-logo-14.png" alt="GitHub 로고" />
                 GitHub
               </span>
               <span className="block flex gap-3 items-center mb-2">
-                <img src="/img/skill-logo-15.png" alt="" />
+                <img src="/img/skill-logo-15.png" alt="Notion 로고" />
                 Notion
               </span>
               <span className="block flex gap-3 items-center mb-2">
-                <img src="/img/skill-logo-16.png" alt="" />
+                <img src="/img/skill-logo-16.png" alt="Swagger 로고" />
                 Swagger
               </span>
             </div>

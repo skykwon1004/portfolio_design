@@ -103,7 +103,7 @@ const Modal: React.FC<ModalProps> = ({
               </span>
               <img
                 src={projectData[activeProjectIndex].image}
-                alt=""
+                alt={projectData[activeProjectIndex].title}
                 className="modal-project-item-img shadow-md max-md:rounded-lg"
                 style={{
                   border: darkMode
@@ -186,7 +186,10 @@ const Modal: React.FC<ModalProps> = ({
                                 projectData[activeProjectIndex].modalContent
                                   .image[index]
                               }
-                              alt=""
+                              alt={
+                                projectData[activeProjectIndex].modalContent
+                                  .screen[index]
+                              }
                               className="modal-project-item-img shadow-md max-md:rounded-lg"
                               style={{
                                 border: darkMode

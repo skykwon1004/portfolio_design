@@ -43,7 +43,7 @@ const Experience: React.FC = () => {
             >
               <div className="flex justify-between max-xl:flex-col">
                 <figure className="max-xl:flex max-xl:items-center max-xl:justify-center max-xl:mb-4 max-xl:hidden">
-                  <img src="/img/ai-logo.jpg" alt="" />
+                  <img src="/img/ai-logo.jpg" alt="에이아이댑스 로고" />
                 </figure>
                 <div>
                   <span className="block text-xl font-extrabold mb-4">
@@ -74,7 +74,7 @@ const Experience: React.FC = () => {
             <div className="experience-content">
               <div className="flex justify-between max-xl:flex-col">
                 <figure className="max-xl:flex max-xl:items-center max-xl:justify-center max-xl:mb-4 max-xl:hidden">
-                  <img src="/img/top-logo.jpg" alt="" />
+                  <img src="/img/top-logo.jpg" alt="탑스타 로고" />
                 </figure>
                 <div>
                   <span className="block text-xl font-extrabold mb-4">

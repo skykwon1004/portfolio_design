@@ -20,10 +20,10 @@ const Intro = () => {
               </strong>
             </div>
             <div className="box-03">
-              <img src="/img/ex-01.png" alt="" />
+              <img src="/img/ex-01.png" alt="js 글자 이미지" />
             </div>
             <div className="box-04 ">
-              <img src="/img/ex-02.png" alt="" />
+              <img src="/img/ex-02.png" alt="React 글자 이미지" />
             </div>
           </div>
           <div className="img-wapper flex flex-col items-center justify-center mb-16">

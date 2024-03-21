@@ -35,7 +35,7 @@ const Education = () => {
             data-aos-duration="1400"
           >
             <div className="education-content-left flex-1">
-              <img src="/img/e-bg-01.jpg" alt="" />
+              <img src="/img/e-bg-01.jpg" alt="컴퓨터 코딩 화면" />
             </div>
             <div className="education-content-right flex-1 flex flex-col justify-center">
               <ul
