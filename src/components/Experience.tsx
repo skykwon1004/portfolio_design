@@ -50,8 +50,10 @@ const Experience: React.FC = () => {
                     에이아이댑스
                   </span>
                   <span className="block">2023.04. ~ 2023.12.</span>
-                  <span className="block mb-4">개발팀 - 프론트엔드</span>
-                  <span className="block max-xl:mb-1.5">
+                  <span className="block mb-4 max-xl:mb-8">
+                    개발팀 - 프론트엔드
+                  </span>
+                  <span className="block max-xl:mb-8">
                     에이아이댑스는 분산 클라우드를 기반으로 다양한 서비스 플랫폼
                     사업을 개발하고 있습니다.
                   </span>
