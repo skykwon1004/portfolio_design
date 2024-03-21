@@ -222,7 +222,8 @@ const projectData: Project[] = [
       "영화 Open API를 활용하여 영화를 장르별로 구분하고 영화 검색이 가능한 서비스입니다.",
     link: "https://skykwon1004.github.io/react_AM_movie/",
     image: "/img/am_01.jpg",
-    gifImage: "/img/am_05_g.gif",
+    gifImage:
+      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aat_01_g.gif",
     technologies: ["솔로", "React", "Axios", "검색"],
     contribution: ["프론트엔드", "퍼블리싱", "디자인"],
     modalContent: {

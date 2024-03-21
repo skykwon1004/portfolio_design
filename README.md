@@ -1,19 +1,18 @@
 # 권은진 포트폴리오
 - **`작업 기간 :`** 24.03 - 진행 중
-- **`배포 링크 :`** [링크](https://portfolio-eunjin.netlify.app/){:target="_blank"}
+- **`배포 링크 :`** [링크](https://portfolio-eunjin.netlify.app/)
 <!-- - **`Figma 구상도 :`** [디자인 시안](https://www.figma.com/file/1Gmg1R2fYyPPrbyeWpOkWa/%ED%8F%AC%EC%BC%93%EB%AA%AC-%EB%8F%84%EA%B0%90?type=design&node-id=0%3A1&mode=design&t=hblSPKcI41uNVdQo-1) -->
 - **`Stack` :** Vite, React, TypeScript, Zustand, Tailwind
 
 ## 설명
 노션, 템플릿 소스 등을 이용할 수 있었지만 저만의 포트폴리오 사이트를 가지고 싶어 제작했습니다.
 주요 색상인 black & yellow로 심플하고 차분한 느낌을 줬고,
-간단한 자기 소개와 프로젝트, 이력 등 중요도 순으로 배치해 내용을 구성했습니다.
-이를 통해 포트폴리오를 보는 사람들에게 원하는 정보를 쉽게 전달할 수 있도록 했습니다.
+업무경험, 프로젝트, 스킬 등으로 내용을 구성했습니다.
 
 ## 작업 사항
-- TypeScript 써서 만들어 보기
+- `TypeScript` 써서 만들어 보기
 - `Vite` 활용해 Webpack 기반 서버에 비해 응답성이 뛰어난 개발 경험
-- `Zustand`활용해 다크모드/라이트모드 구현
+- `Zustand` 활용해 다크모드/라이트모드 구현
 - `Tailwind CSS`를 활용해 일관된 스타일의 반응형 작업
 - `react-scroll`라이브러리 활용해 header의 각 nav 메뉴로 스크롤 이동하게 구현
 
