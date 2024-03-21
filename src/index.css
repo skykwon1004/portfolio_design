@@ -880,6 +880,42 @@ nav.block::before {
     width: 100%;
   }
 
+  /* intro */
+  .item {
+    display: flex;
+    gap: 8px;
+  }
+
+  .item>span {
+    display: block;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .i-01 {
+    padding: 10px 20px;
+    font-weight: 300;
+  }
+
+  .i-02 {
+    font-weight: 700;
+    padding: 10px 28px;
+  }
+
+  .i-03 {
+    padding: 10px 10px;
+  }
+
+  .i-04 {
+    font-size: 12px;
+    padding: 10px 15px;
+    font-weight: 500;
+  }
+
   .experience-content>div>figure>img {
     width: 200px;
     border-radius: 10px;

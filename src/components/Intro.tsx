@@ -27,7 +27,7 @@ const Intro = () => {
             </div>
           </div>
           <div className="img-wapper flex flex-col items-center justify-center mb-16">
-            <div className="item mb-5">
+            <div className="item mb-5 max-md:mb-3">
               <span
                 className="i-03 intro-ani"
                 style={{
