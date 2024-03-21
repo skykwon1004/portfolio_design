@@ -46,7 +46,7 @@ const Modal: React.FC<ModalProps> = ({
     <div className="modal" onClick={handleModalClose}>
       <div className="modal" onClick={handleModalClose}>
         <div
-          className="modal-content-wapper max-md:max-w-full py-[10%] px-[10%] max-xl:py-[5%] max-xl:px-[5%]"
+          className="modal-content-wapper max-md:max-w-full py-[10%] px-[10%] max-xl:px-[5%]"
           onClick={(e) => e.stopPropagation()}
           style={{
             backgroundColor: darkMode ? "rgba(51, 51, 51)" : "",
