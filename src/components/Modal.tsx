@@ -20,6 +20,7 @@ const Modal: React.FC<ModalProps> = ({
 
   const handleTabChange = (tab: string) => {
     setActiveTab(tab);
+    console.log(imageLoading);
   };
 
   useEffect(() => {
@@ -46,7 +47,7 @@ const Modal: React.FC<ModalProps> = ({
     <div className="modal" onClick={handleModalClose}>
       <div className="modal" onClick={handleModalClose}>
         <div
-          className="modal-content-wapper max-md:max-w-full"
+          className="modal-content-wapper max-md:max-w-full py-[10%] px-[10%] max-xl:py-[5%] max-xl:px-[5%]"
           onClick={(e) => e.stopPropagation()}
           style={{
             backgroundColor: darkMode ? "rgba(51, 51, 51)" : "",
@@ -113,7 +114,7 @@ const Modal: React.FC<ModalProps> = ({
               />
             </div>
             <p
-              className="modal-desc mb-20 text-xl text-center font-medium max-md:text-lg"
+              className="modal-desc mb-20 text-xl text-center font-medium max-md:text-lg py-[8%] px-[12%] max-xl:py-[6%] max-xl:px-[10%]"
               style={{
                 borderBottom: darkMode ? "1px solid rgb(64 64 64)" : "",
               }}

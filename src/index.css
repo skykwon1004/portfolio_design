@@ -218,6 +218,22 @@ nav.block::before {
   font-weight: 500;
 }
 
+.intro-ani {
+  animation: intro-ani 1.5s infinite alternate;
+}
+
+@keyframes intro-ani {
+  0% {
+    opacity: 0.2;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+}
+
 .scroll-dwon {
   position: absolute;
   bottom: 50px;
@@ -322,12 +338,8 @@ nav.block::before {
   background: #f8d10a;
   border-radius: 25px;
   font-weight: 500;
+  color: rgb(23 23 23);
 }
-
-/* .show-more-button {
-  display: flex;
-  justify-content: center;
-} */
 
 .btn-more {
   display: flex;
@@ -359,7 +371,6 @@ nav.block::before {
   width: calc(100% - 200px);
   max-height: calc(100vh - 40px);
   margin: 0 auto;
-  padding: 200px;
   overflow-y: scroll;
 }
 
@@ -406,7 +417,6 @@ nav.block::before {
 
 .modal-desc {
   border-bottom: 1px solid #ddd;
-  padding: 80px 250px;
   position: relative;
 }
 
@@ -594,7 +604,6 @@ nav.block::before {
   }
 
   .experience-content > div > :nth-child(2) {
-    /* outline: 1px solid red; */
     flex: 0.7;
   }
 
@@ -751,7 +760,6 @@ nav.block::before {
     position: fixed;
     top: 0;
     left: 20px;
-    /* border-bottom: 1px solid rgb(158, 158, 158); */
     width: calc(100% - 40px);
     height: 80px;
     background: #fff;
@@ -796,7 +804,7 @@ nav.block::before {
 
   .modal-desc {
     border-bottom: 1px solid #ddd;
-    padding: 20px;
+    padding: 60px 20px;
     position: relative;
   }
 
@@ -889,7 +897,7 @@ nav.block::before {
 
   /* education */
   .education-content-left > img {
-    height: 50%;
+    height: 250px;
     margin: 0 auto;
   }
 

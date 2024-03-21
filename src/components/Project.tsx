@@ -11,10 +11,7 @@ const Project = () => {
   const { darkMode } = useDarkModeStore();
   const [showModal, setShowModal] = useState(false);
   const [activeProjectIndex, setActiveProjectIndex] = useState(-1);
-  const [isHoveredArray, setIsHoveredArray] = useState(
-    Array(projectData.length).fill(false)
-  ); // 초기 상태를 모두 false로 설정
-  // const [showMoreProjects, setShowMoreProjects] = useState(false);
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -30,26 +27,7 @@ const Project = () => {
     };
   }, [showModal]);
 
-  const handleMouseEnter = (index: number) => {
-    // index 추가
-    setIsHoveredArray((prevState) => {
-      const newArray = [...prevState];
-      newArray[index] = true;
-      return newArray;
-    });
-  };
-
-  const handleMouseLeave = (index: number) => {
-    // index 추가
-    setIsHoveredArray((prevState) => {
-      const newArray = [...prevState];
-      newArray[index] = false;
-      return newArray;
-    });
-  };
-
   const handleModalOpen = (index: number) => {
-    // console.log("Modal opened for index:", index);
     setShowModal(true);
     setActiveProjectIndex(index); // 모달이 열릴 때 선택된 프로젝트의 인덱스 설정
   };
@@ -57,11 +35,6 @@ const Project = () => {
   const handleModalClose = () => {
     setShowModal(false);
   };
-
-  // const handleShowMoreProjects = () => {
-  //   // 추가
-  //   setShowMoreProjects(true);
-  // };
 
   return (
     <Element name="project">
@@ -84,7 +57,6 @@ const Project = () => {
           </div>
           <div className="project-content-wapper max-w-full grid grid-cols-2">
             {projectData.map(
-              // {projectData.slice(0, showMoreProjects ? undefined : 6).map(
               (
                 item,
                 index // 변경
@@ -103,15 +75,7 @@ const Project = () => {
                         : " rgb(249, 249, 249,0.5)",
                     }}
                   >
-                    <img
-                      src={
-                        isHoveredArray[index] // index 변경
-                          ? item.gifImage
-                          : item.image
-                      }
-                      alt=""
-                      className=""
-                    />
+                    <img src={item.image} alt="" className="" />
                   </figure>
                   <div
                     className="project-text-box-link"
@@ -120,20 +84,11 @@ const Project = () => {
                     }}
                   >
                     {" "}
-                    {/* 모달 오픈 핸들러 추가 */}
-                    <div
-                      className="project-text-box"
-                      onMouseEnter={() => handleMouseEnter(index)} // index 추가
-                      onMouseLeave={() => handleMouseLeave(index)} // index 추가
-                    >
-                      {/* <span className="project-text-box-number block mb-8">
-                        {`0${index + 1}`}
-                      </span> */}
+                    <div className="project-text-box">
                       <strong className="text-4xl font-bold block mb-4 max-md:text-2xl">
                         {item.title}
                       </strong>
                       <p className="mb-8 min-h-12">{item.description}</p>
-                      {/* <p className="mb-8 min-h-12">{item.contribution}</p> */}
                       <ul className="flex gap-2 text-gray-500 font-medium mb-2 max-md:grid max-md:grid-cols-2">
                         {item.contribution.map(
                           (contribution, contributionIndex) => (
@@ -169,12 +124,7 @@ const Project = () => {
                           className="btn-link inline-block"
                           onClick={() => handleModalOpen(index)}
                         >
-                          <button
-                            className="btn"
-                            style={{
-                              color: darkMode ? "rgb(23 23 23)" : "",
-                            }}
-                          >
+                          <button className="btn">
                             Read More <IoIosArrowRoundForward />
                           </button>
                         </div>
@@ -184,12 +134,7 @@ const Project = () => {
                             className="btn-link"
                             target="_blank"
                           >
-                            <button
-                              className="btn"
-                              style={{
-                                color: darkMode ? "rgb(23 23 23)" : "",
-                              }}
-                            >
+                            <button className="btn">
                               Go Site <IoIosArrowRoundForward />
                             </button>
                           </a>
@@ -201,19 +146,6 @@ const Project = () => {
               )
             )}
           </div>
-          {/* {!showMoreProjects && (
-            <div className="show-more-button from-white">
-              <button
-                className="btn-more"
-                onClick={handleShowMoreProjects}
-                style={{
-                  backgroundColor: darkMode ? "rgb(23 23 23)" : "",
-                }}
-              >
-                더 보기 ...
-              </button>
-            </div>
-          )} */}
         </div>
       </div>
       {showModal && activeProjectIndex !== -1 && (

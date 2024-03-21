@@ -16,7 +16,6 @@ interface Project {
   title: string;
   description: string;
   link: string;
-
   image: string;
   gifImage: string;
   technologies: string[];
@@ -111,7 +110,7 @@ const projectData: Project[] = [
         "반응형 웹 개발 및 크로스 브라우징 개발",
         " Netlify로 배포, 유지 보수",
       ],
-      skill: ["React", "JavaScript", "SCSS", "Netlify", "반응형"],
+      skill: ["React", "JavaScript", "SCSS"],
       screen: [
         "다국어 서비스",
         "원페이지 스크롤",
@@ -231,7 +230,8 @@ const projectData: Project[] = [
     link: "https://skykwon1004.github.io/react_AM_movie/",
     image:
       "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/am_01.jpg",
-    gifImage: "",
+    gifImage:
+      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/am_05_g.gif",
     technologies: ["솔로", "React", "Axios", "검색"],
     contribution: ["프론트엔드", "퍼블리싱", "디자인"],
     modalContent: {
@@ -296,15 +296,19 @@ const projectData: Project[] = [
     contribution: ["프론트엔드", "퍼블리싱", "디자인"],
     modalContent: {
       title: "부산 맛집 지도",
-      date: "작업기간 : 2022.3. ~ 2022.3. (1주)",
+      date: "작업기간 : 2022.4. ~ 2022.4. (1주)",
       team: "팀 구성 : 솔로, 개인작업 100%",
       description:
-        "Axios를 사용하여 공공데이터 API를 가져와서 부산맛집지도 사이트를 제작했습니다. kakao-maps api를 이용하여 맛집을 지도에 표시해 줍니다. 부산의 구,군 별로 리스트를 만들었고 레스토랑을 클릭하면 레스토랑의 정보를 보여줍니다.",
+        "Axios를 사용하여 공공데이터 API를 가져와서 부산맛집지도 사이트를 제작했습니다. kakao-maps api를 이용하여 맛집을 지도에 표시해 줍니다. 부산의 구,군 별로 리스트를 만들었고 레스토랑을 클릭하면 레스토랑의 정보를 보여줍니다. 댓글 게시, 수정, 삭제 기능을 구현하였습니다.",
       link: "https://skykwon1004.github.io/react_busan_restauran/",
-      github: "",
+      github: "https://github.com/skykwon1004/react_busan_restauran",
       features: [
-        "KakaoMap API를 이용하여 맛집을 지도에 표시",
+        "공공데이터 포탈 API 데이터 사용하기",
+        "Axios를 사용하여 맛집 데이터 API를 가져오기",
+        "React Router Dom을 사용하여 URL 구조를 설정",
+        "API에서 가져온 데이터 값과 URL이 일치하는 경우, useParams를 사용하여 해당 URL로 이동",
         "부산의 구,군 별로 카테고리를 분류",
+        "KakaoMap API를 이용하여 맛집을 지도에 표시",
         "레스토랑의 정보를 가져오고 해당 레스토랑 위치를 지도에 표시",
         "댓글 게시,수정,삭제 기능 구현",
       ],

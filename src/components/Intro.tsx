@@ -29,7 +29,7 @@ const Intro = () => {
           <div className="img-wapper flex flex-col items-center justify-center mb-16">
             <div className="item mb-5">
               <span
-                className="i-03"
+                className="i-03 intro-ani"
                 style={{
                   background: darkMode
                     ? "linear-gradient(90deg, rgba(133,133,133,1) 0%, rgba(52,52,52,1) 100%)"
@@ -66,7 +66,7 @@ const Intro = () => {
                 FrontEnd
               </span>
               <span
-                className="i-03"
+                className="i-03 intro-ani"
                 style={{
                   background: darkMode
                     ? "linear-gradient(90deg, rgba(133,133,133,1) 0%, rgba(52,52,52,1) 100%)"
@@ -98,7 +98,7 @@ const Intro = () => {
                 Publisher
               </span>
               <span
-                className="i-04"
+                className="i-04 intro-ani"
                 style={{
                   border: darkMode
                     ? "1px solid rgb(64,64,64)"

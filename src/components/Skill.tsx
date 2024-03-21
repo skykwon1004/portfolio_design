@@ -49,7 +49,9 @@ const Skill = () => {
                 </span>
               </div>
               <div className="skill-list-item">
-                <strong className="block mb-4 opacity-0">Front-End</strong>
+                <strong className="block mb-4 opacity-0 text-xl">
+                  Front-End
+                </strong>
                 <span className="block flex gap-3 items-center mb-2">
                   <img src="/img/skill-logo-06.png" alt="" />
                   HTML
