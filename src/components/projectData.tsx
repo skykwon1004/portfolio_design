@@ -29,10 +29,8 @@ const projectData: Project[] = [
     description:
       "빅데이터를 분석하여 최적의 수익 실현 타이밍에 매매를 도와주는 인공지능 서비스 웹사이트 입니다.",
     link: "",
-    image:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aat_01.jpg",
-    gifImage:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aat_01_g.gif",
+    image: "/img/aat_01.jpg",
+    gifImage: "/img/aat_01_g.gif",
     technologies: ["팀", "React", "TypeScript", "Redux", "Aixos", "반응형"],
     contribution: ["프론트엔드", "퍼블리싱"],
     modalContent: {
@@ -65,12 +63,12 @@ const projectData: Project[] = [
         "반응형",
       ],
       image: [
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aat_01_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aat_02_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aat_03.jpg",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aat_07.jpg",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aat_05.jpg",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aat_13.jpg",
+        "/img/aat_02.jpg",
+        "/img/aat_02_g.gif",
+        "/img/aat_03.jpg",
+        "/img/aat_07.jpg",
+        "/img/aat_05.jpg",
+        "/img/aat_13.jpg",
       ],
       screenText: [
         "<react-hook-form> 라이브러리를 사용하여 <유효성 검사>를 하였고, <로그인 여부에 따라 자동으로 리다이렉트>되도록 구현했습니다.",
@@ -87,10 +85,8 @@ const projectData: Project[] = [
     description:
       "스마트 배변판으로 반려동물의 소변검사를 통해 집에서 건강상태를 손쉽게 진단할 수 있는 펫케어 서비스 소개 웹사이트 입니다.",
     link: "https://petcarelab.net/",
-    image:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/petcare_01.jpg",
-    gifImage:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/petcare_08_g.gif",
+    image: "/img/petcare_01.jpg",
+    gifImage: "/img/petcare_08_g.gif",
     technologies: ["팀", "React", "다국어", "반응형"],
     contribution: ["퍼블리싱"],
     modalContent: {
@@ -119,11 +115,11 @@ const projectData: Project[] = [
         "반응형",
       ],
       image: [
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/petcare_09_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/petcare_08_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/petcare_10_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/petcare_04.jpg",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/petcare_07.jpg",
+        "/img/petcare_02.jpg",
+        "/img/petcare_08_g.gif",
+        "/img/petcare_10_g.gif",
+        "/img/petcare_04.jpg",
+        "/img/petcare_07.jpg",
       ],
       screenText: [
         "<react-intl> 라이브러리를 활용하여 <다국어 서비스>를 구현했습니다.",
@@ -139,10 +135,8 @@ const projectData: Project[] = [
     description:
       "분산 클라우드 기반의 서비스 플랫폼 기업 에이아이댑스의 공식 웹사이트 입니다.",
     link: "https://ai-dapps.com/",
-    image:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aidapps_01.jpg",
-    gifImage:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aidapps_09_g.gif",
+    image: "/img/aidapps_01.jpg",
+    gifImage: "/img/aidapps_09_g.gif",
     technologies: ["팀", "그누보드", "다국어", "반응형"],
     contribution: ["퍼블리싱"],
     modalContent: {
@@ -165,11 +159,11 @@ const projectData: Project[] = [
       skill: ["HTML", "CSS", "JavaScript", "그누보드"],
       screen: ["다국어 서비스", "게시판", "AOS", "슬라이드", "반응형"],
       image: [
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aidapps_10_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aidapps_08.jpg",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aidapps_09_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aidapps_11_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/aidapps_06.jpg",
+        "/img/aidapps_02.jpg",
+        "/img/aidapps_08.jpg",
+        "/img/aidapps_09_g.gif",
+        "/img/aidapps_11_g.gif",
+        "/img/aidapps_06.jpg",
       ],
       screenText: [
         "<그누보드로 다국어(KOR, ENG)> 페이지 기능 구현했습니다.",
@@ -185,10 +179,8 @@ const projectData: Project[] = [
     description:
       "기존의 일신방직 웹사이트의 UI/UX를 개선하여 디자인부터 배포까지 100% 솔로로 작업한 리뉴얼 웹사이트입니다.",
     link: "http://skykwon1004.dothome.co.kr/",
-    image:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/ilshin_01.jpg",
-    gifImage:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/ilshin_09_g.gif",
+    image: "/img/ilshin_01.jpg",
+    gifImage: "/img/ilshin_09_g.gif",
     technologies: ["솔로", "그누보드", "JQuery", "리뉴얼", "반응형"],
     contribution: ["퍼블리싱", "디자인"],
     modalContent: {
@@ -210,10 +202,10 @@ const projectData: Project[] = [
       skill: ["HTML", "CSS", "JQuery", "그누보드"],
       screen: ["멀티페이지", "게시판", "사이드 네비", "반응형"],
       image: [
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/ilshin_09_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/ilshin_04.jpg",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/ilshin_07.jpg",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/ilshin_08.jpg",
+        "/img/ilshin_09_g.gif",
+        "/img/ilshin_04.jpg",
+        "/img/ilshin_07.jpg",
+        "/img/ilshin_08.jpg",
       ],
       screenText: [
         "<그누보드>를 사용하여 <멀티페이지> 홈페이지 제작했습니다.",
@@ -228,10 +220,8 @@ const projectData: Project[] = [
     description:
       "영화 Open API를 활용하여 영화를 장르별로 구분하고 영화 검색이 가능한 서비스입니다.",
     link: "https://skykwon1004.github.io/react_AM_movie/",
-    image:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/am_01.jpg",
-    gifImage:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/am_05_g.gif",
+    image: "/img/am_01.jpg",
+    gifImage: "/img/am_05_g.gif",
     technologies: ["솔로", "React", "Axios", "검색"],
     contribution: ["프론트엔드", "퍼블리싱", "디자인"],
     modalContent: {
@@ -261,11 +251,11 @@ const projectData: Project[] = [
         "로딩페이지",
       ],
       image: [
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/am_06_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/am_07_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/am_02.jpg",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/am_08_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/am_04.jpg",
+        "/img/am_06_g.gif",
+        "/img/am_07_g.gif",
+        "/img/am_02.jpg",
+        "/img/am_08_g.gif",
+        "/img/am_04.jpg",
       ],
       screenText: [
         "API에 가져온 영화 데이터를 <장르별로> 구분하여 보여주는 UI를 구현하였습니다.",
@@ -281,10 +271,8 @@ const projectData: Project[] = [
     description:
       "공공데이터 API를 이용하여 부산 맛집을 지도에서 한 번에 볼 수 있도록 만든 서비스입니다.",
     link: "https://skykwon1004.github.io/react_busan_restauran/",
-    image:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/busan_food_01.jpg",
-    gifImage:
-      "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/busan_food_04_g.gif",
+    image: "/img/busan_food_01.jpg",
+    gifImage: "/img/busan_food_04_g.gif",
     technologies: [
       "솔로",
       "React",
@@ -315,10 +303,10 @@ const projectData: Project[] = [
       skill: ["React", "JavaScript", "SCSS"],
       screen: ["카테고리 분류", "KakaoMap API", "디테일페이지", "댓글"],
       image: [
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/busan_food_04_g.gif",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/busan_food_01.jpg",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/busan_food_02.jpg",
-        "https://raw.githubusercontent.com/skykwon1004/fe_portfolio/main/public/img/busan_food_05_g.gif",
+        "/img/busan_food_04_g.gif",
+        "/img/busan_food_01.jpg",
+        "/img/busan_food_02.jpg",
+        "/img/busan_food_05_g.gif",
       ],
       screenText: [
         "부산의 <구,군 별로 카테고리>를 분류하여 구현했습니다",
