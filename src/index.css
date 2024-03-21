@@ -629,19 +629,11 @@ nav.block::before {
     padding: 40px 0 0 0;
   }
 
-  .experience-content > div > figure > img {
-    width: 200px;
-    border-radius: 10px;
-  }
-
   .experience-content > div > :nth-child(2) {
     flex: 0.7;
   }
 
   /* Project */
-  .project {
-    background: rgb(249, 249, 249, 0.5);
-  }
 
   .project-content-wapper {
     display: grid;
@@ -884,6 +876,11 @@ nav.block::before {
     margin: 0 auto;
     padding: 100px 20px;
     width: 100%;
+  }
+
+  .experience-content > div > figure > img {
+    width: 200px;
+    border-radius: 10px;
   }
 
   /* skill */
