@@ -84,7 +84,10 @@ const Project = () => {
                     }}
                   >
                     {" "}
-                    <div className="project-text-box">
+                    <div
+                      className="project-text-box"
+                      onClick={() => handleModalOpen(index)}
+                    >
                       <strong className="text-4xl font-bold block mb-4 max-md:text-2xl">
                         {item.title}
                       </strong>

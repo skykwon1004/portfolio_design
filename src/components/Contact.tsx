@@ -27,7 +27,7 @@ const Contact = () => {
             data-aos="fade-up"
             data-aos-duration="1400"
           >
-            <div className="contact-content flex justify-between gap-14 max-md:flex-col">
+            <div className="contact-content flex justify-between gap-14 w-4/5 max-xl:flex-col max-md:w-full">
               <div
                 className="contact-content-left flex-1"
                 style={{

@@ -63,7 +63,7 @@ const projectData: Project[] = [
         "반응형",
       ],
       image: [
-        "/img/aat_02.jpg",
+        "/img/aat_01_g.gif",
         "/img/aat_02_g.gif",
         "/img/aat_03.jpg",
         "/img/aat_07.jpg",
@@ -177,7 +177,7 @@ const projectData: Project[] = [
   {
     title: "ILSHIN",
     description:
-      "기존의 일신방직 웹사이트의 UI/UX를 개선하여 디자인부터 배포까지 100% 솔로로 작업한 리뉴얼 웹사이트입니다.",
+      "기존의 일신방직 웹사이트의 UI/UX를 개선하여 디자인부터 배포까지 솔로로 작업한 멀티페이지 리뉴얼 웹사이트입니다.",
     link: "http://skykwon1004.dothome.co.kr/",
     image: "/img/ilshin_01.jpg",
     gifImage: "/img/ilshin_09_g.gif",
