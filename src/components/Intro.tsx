@@ -9,9 +9,8 @@ const Intro = () => {
     <Element name="intro">
       <div className="intro">
         <div className="intro-content h-screen flex flex-col items-center justify-center">
-          <div className="intro-content-left flex flex-col justify-center items-center mb-16 max-md:mb-10">
-            <div className="box-wapper mb-4 max-xl:mt-10">
-              {/* <div className="box"></div> */}
+          <div className="intro-content-left flex flex-col justify-center items-center max-md:mb-10">
+            <div className="box-wapper mb-10 max-xl:mt-10">
               <strong className="text-5xl font-thin max-md:text-3xl max-xl:block max-md:text-center text-animate mb-2 mx-4">
                 Make it More
               </strong>
@@ -19,120 +18,75 @@ const Intro = () => {
                 Appealing,
               </strong>
             </div>
-            <div className="box-03">
-              <img src="/img/ex-01.png" alt="js 글자 이미지" />
+            <div className="text-wapper">
+              <p className="font-light text-xl max-md:text-base text-center">
+                웹디자이너 경험과 프론트엔드 개발 경험을 바탕으로
+              </p>
+              <p className="font-light text-xl max-md:text-base text-center">
+                한 번 더 들여다보게 만드는{" "}
+                <b className="font-semibold">매력적인 웹사이트를</b>{" "}
+                만들겠습니다.
+              </p>
             </div>
-            <div className="box-04 ">
-              <img src="/img/ex-02.png" alt="React 글자 이미지" />
-            </div>
-          </div>
-          <div className="img-wapper flex flex-col items-center justify-center mb-16">
-            <div className="item mb-5 max-md:mb-3">
-              <span
-                className="i-03 intro-ani"
-                style={{
-                  background: darkMode
-                    ? "linear-gradient(90deg, rgba(133,133,133,1) 0%, rgba(52,52,52,1) 100%)"
-                    : "linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(255, 255, 255, 1) 100%)",
-                  border: darkMode ? "1px solid #605f5f" : "1px solid #f5f5f5",
-                }}
-              >
-                Publisher
-              </span>
-              <span
-                className="i-04"
-                style={{
-                  border: darkMode
-                    ? "1px solid rgb(64,64,64)"
-                    : "1px solid #999",
-                }}
-              >
-                Designer
-              </span>
-              <span
-                className="i-01"
-                style={{
-                  border: darkMode ? "1px solid #a1a1a1" : "1px solid #999",
-                }}
-              >
-                Developer
-              </span>
-              <span
-                className="i-02"
-                style={{
-                  backgroundColor: darkMode ? "#454545" : " #f9f9f9",
-                }}
-              >
-                FrontEnd
-              </span>
-              <span
-                className="i-03 intro-ani"
-                style={{
-                  background: darkMode
-                    ? "linear-gradient(90deg, rgba(133,133,133,1) 0%, rgba(52,52,52,1) 100%)"
-                    : "linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(255, 255, 255, 1) 100%)",
-                  border: darkMode ? "1px solid #605f5f" : "1px solid #f5f5f5",
-                }}
-              >
-                &#127752;
-              </span>
-            </div>
-            <div className="item">
-              <span
-                className="i-02"
-                style={{
-                  backgroundColor: darkMode ? "#454545" : " #f9f9f9",
-                }}
-              >
-                FrontEnd
-              </span>
-              <span
-                className="i-03"
-                style={{
-                  background: darkMode
-                    ? "linear-gradient(90deg, rgba(133,133,133,1) 0%, rgba(52,52,52,1) 100%)"
-                    : "linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(255, 255, 255, 1) 100%)",
-                  border: darkMode ? "1px solid #605f5f" : "1px solid #f5f5f5",
-                }}
-              >
-                Publisher
-              </span>
-              <span
-                className="i-04 intro-ani"
-                style={{
-                  border: darkMode
-                    ? "1px solid rgb(64,64,64)"
-                    : "1px solid #999",
-                }}
-              >
-                &#127775;
-              </span>
-              <span
-                className="i-01"
-                style={{
-                  border: darkMode ? "1px solid #a1a1a1" : "1px solid #999",
-                }}
-              >
-                Developer
-              </span>
-              <span
-                className="i-02"
-                style={{
-                  backgroundColor: darkMode ? "#454545" : " #f9f9f9",
-                }}
-              >
-                Designer
-              </span>
+            <div className="sticker-img">
+              <figure className="box-item box-01 w-1/12 max-md:w-2/12">
+                <img src="/img/ex-01.png" alt="js 글자 이미지" />
+              </figure>
+              <figure className="box-item box-02 w-2/12 max-md:w-4/12">
+                <img src="/img/ex-02.png" alt="React 글자 이미지" />
+              </figure>
+              <figure className="box-item box-03 intro-ani w-2/12 max-md:w-4/12">
+                <img src="/img/ex-03.png" alt="따봉 이미지" />
+              </figure>
+              <figure className="box-item box-04 intro-ani w-2/12 max-md:w-4/12">
+                <img src="/img/ex-04.png" alt="DO GOOD 글자 이미지" />
+              </figure>
+              <figure className="box-item box-05 w-2/12 max-md:w-4/12">
+                <img src="/img/ex-05.png" alt="CSS 글자 이미지" />
+              </figure>
+              <figure className="box-item box-06 w-2/12 max-md:w-4/12">
+                <img src="/img/ex-06.png" alt="WebSites 글자 이미지" />
+              </figure>
+              <figure className="box-item box-07 w-2/12 max-md:w-4/12">
+                <img src="/img/ex-07.png" alt="HELLO WORLD 글자 이미지" />
+              </figure>
+              <figure className="box-item box-08 w-2/12 max-md:w-4/12">
+                <img src="/img/ex-08.png" alt="JSX 글자 이미지" />
+              </figure>
+              <figure className="box-item box-09 w-2/12 max-md:w-4/12">
+                <img src="/img/ex-09.png" alt="시멘틱 마크업 글자 이미지" />
+              </figure>
+              <figure className="box-item box-10 intro-ani w-2/12 max-md:w-4/12">
+                <img src="/img/ex-10.png" alt="HTML5 글자 이미지" />
+              </figure>
             </div>
           </div>
-          <div className="text-wapper">
-            <p className="font-light text-xl max-md:text-base text-center">
-              웹디자이너 경험과 프론트엔드 개발 경험을 바탕으로
-            </p>
-            <p className="font-light text-xl max-md:text-base text-center">
-              한 번 더 들여다보게 만드는{" "}
-              <b className="font-semibold">매력적인 웹사이트를</b> 만들겠습니다.
-            </p>
+          <div className="yellow-line font-medium text-lg p-2">
+            <div className="flow-container">
+              <div className="flow-text">
+                <div className="flow-wrap">
+                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                </div>
+                <div className="flow-wrap">
+                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                </div>
+                <div className="flow-wrap">
+                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                </div>
+                <div className="flow-wrap">
+                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                </div>
+                <div className="flow-wrap">
+                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                </div>
+                <div className="flow-wrap">
+                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                </div>
+                <div className="flow-wrap">
+                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                </div>
+              </div>
+            </div>
           </div>
           <div className="scroll-dwon">
             <IoIosArrowRoundDown />

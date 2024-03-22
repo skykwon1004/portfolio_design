@@ -88,79 +88,134 @@ nav.block::before {
   width: 100%;
 }
 
+.box {
+  position: relative;
+  inset: 0 0 0 100%;
+  transform: translate(-50%, 50%);
+  width: 30px;
+  height: 30px;
+  background: #f8d10a;
+  border-radius: 50%;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  inset: -25px -25px auto auto;
+  z-index: -1;
+  width: 80px;
+  height: 80px;
+  background: #f8d10a;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: scale-up 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes scale-up {
+  100% {
+    opacity: 0.2;
+    transform: translate(0, 0) scale(0.3);
+  }
+}
+
 .img-wapper {
   max-width: 100%;
   position: relative;
 }
 
-.box-item {
+/* .box-03 {
   position: absolute;
-  padding: 0 !important;
-}
+  top: 70%;
+  right: -10%;
+  transform: translate(0, 0);
+  width: 400px;
+  height: 400px;
+  background: rgb(248, 209, 10);
+  background: radial-gradient(circle, rgba(248, 209, 10, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  border-radius: 50%;
+  opacity: 60%;
+  transform: rotate(-45deg);
+} */
 
-.box-item-ani {
+/* .box-04 {
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  transform: translate(0, 0);
+  width: 300px;
+  height: 300px;
+  background: rgb(248, 209, 10);
+  background: radial-gradient(circle, rgba(248, 209, 10, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  border-radius: 50%;
+  opacity: 50%;
+} */
+
+.box-03 {
+  position: absolute;
+  bottom: 3%;
+  right: 5%;
+  width: 160px;
+  padding: 0 !important;
   animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-.box-01 {
-  position: absolute;
-  bottom: 8%;
-  right: 14%;
-}
-
-.box-02 {
-  top: 5%;
-  left: 8%;
-  transform: rotate(-45deg);
-}
-
-.box-03 {
-  top: 12%;
-  left: 15%;
-}
-
 .box-04 {
-  bottom: 8%;
-  left: 35%;
-}
-
-.box-05 {
-  bottom: 7%;
-  left: 8%;
-  transform: rotate(-40deg);
-}
-
-.box-06 {
-  bottom: 8%;
-  left: 20%;
-  transform: rotate(10deg);
-}
-
-.box-07 {
+  position: absolute;
   top: 3%;
-  right: 22%;
-  transform: rotate(-10deg);
+  left: 5%;
+  width: 250px;
+  padding: 0 !important;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-.box-08 {
-  bottom: 10%;
-  right: 15%;
-  transform: rotate(25deg);
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.box-09 {
-  top: 15%;
-  right: 10%;
-  transform: rotate(10deg);
+.item {
+  display: flex;
+  gap: 15px;
 }
 
-.box-10 {
-  top: 35%;
-  right: 8%;
-  transform: rotate(3deg);
+.item>span {
+  display: block;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.i-01 {
+  padding: 10px 50px;
+  font-weight: 300;
+}
+
+.i-02 {
+  font-weight: 700;
+  padding: 10px 100px;
+}
+
+.i-03 {
+  padding: 10px 50px;
+}
+
+.i-04 {
+  font-size: 14px;
+  padding: 10px 20px;
+  font-weight: 500;
 }
 
 .intro-ani {
@@ -179,46 +234,9 @@ nav.block::before {
   }
 }
 
-.yellow-line {
-  position: absolute;
-  bottom: 0;
-  background: #f8d10a;
-  width: 100%;
-  color: rgb(23 23 23);
-}
-
-.flow-text {
-  display: flex;
-  flex: 0 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-.flow-text:hover .flow-wrap {
-  animation-play-state: paused;
-}
-
-.flow-wrap {
-  animation: textLoop 10s linear infinite;
-  padding-right: 1.4881vw;
-}
-
-@keyframes textLoop {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
 .scroll-dwon {
   position: absolute;
-  bottom: 15%;
+  bottom: 50px;
   left: 50%;
   font-size: 40px;
   opacity: 0.4;
@@ -542,16 +560,28 @@ nav.block::before {
     height: 550px;
   }
 
-  .box-06 {
-    bottom: 13%;
-    left: 20%;
-    transform: rotate(10deg);
+  .box-03 {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    width: 80px;
+    padding: 0 !important;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
-  .box-10 {
-    top: 23%;
-    right: 8%;
-    transform: rotate(3deg);
+  .box-04 {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: 150px;
+    padding: 0 !important;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
   /* experience */
@@ -606,6 +636,7 @@ nav.block::before {
   }
 
   /* Project */
+
   .project-content-wapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -865,24 +896,24 @@ nav.block::before {
     font-size: 12px;
   }
 
-  .scroll-dwon {
-    position: absolute;
-    bottom: 30%;
-    left: 50%;
-    font-size: 40px;
-    opacity: 0.4;
-    animation: scroll-down 2.5s infinite;
+  .i-01 {
+    padding: 10px 20px;
+    font-weight: 300;
   }
 
-  @keyframes scroll-down {
-    0% {
-      transform: translate(-50%, 0);
-    }
+  .i-02 {
+    font-weight: 700;
+    padding: 10px 28px;
+  }
 
-    100% {
-      opacity: 0.2;
-      transform: translate(-50%, 20px);
-    }
+  .i-03 {
+    padding: 10px 10px;
+  }
+
+  .i-04 {
+    font-size: 12px;
+    padding: 10px 15px;
+    font-weight: 500;
   }
 
   .experience-content>div>figure>img {
