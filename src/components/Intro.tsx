@@ -1,10 +1,8 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { IoIosArrowRoundDown } from "react-icons/io";
-import useDarkModeStore from "../zustand/useDarkModeStore";
 
 const Intro = () => {
-  const { darkMode } = useDarkModeStore();
   return (
     <Element name="intro">
       <div className="intro">
