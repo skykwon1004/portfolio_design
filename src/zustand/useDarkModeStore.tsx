@@ -7,7 +7,7 @@ interface DarkModeStore {
 
 const useDarkModeStore = create<DarkModeStore>(
   (set: SetState<DarkModeStore>) => ({
-    darkMode: true,
+    darkMode: false,
     toggleDarkMode: () =>
       set((state: DarkModeStore) => ({ darkMode: !state.darkMode })),
   })

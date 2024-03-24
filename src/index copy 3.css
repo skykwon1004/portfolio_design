@@ -9,13 +9,9 @@
 @tailwind utilities;
 
 html {
-  font-family: "Red Hat Display", "Poppins", "Pretendard", "Roboto",
+  font-family: "Poppins", "Red Hat Display", "Pretendard", "Roboto",
     "Noto Sans KR", sans-serif;
   word-break: keep-all;
-}
-
-.popins {
-  font-family: "Poppins", "Roboto", sans-serif;
 }
 
 .white {
@@ -97,59 +93,6 @@ nav.block::before {
   position: relative;
 }
 
-.box-wapper {
-  position: relative;
-}
-
-.box {
-  position: relative;
-  inset: 0 0 0 100%;
-  transform: translate(-100%, 80%);
-  width: 40px;
-  height: 40px;
-  background: #f8d10a;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.box::before {
-  content: "";
-  position: absolute;
-  inset: -25px -25px auto auto;
-  width: 90px;
-  height: 90px;
-  background: #f8d10a;
-  border-radius: 50%;
-  opacity: 0.5;
-  animation: scale-up 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-}
-
-@keyframes scale-up {
-  100% {
-    opacity: 0.2;
-    transform: translate(0, 0) scale(0.3);
-  }
-}
-
-.appealing {
-  position: relative;
-  z-index: 5;
-}
-
-.box-02 {
-  position: relative;
-}
-
-.box-02::after {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  transform: translate(0, 150%);
-  content: "";
-  width: 1px;
-  height: 30px;
-  background: #bbb;
-}
-
 .box-item {
   position: absolute;
   padding: 0 !important;
@@ -164,26 +107,80 @@ nav.block::before {
 
 .box-01 {
   position: absolute;
-  bottom: -5%;
-  right: -5%;
-  padding: 0 !important;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  bottom: 8%;
+  right: 14%;
 }
 
-@keyframes spin {
+.box-02 {
+  top: 5%;
+  left: 8%;
+  transform: rotate(-45deg);
+}
+
+.box-03 {
+  top: 12%;
+  left: 15%;
+}
+
+.box-04 {
+  bottom: 8%;
+  left: 35%;
+}
+
+.box-05 {
+  bottom: 7%;
+  left: 8%;
+  transform: rotate(-40deg);
+}
+
+.box-06 {
+  bottom: 8%;
+  left: 20%;
+  transform: rotate(10deg);
+}
+
+.box-07 {
+  top: 3%;
+  right: 22%;
+  transform: rotate(-10deg);
+}
+
+.box-08 {
+  bottom: 10%;
+  right: 15%;
+  transform: rotate(25deg);
+}
+
+.box-09 {
+  top: 15%;
+  right: 10%;
+  transform: rotate(10deg);
+}
+
+.box-10 {
+  top: 35%;
+  right: 8%;
+  transform: rotate(3deg);
+}
+
+.intro-ani {
+  animation: intro-ani 1.5s infinite alternate;
+}
+
+@keyframes intro-ani {
   0% {
-    transform: rotate(0deg);
+    opacity: 0.2;
+    transform: translateY(0);
   }
 
   100% {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(-5px);
   }
 }
 
 .yellow-line {
+  display: none;
   position: absolute;
   bottom: 0;
   background: #f8d10a;
@@ -204,7 +201,7 @@ nav.block::before {
 }
 
 .flow-wrap {
-  animation: textLoop 15s linear infinite;
+  animation: textLoop 10s linear infinite;
   padding-right: 1.4881vw;
 }
 
@@ -531,7 +528,6 @@ nav.block::before {
   /* intro */
   .intro-content-left {
     padding: 0 40px;
-    position: relative;
   }
 
   .img::before {
@@ -547,9 +543,19 @@ nav.block::before {
     height: 550px;
   }
 
-  .makeit {
-    position: relative;
-    z-index: 5;
+  .box-05 {
+    bottom: 7%;
+    left: 7%;
+  }
+
+  .box-06 {
+    bottom: 13%;
+    left: 20%;
+  }
+
+  .box-10 {
+    top: 23%;
+    right: 8%;
   }
 
   /* experience */
@@ -863,27 +869,24 @@ nav.block::before {
     font-size: 12px;
   }
 
-  .box {
-    position: relative;
-    inset: 0 0 0 100%;
-    transform: translate(-100%, 80%);
-    width: 30px;
-    height: 30px;
-    background: #f8d10a;
-    border-radius: 50%;
-    z-index: 1;
+  .scroll-dwon {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    font-size: 40px;
+    opacity: 0.4;
+    animation: scroll-down 2.5s infinite;
   }
 
-  .box::before {
-    content: "";
-    position: absolute;
-    inset: -15px -15px auto auto;
-    width: 60px;
-    height: 60px;
-    background: #f8d10a;
-    border-radius: 50%;
-    opacity: 0.5;
-    animation: scale-up 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  @keyframes scroll-down {
+    0% {
+      transform: translate(-50%, 0);
+    }
+
+    100% {
+      opacity: 0.2;
+      transform: translate(-50%, 20px);
+    }
   }
 
   .experience-content>div>figure>img {

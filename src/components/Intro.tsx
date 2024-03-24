@@ -8,14 +8,16 @@ const Intro = () => {
       <div className="intro">
         <div className="intro-content h-screen flex flex-col items-center justify-center">
           <div className="intro-content-left flex flex-col justify-center items-center max-md:mb-10">
-            <div className="box-wapper mb-10 max-xl:mt-10">
-              <strong className="text-5xl font-thin max-md:text-3xl max-xl:block max-md:text-center text-animate mb-2 mx-4">
+            <div className="box-wapper mb-5 max-xl:mt-10">
+              <div className="box"></div>
+              <strong className="makeit popins text-5xl font-thin max-md:text-4xl max-xl:block max-md:text-center text-animate mb-2 mx-4">
                 Make it More
               </strong>
-              <strong className="text-7xl font-semibold max-md:text-5xl max-xl:block  max-md:text-center text-animate">
+              <strong className="appealing text-7xl font-bold max-md:text-6xl max-xl:block  max-md:text-center text-animate">
                 Appealing,
               </strong>
             </div>
+            <span className="box-02 text-lg mb-32"></span>
             <div className="text-wapper">
               <p className="font-light text-xl max-md:text-base text-center">
                 웹디자이너 경험과 프론트엔드 개발 경험을 바탕으로
@@ -26,62 +28,38 @@ const Intro = () => {
                 만들겠습니다.
               </p>
             </div>
-            <div className="sticker-img">
-              <figure className="box-item box-01 w-1/12 max-md:w-2/12">
-                <img src="/img/ex-01.png" alt="js 글자 이미지" />
+            {/* <div className="sticker-img">
+              <figure className="box-item box-01 w-2/12 max-md:w-2/12">
+                <img src="/img/jsx-img-01.png" alt="js 글자 이미지" />
               </figure>
-              <figure className="box-item box-02 w-2/12 max-md:w-4/12">
-                <img src="/img/ex-02.png" alt="React 글자 이미지" />
-              </figure>
-              <figure className="box-item box-03 intro-ani w-2/12 max-md:w-4/12">
-                <img src="/img/ex-03.png" alt="따봉 이미지" />
-              </figure>
-              <figure className="box-item box-04 intro-ani w-2/12 max-md:w-4/12">
-                <img src="/img/ex-04.png" alt="DO GOOD 글자 이미지" />
-              </figure>
-              <figure className="box-item box-05 w-2/12 max-md:w-4/12">
-                <img src="/img/ex-05.png" alt="CSS 글자 이미지" />
-              </figure>
-              <figure className="box-item box-06 w-2/12 max-md:w-4/12">
-                <img src="/img/ex-06.png" alt="WebSites 글자 이미지" />
-              </figure>
-              <figure className="box-item box-07 w-2/12 max-md:w-4/12">
-                <img src="/img/ex-07.png" alt="HELLO WORLD 글자 이미지" />
-              </figure>
-              <figure className="box-item box-08 w-2/12 max-md:w-4/12">
-                <img src="/img/ex-08.png" alt="JSX 글자 이미지" />
-              </figure>
-              <figure className="box-item box-09 w-2/12 max-md:w-4/12">
-                <img src="/img/ex-09.png" alt="시멘틱 마크업 글자 이미지" />
-              </figure>
-              <figure className="box-item box-10 intro-ani w-2/12 max-md:w-4/12">
-                <img src="/img/ex-10.png" alt="HTML5 글자 이미지" />
-              </figure>
-            </div>
+            </div> */}
           </div>
-          <div className="yellow-line font-medium text-lg p-2">
+          <div className="yellow-line font-light p-2">
             <div className="flow-container">
               <div className="flow-text">
                 <div className="flow-wrap">
-                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                  FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
+                  개발자 사용자 인터페이스/사용자 경험
                 </div>
                 <div className="flow-wrap">
-                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                  FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
+                  개발자 사용자 인터페이스/사용자 경험
                 </div>
                 <div className="flow-wrap">
-                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                  FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
+                  개발자 사용자 인터페이스/사용자 경험
                 </div>
                 <div className="flow-wrap">
-                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                  FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
+                  개발자 사용자 인터페이스/사용자 경험
                 </div>
                 <div className="flow-wrap">
-                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                  FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
+                  개발자 사용자 인터페이스/사용자 경험
                 </div>
                 <div className="flow-wrap">
-                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
-                </div>
-                <div className="flow-wrap">
-                  FrontEnd Publisher Developer UX/UI &#127752;{" "}
+                  FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
+                  개발자 사용자 인터페이스/사용자 경험
                 </div>
               </div>
             </div>
