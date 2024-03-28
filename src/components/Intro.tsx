@@ -19,13 +19,10 @@ const Intro = () => {
             </div>
             <span className="box-02 text-lg mb-32"></span>
             <div className="text-wapper">
-              <p className="font-light text-xl max-md:text-base text-center">
-                웹디자이너 경험과 프론트엔드 개발 경험을 바탕으로
-              </p>
-              <p className="font-light text-xl max-md:text-base text-center">
-                한 번 더 들여다보게 만드는{" "}
-                <b className="font-semibold">매력적인 웹사이트를</b>{" "}
-                만들겠습니다.
+              <p className="font-light text-xl max-md:text-base text-center max-w-screen-sm">
+                웹디자이너 경험과 프론트엔드 개발 경험을 바탕으로{" "}
+                <b className="font-semibold">한 번 더 들여다보게 만드는</b>{" "}
+                매력적인 웹사이트를 만들겠습니다.
               </p>
             </div>
             {/* <div className="sticker-img">

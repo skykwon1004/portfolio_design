@@ -41,11 +41,11 @@ const Experience: React.FC = () => {
                   : "1px solid #f2f2f2",
               }}
             >
-              <div className="flex justify-between max-xl:flex-col">
+              <div className="flex gap-10 max-xl:flex-col">
                 <figure className="max-xl:flex max-xl:items-center max-xl:justify-center max-xl:mb-4 max-xl:hidden">
                   <img src="/img/ai-logo.jpg" alt="에이아이댑스 로고" />
                 </figure>
-                <div>
+                <div className="max-w-80">
                   <span className="block text-xl font-extrabold mb-4">
                     에이아이댑스
                   </span>
@@ -53,14 +53,17 @@ const Experience: React.FC = () => {
                   <span className="block mb-4 max-xl:mb-8">
                     개발팀 - 프론트엔드
                   </span>
-                  <span className="block max-xl:mb-8">
+                  <span className="min-w-80 max-xl:mb-8">
                     에이아이댑스는 분산 클라우드를 기반으로 다양한 서비스 플랫폼
                     사업을 개발하고 있습니다.
                   </span>
                 </div>
-                <ul className="dot mb-1">
+                <ul className="dot mb-1 max-w-96 w-auto">
                   <li>React를 사용한 플랫폼 웹사이트 개발 및 유지보수 </li>
-                  <li>그누보드를 사용한 플랫폼 웹사이트 개발 및 유지보수</li>
+                  <li>
+                    CMS 사이트인 그누보드를 사용한 플랫폼 웹사이트 개발 및
+                    유지보수
+                  </li>
                   <li>반응형 웹 개발 및 크로스 브라우징 개발</li>
                   <li>재사용이 가능한 UI컴포넌트 설계 및 개발</li>
                   <li>
@@ -72,22 +75,22 @@ const Experience: React.FC = () => {
               </div>
             </div>
             <div className="experience-content">
-              <div className="flex justify-between max-xl:flex-col">
+              <div className="flex gap-10 max-xl:flex-col">
                 <figure className="max-xl:flex max-xl:items-center max-xl:justify-center max-xl:mb-4 max-xl:hidden">
                   <img src="/img/top-logo.jpg" alt="탑스타 로고" />
                 </figure>
-                <div>
+                <div className="max-w-80 w-auto">
                   <span className="block text-xl font-extrabold mb-4">
                     탑스타
                   </span>
                   <span className="block">2018.06 ~ 2021.06.</span>
                   <span className="block mb-4">디자인팀 - 웹디자이너</span>
-                  <span className="block max-xl:mb-1.5">
+                  <span className="max-xl:mb-1.5">
                     탑스타는 프리미엄 해외 명품 편집샵 온라인 쇼핑몰 입니다.
                   </span>
                 </div>
-                <ul className="dot mb-1">
-                  <li>퍼블리싱 및 자사 사이트 유지보수</li>
+                <ul className="dot mb-1 max-w-96 w-auto">
+                  <li>카페24를 활용하여 퍼블리싱 및 자사 사이트 유지보수</li>
                   <li>
                     Photoshop을 활용한 상세 페이지, 홍보 페이지, 웹 디자인 작업
                   </li>
