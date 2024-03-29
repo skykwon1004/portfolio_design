@@ -1,6 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { IoIosArrowRoundDown } from "react-icons/io";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Intro = () => {
   return (
@@ -25,11 +25,6 @@ const Intro = () => {
                 매력적인 웹사이트를 만들겠습니다.
               </p>
             </div>
-            {/* <div className="sticker-img">
-              <figure className="box-item box-01 w-2/12 max-md:w-2/12">
-                <img src="/img/jsx-img-01.png" alt="js 글자 이미지" />
-              </figure>
-            </div> */}
           </div>
           <div className="yellow-line font-light p-2">
             <div className="flow-container">
@@ -62,7 +57,7 @@ const Intro = () => {
             </div>
           </div>
           <div className="scroll-dwon">
-            <IoIosArrowRoundDown />
+            <MdKeyboardDoubleArrowDown />
           </div>
         </div>
       </div>

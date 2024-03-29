@@ -12,10 +12,10 @@ const Skill = () => {
       <div className="skill">
         <div className="skill-wapper inner">
           <div>
-            <h2 className="text-5xl font-bold mb-4 max-md:text-3xl max-md:mb-2">
+            <h2 className="text-5xl font-bold mb-4 mb-4 max-md:text-4xl max-md:mb-2">
               Skill
             </h2>
-            <p className="mb-10 text-xl max-md:text-lg max-md:mb-6">
+            <p className="mb-16 text-xl max-md:text-lg max-md:mb-10">
               새로운 기술 스택에 관심을 가지며 꾸준히 공부하고 있습니다.
             </p>
           </div>

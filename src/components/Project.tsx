@@ -41,21 +41,19 @@ const Project = () => {
       <div
         className="project"
         style={{
-          backgroundColor: darkMode
-            ? "rgb(51, 51, 51, 0.5)"
-            : " rgb(249, 249, 249,0.5)",
+          backgroundColor: darkMode ? "rgb(51, 51, 51, 0.5)" : "#f9f9f9",
         }}
       >
         <div className="project-wapper inner">
           <div>
-            <h2 className="text-6xl font-bold mb-4 max-md:text-3xl max-md:mb-2">
+            <h2 className="text-5xl font-bold mb-4 mb-4 max-md:text-4xl max-md:mb-2">
               Project
             </h2>
-            <p className="mb-10 text-xl max-md:text-lg max-md:mb-6">
+            <p className="mb-16 text-xl max-md:text-lg max-md:mb-10">
               주요 프로젝트만 모아 놓았습니다.
             </p>
           </div>
-          <div className="project-content-wapper max-w-full grid grid-cols-2">
+          <div className="project-content-wapper max-w-full grid grid-cols-2 gap-[30px]">
             {projectData.map(
               (
                 item,
@@ -67,14 +65,7 @@ const Project = () => {
                   data-aos="fade-up"
                   data-aos-duration="1400"
                 >
-                  <figure
-                    className="project-img-box"
-                    style={{
-                      backgroundColor: darkMode
-                        ? "#32343a"
-                        : " rgb(249, 249, 249,0.5)",
-                    }}
-                  >
+                  <figure className="project-img-box">
                     <img src={item.image} alt={item.title} className="" />
                   </figure>
                   <div

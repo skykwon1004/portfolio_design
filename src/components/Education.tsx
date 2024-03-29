@@ -22,10 +22,10 @@ const Education = () => {
       >
         <div className="education-wapper inner">
           <div>
-            <h2 className="text-5xl font-bold mb-4 max-md:text-3xl max-md:mb-2">
+            <h2 className="text-5xl font-bold mb-4 mb-4 max-md:text-4xl max-md:mb-2">
               Education
             </h2>
-            <p className="mb-10 text-xl max-md:text-lg max-md:mb-6">
+            <p className="mb-16 text-xl max-md:text-lg max-md:mb-10">
               개발자 양성과정을 수료했습니다.
             </p>
           </div>

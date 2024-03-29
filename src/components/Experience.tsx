@@ -16,22 +16,17 @@ const Experience: React.FC = () => {
       <div className="experience">
         <div className="experience-wapper inner">
           <div>
-            <h2 className="text-6xl font-bold mb-4 max-md:text-3xl max-md:mb-2">
+            <h2 className="text-5xl font-bold mb-4 mb-4 max-md:text-4xl max-md:mb-2">
               Experience
             </h2>
-            <p className="mb-10 text-xl max-md:text-lg max-md:mb-6">
+            <p className="mb-16 text-xl max-md:text-lg max-md:mb-10">
               다양한 업무 경험을 바탕으로 서비스를 개발하였습니다.
             </p>
           </div>
           <div
-            className="experience-content-wapper flex flex-col rounded-3xl p-24"
+            className="experience-content-wapper flex flex-col"
             data-aos="fade-up"
             data-aos-duration="1400"
-            style={{
-              backgroundColor: darkMode
-                ? "rgb(51, 51, 51, 0.5)"
-                : " rgb(249, 249, 249,0.5)",
-            }}
           >
             <div
               className="experience-content"
@@ -39,11 +34,24 @@ const Experience: React.FC = () => {
                 borderBottom: darkMode
                   ? "1px solid rgb(64 64 64)"
                   : "1px solid #f2f2f2",
+                borderTop: darkMode
+                  ? "1px solid rgb(64 64 64)"
+                  : "1px solid #f2f2f2",
               }}
             >
-              <div className="flex gap-10 max-xl:flex-col">
+              <div className="flex justify-between max-xl:flex-col">
                 <figure className="max-xl:flex max-xl:items-center max-xl:justify-center max-xl:mb-4 max-xl:hidden">
-                  <img src="/img/ai-logo.jpg" alt="에이아이댑스 로고" />
+                  <img
+                    src="/img/ai-logo.jpg"
+                    alt="에이아이댑스 로고"
+                    style={{
+                      boxShadow: darkMode
+                        ? "10px 10px #333"
+                        : "10px 10px #f5f5f5",
+                      border: darkMode ? "1px solid #333" : "1px solid #f5f5f5",
+                    }}
+                    className="rounded-[10px] w-10/12"
+                  />
                 </figure>
                 <div className="max-w-80">
                   <span className="block text-xl font-extrabold mb-4">
@@ -74,10 +82,27 @@ const Experience: React.FC = () => {
                 </ul>
               </div>
             </div>
-            <div className="experience-content">
-              <div className="flex gap-10 max-xl:flex-col">
+            <div
+              className="experience-content"
+              style={{
+                borderBottom: darkMode
+                  ? "1px solid rgb(64 64 64)"
+                  : "1px solid #f2f2f2",
+              }}
+            >
+              <div className="flex justify-between max-xl:flex-col">
                 <figure className="max-xl:flex max-xl:items-center max-xl:justify-center max-xl:mb-4 max-xl:hidden">
-                  <img src="/img/top-logo.jpg" alt="탑스타 로고" />
+                  <img
+                    src="/img/top-logo.jpg"
+                    alt="탑스타 로고"
+                    style={{
+                      boxShadow: darkMode
+                        ? "10px 10px #333"
+                        : "10px 10px #f5f5f5",
+                      border: darkMode ? "1px solid #333" : "1px solid #f5f5f5",
+                    }}
+                    className="rounded-[10px] w-10/12"
+                  />
                 </figure>
                 <div className="max-w-80 w-auto">
                   <span className="block text-xl font-extrabold mb-4">

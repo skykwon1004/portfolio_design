@@ -49,13 +49,13 @@ const Modal: React.FC<ModalProps> = ({
           className="modal-content-wapper max-md:max-w-full py-[10%] px-[10%] max-xl:px-[5%]"
           onClick={(e) => e.stopPropagation()}
           style={{
-            backgroundColor: darkMode ? "rgba(51, 51, 51)" : "",
+            backgroundColor: darkMode ? "#333" : "",
           }}
         >
           <div
             className="modal-bnt"
             style={{
-              backgroundColor: darkMode ? "rgba(51, 51, 51)" : "",
+              backgroundColor: darkMode ? "#333" : "",
               borderBottom: darkMode
                 ? "1px solid rgb(64, 64, 64) "
                 : "1px solid rgb(158, 158, 158)",
