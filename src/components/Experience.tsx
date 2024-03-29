@@ -61,7 +61,7 @@ const Experience: React.FC = () => {
                   <span className="block mb-4 max-xl:mb-8">
                     개발팀 - 프론트엔드
                   </span>
-                  <span className="min-w-80 max-xl:mb-8">
+                  <span className="min-w-80 max-xl:min-w-full max-xl:block max-xl:mb-6">
                     에이아이댑스는 분산 클라우드를 기반으로 다양한 서비스 플랫폼
                     사업을 개발하고 있습니다.
                   </span>
@@ -110,7 +110,7 @@ const Experience: React.FC = () => {
                   </span>
                   <span className="block">2018.06 ~ 2021.06.</span>
                   <span className="block mb-4">디자인팀 - 웹디자이너</span>
-                  <span className="max-xl:mb-1.5">
+                  <span className="min-w-80 max-xl:min-w-full max-xl:block max-xl:mb-6">
                     탑스타는 프리미엄 해외 명품 편집샵 온라인 쇼핑몰 입니다.
                   </span>
                 </div>
