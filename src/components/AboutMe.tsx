@@ -18,7 +18,7 @@ const AboutMe = () => {
             data-aos="fade-up"
             data-aos-duration="1400"
             style={{
-              backgroundColor: darkMode ? "rgb(51, 51, 51, 0.5)" : "#f9f9f9",
+              backgroundColor: darkMode ? "rgb(51, 51, 51)" : "#f9f9f9",
             }}
           >
             <figure className="me flex-1 max-xl:w-5/12 max-md:w-9/12 max-xl:pt-12 max-md:pt-10">

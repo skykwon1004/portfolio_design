@@ -36,7 +36,7 @@ html {
 }
 
 /* 테블릿 모바일 햄버거 버튼 */
-nav.block > ul {
+nav.block>ul {
   padding: 100px 50px 50px;
   position: fixed;
   right: 0;
@@ -63,13 +63,13 @@ nav.block::before {
   font-weight: 500;
 }
 
-.dot > li {
+.dot>li {
   display: block;
   position: relative;
   padding: 0 0 0 12px;
 }
 
-.dot > li::before {
+.dot>li::before {
   content: "";
   position: absolute;
   top: 12px;
@@ -380,7 +380,7 @@ button.burger.burger2.dark span:before {
   border-radius: 30px 30px 0 0;
 }
 
-.project-img-box > img {
+.project-img-box>img {
   width: 100%;
   height: 274px;
   border-radius: 30px 30px 0 0;
@@ -531,21 +531,21 @@ button.burger.burger2.dark span:before {
 }
 
 /* skill */
-.skill-list > .skill-front > .skill-list-item > span > img {
+.skill-list>.skill-front>.skill-list-item>span>img {
   width: 20px;
   height: 20px;
 }
 
-.skill-list > .skill-front > span > img {
+.skill-list>.skill-front>span>img {
   width: 20px;
   height: 20px;
 }
 
-.skill-list > .skill-front > .skill-list-item > span {
+.skill-list>.skill-front>.skill-list-item>span {
   font-size: 18px;
 }
 
-.skill-list > .skill-front > span {
+.skill-list>.skill-front>span {
   font-size: 18px;
 }
 
@@ -554,13 +554,13 @@ button.burger.burger2.dark span:before {
   background: rgb(249, 249, 249, 0.5);
 }
 
-.education-content-left > img {
+.education-content-left>img {
   height: 500px;
   overflow: hidden;
   object-fit: cover;
 }
 
-.education-content-right > ul:nth-child(1) {
+.education-content-right>ul:nth-child(1) {
   padding: 0 0 40px 0;
 }
 
@@ -592,7 +592,7 @@ button.burger.burger2.dark span:before {
   border-radius: 50%;
 }
 
-.contact-icon > svg {
+.contact-icon>svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -617,7 +617,7 @@ button.burger.burger2.dark span:before {
   right: 20px;
 }
 
-.scroll-top > button {
+.scroll-top>button {
   width: 68px;
   height: 68px;
   display: flex;
@@ -631,6 +631,7 @@ button.burger.burger2.dark span:before {
 
 /* ----- 반응형 ----- */
 @media not all and (min-width: 1280px) {
+
   /* intro */
   .intro-content-left {
     border: none;
@@ -677,7 +678,7 @@ button.burger.burger2.dark span:before {
     border-radius: 20px 20px 0 0;
   }
 
-  .project-img-box > img {
+  .project-img-box>img {
     width: 100%;
     height: auto;
     border-radius: 20px 20px 0 0;
@@ -847,7 +848,7 @@ button.burger.burger2.dark span:before {
   }
 
   /* education */
-  .education-content-right > ul:nth-child(1) {
+  .education-content-right>ul:nth-child(1) {
     border-bottom: 1px solid #ddd;
     padding: 0 0 20px 0;
   }
@@ -870,7 +871,7 @@ button.burger.burger2.dark span:before {
     border-radius: 50%;
   }
 
-  .contact-icon > svg {
+  .contact-icon>svg {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -883,7 +884,7 @@ button.burger.burger2.dark span:before {
     right: 10px;
   }
 
-  .scroll-top > button {
+  .scroll-top>button {
     width: 50px;
     height: 50px;
     display: flex;
@@ -910,7 +911,7 @@ button.burger.burger2.dark span:before {
     gap: 8px;
   }
 
-  .item > span {
+  .item>span {
     display: block;
     border-radius: 60px;
     display: flex;
@@ -976,16 +977,16 @@ button.burger.burger2.dark span:before {
   }
 
   /* skill */
-  .skill-list > .skill-front > .skill-list-item > span {
+  .skill-list>.skill-front>.skill-list-item>span {
     font-size: 16px;
   }
 
-  .skill-list > .skill-front > span {
+  .skill-list>.skill-front>span {
     font-size: 16px;
   }
 
   /* education */
-  .education-content-left > img {
+  .education-content-left>img {
     height: 250px;
     margin: 0 auto;
   }

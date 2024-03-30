@@ -1,13 +1,25 @@
 import React from "react";
 import { Element } from "react-scroll";
+import useDarkModeStore from "../zustand/useDarkModeStore";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Intro = () => {
+  const { darkMode } = useDarkModeStore();
   return (
     <Element name="intro">
       <div className="intro">
         <div className="intro-content h-screen flex flex-col items-center justify-center">
-          <div className="intro-content-left flex flex-col justify-center items-center max-md:mb-10">
+          <div
+            className="intro-content-left flex flex-col justify-center items-center max-md:mb-10"
+            style={{
+              borderLeft: darkMode
+                ? "1px solid rgba(64,64,64)"
+                : "1px solid #ddd",
+              borderRight: darkMode
+                ? "1px solid rgba(64,64,64)"
+                : "1px solid #ddd",
+            }}
+          >
             <div className="box-wapper mb-5 max-xl:mt-10">
               <div className="box"></div>
               <strong className="makeit popins text-5xl font-thin max-md:text-4xl max-xl:block max-md:text-center text-animate mb-2 mx-4">
