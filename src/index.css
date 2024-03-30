@@ -184,8 +184,6 @@ button.burger.burger2.dark span:before {
 }
 
 .intro-content-left {
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
   margin: 0 auto;
   width: 85%;
   height: 100vh;
@@ -634,9 +632,8 @@ button.burger.burger2.dark span:before {
 
   /* intro */
   .intro-content-left {
-    border: none;
+    border: none !important;
     padding: 0 40px;
-    position: relative;
   }
 
   .img::before {
