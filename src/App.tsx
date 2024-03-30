@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
@@ -25,6 +26,7 @@ const App: React.FC = () => {
       <Header />
       <main>
         <Intro />
+        <AboutMe />
         <Experience />
         <Project />
         <Skill />

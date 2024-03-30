@@ -54,6 +54,19 @@ const Header: React.FC = () => {
             <li>
               <Link
                 activeClass="active"
+                to="aboutme"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={closeMenu}
+              >
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
                 to="experience"
                 spy={true}
                 smooth={true}

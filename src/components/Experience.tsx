@@ -16,7 +16,7 @@ const Experience: React.FC = () => {
       <div className="experience">
         <div className="experience-wapper inner">
           <div>
-            <h2 className="text-5xl font-bold mb-4 mb-4 max-md:text-4xl max-md:mb-2">
+            <h2 className="text-5xl font-bold mb-4 max-md:text-4xl max-md:mb-2">
               Experience
             </h2>
             <p className="mb-16 text-xl max-md:text-lg max-md:mb-10">
@@ -50,7 +50,7 @@ const Experience: React.FC = () => {
                         : "10px 10px #f5f5f5",
                       border: darkMode ? "1px solid #333" : "1px solid #f5f5f5",
                     }}
-                    className="rounded-[10px] w-10/12"
+                    className="rounded-[10px] w-9/12"
                   />
                 </figure>
                 <div className="max-w-80">
@@ -101,7 +101,7 @@ const Experience: React.FC = () => {
                         : "10px 10px #f5f5f5",
                       border: darkMode ? "1px solid #333" : "1px solid #f5f5f5",
                     }}
-                    className="rounded-[10px] w-10/12"
+                    className="rounded-[10px] w-9/12"
                   />
                 </figure>
                 <div className="max-w-80 w-auto">

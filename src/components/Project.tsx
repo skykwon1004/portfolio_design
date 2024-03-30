@@ -46,7 +46,7 @@ const Project = () => {
       >
         <div className="project-wapper inner">
           <div>
-            <h2 className="text-5xl font-bold mb-4 mb-4 max-md:text-4xl max-md:mb-2">
+            <h2 className="text-5xl font-bold mb-4 max-md:text-4xl max-md:mb-2">
               Project
             </h2>
             <p className="mb-16 text-xl max-md:text-lg max-md:mb-10">
