@@ -109,7 +109,9 @@ const Experience: React.FC = () => {
                     탑스타
                   </span>
                   <span className="block">2018.06 ~ 2021.06.</span>
-                  <span className="block mb-4">디자인팀 - 웹디자이너</span>
+                  <span className="block mb-4 max-xl:mb-8">
+                    디자인팀 - 웹디자이너
+                  </span>
                   <span className="min-w-80 max-xl:min-w-full max-xl:block max-xl:mb-6">
                     탑스타는 프리미엄 해외 명품 편집샵 온라인 쇼핑몰 입니다.
                   </span>
