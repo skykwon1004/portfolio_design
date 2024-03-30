@@ -22,7 +22,7 @@ const Intro = () => {
           >
             <div className="box-wapper mb-5 max-xl:mt-10">
               <div className="box"></div>
-              <strong className="makeit popins text-5xl font-thin max-md:text-4xl max-xl:block max-md:text-center text-animate mb-2 mx-4">
+              <strong className="makeit poppins text-5xl font-thin max-md:text-4xl max-xl:block max-md:text-center text-animate mb-2 mx-4">
                 Make it More
               </strong>
               <strong className="appealing text-7xl font-bold max-md:text-6xl max-xl:block  max-md:text-center text-animate">
