@@ -11,14 +11,14 @@ const Intro = () => {
         <div className="intro-content h-screen flex flex-col items-center justify-center">
           <div
             className="intro-content-left flex flex-col justify-center items-center max-md:mb-10"
-            style={{
-              borderLeft: darkMode
-                ? "1px solid rgba(64,64,64)"
-                : "1px solid #ddd",
-              borderRight: darkMode
-                ? "1px solid rgba(64,64,64)"
-                : "1px solid #ddd",
-            }}
+            // style={{
+            //   borderLeft: darkMode
+            //     ? "1px solid rgba(64,64,64)"
+            //     : "1px solid #ddd",
+            //   borderRight: darkMode
+            //     ? "1px solid rgba(64,64,64)"
+            //     : "1px solid #ddd",
+            // }}
           >
             <div className="box-wapper mb-5 max-xl:mt-10">
               <div className="box"></div>
