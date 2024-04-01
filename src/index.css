@@ -40,6 +40,7 @@ html {
   outline: 1px solid rgb(31, 31, 31);
 }
 
+/* header */
 /* 테블릿 모바일 햄버거 버튼 */
 nav.block>ul {
   padding: 100px 50px 50px;
@@ -59,6 +60,27 @@ nav.block::before {
   top: 0;
   left: 0;
   z-index: -999;
+}
+
+.header-nav>ul>li>a {
+  position: relative;
+}
+
+.header-nav>ul>li>a::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  z-index: -1;
+  transition: background-color 0.5s;
+}
+
+.header-nav>ul>li>a:hover::before {
+  background-color: rgba(248, 209, 10, 0.5);
 }
 
 .point-text {
@@ -179,6 +201,16 @@ button.burger.burger2.dark span {
 
 button.burger.burger2.dark span:before {
   background: rgb(232 235 237);
+}
+
+h2::after {
+  content: "";
+  display: inline-block;
+  background: linear-gradient(to bottom left, #fcec9a, #f8d10a);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 0 0 0 10px;
 }
 
 /* intro */
@@ -634,6 +666,10 @@ button.burger.burger2.dark span:before {
 
 /* ----- 반응형 ----- */
 @media not all and (min-width: 1280px) {
+  h2::after {
+    width: 10px;
+    height: 10px;
+  }
 
   /* intro */
   .intro-content-left {

@@ -72,13 +72,14 @@ const Experience: React.FC = () => {
                     CMS 사이트인 그누보드를 사용한 플랫폼 웹사이트 개발 및
                     유지보수
                   </li>
-                  <li>반응형 웹 개발 및 크로스 브라우징 개발</li>
+                  <li>반응형 웹 개발 및 크로스 브라우징 호환성 테스트</li>
                   <li>재사용이 가능한 UI컴포넌트 설계 및 개발</li>
                   <li>
                     사이트의 SEO를 향상시키기 위해 오픈 그래프 메타데이터를 설정
                   </li>
                   <li>Netlify를 사용하여 정적 웹 페이지 배포 작업</li>
                   <li>Github을 기반으로 하는 소스 코드 및 버전 관리</li>
+                  <li>Notion을 통한 개발 문서 관리</li>
                 </ul>
               </div>
             </div>
@@ -117,10 +118,12 @@ const Experience: React.FC = () => {
                   </span>
                 </div>
                 <ul className="dot mb-1 max-w-96 w-auto">
-                  <li>카페24를 활용하여 퍼블리싱 및 자사 사이트 유지보수</li>
+                  <li>카페24를 사용한 퍼블리싱 및 자사 사이트 유지보수</li>
+                  <li>쇼핑몰 리뉴얼 기획 및 퍼블리싱</li>
                   <li>
                     Photoshop을 활용한 상세 페이지, 홍보 페이지, 웹 디자인 작업
                   </li>
+                  <li>상품 등록 작업</li>
                   <li>각종 페이지 UI/UX 디자인 개선</li>
                 </ul>
               </div>

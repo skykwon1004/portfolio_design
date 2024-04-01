@@ -31,7 +31,9 @@ const Header: React.FC = () => {
       <h1 className="font-black text-2xl z-10">EunJin.</h1>
       <div className="flex gap-6 max-xl:gap-3 max-xl:items-center">
         <nav
-          className={`${isMenuOpen ? "block" : "hidden"} xl:flex font-medium`}
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } header-nav xl:flex font-medium`}
         >
           <ul
             className={`flex gap-6 cursor-pointer max-xl:flex-col max-xl:text-right ${
