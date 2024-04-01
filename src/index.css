@@ -982,9 +982,10 @@ button.burger.burger2.dark span:before {
 
   /* About Me */
   .aboutme-wapper::before {
-    bottom: 10px;
-    right: -10px;
-    font-size: 42px;
+    bottom: -40px;
+    left: 40px;
+    font-size: 80px;
+    line-height: 1;
   }
 
   .me::after {
