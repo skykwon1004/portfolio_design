@@ -34,7 +34,7 @@ const Intro = () => {
               <p className="font-light text-xl max-md:text-base text-center max-w-screen-sm">
                 웹디자이너 경험과 프론트엔드 개발 경험을 바탕으로{" "}
                 <b className="font-semibold">한 번 더 들여다보게 만드는</b>{" "}
-                매력적인 웹사이트를 만들겠습니다.
+                매력적인 서비스를 만들겠습니다.
               </p>
             </div>
           </div>
