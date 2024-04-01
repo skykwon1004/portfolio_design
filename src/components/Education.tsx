@@ -15,9 +15,7 @@ const Education = () => {
       <div
         className="education"
         style={{
-          backgroundColor: darkMode
-            ? "rgb(51, 51, 51, 0.5)"
-            : " rgb(249, 249, 249,0.5)",
+          backgroundColor: darkMode ? "rgb(51, 51, 51, 0.5)" : "#f9f9f9",
         }}
       >
         <div className="education-wapper inner">
