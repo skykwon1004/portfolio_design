@@ -50,10 +50,10 @@ const Project = () => {
               Project
             </h2>
             <p className="mb-16 text-xl max-md:text-lg max-md:mb-10">
-              주요 프로젝트 산출물 입니다.
+              주요 프로젝트만 모아 놓았습니다.
             </p>
           </div>
-          <div className="project-content-wapper max-w-full grid grid-cols-3 gap-[30px]">
+          <div className="project-content-wapper max-w-full grid grid-cols-2 gap-[30px]">
             {projectData.map(
               (
                 item,
@@ -82,7 +82,7 @@ const Project = () => {
                       <strong className="text-4xl font-bold block mb-4 max-md:text-2xl">
                         {item.title}
                       </strong>
-                      <p className="mb-8 min-h-[74px]">{item.description}</p>
+                      <p className="mb-8 min-h-12">{item.description}</p>
                       <ul className="flex gap-2 text-gray-500 font-medium mb-2 max-md:grid max-md:grid-cols-2">
                         {item.contribution.map(
                           (contribution, contributionIndex) => (
@@ -99,22 +99,20 @@ const Project = () => {
                           )
                         )}
                       </ul>
-                      <div className="min-h-[98px]">
-                        <ul className="flex gap-2 text-gray-500 font-medium mb-8 max-md:grid max-md:grid-cols-2 flex-wrap">
-                          {item.technologies.map((tech, techIndex) => (
-                            <li
-                              key={techIndex}
-                              className="bg-gray-100 px-2 py-0.5 rounded"
-                              style={{
-                                backgroundColor: darkMode ? "#1f1f1f" : "",
-                                color: darkMode ? "rgb(209 213 219)" : "",
-                              }}
-                            >
-                              {tech}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                      <ul className="flex gap-2 text-gray-500 font-medium mb-8 max-md:grid max-md:grid-cols-2">
+                        {item.technologies.map((tech, techIndex) => (
+                          <li
+                            key={techIndex}
+                            className="bg-gray-100 px-2 py-0.5 rounded"
+                            style={{
+                              backgroundColor: darkMode ? "#1f1f1f" : "",
+                              color: darkMode ? "rgb(209 213 219)" : "",
+                            }}
+                          >
+                            {tech}
+                          </li>
+                        ))}
+                      </ul>
                       <div className="project-btn-wapper flex gap-2.5">
                         <div
                           className="btn-link inline-block"

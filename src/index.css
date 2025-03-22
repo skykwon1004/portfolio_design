@@ -398,8 +398,12 @@ button.burger.burger2.dark span:before {
 }
 
 /* Experience */
-.experience-content:nth-child(1),
+/* .experience-content:nth-child(1),
 .experience-content:nth-child(2) {
+  padding: 60px 0;
+} */
+
+.experience-content {
   padding: 60px 0;
 }
 

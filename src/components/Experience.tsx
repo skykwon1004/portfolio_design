@@ -28,6 +28,56 @@ const Experience: React.FC = () => {
             data-aos="fade-up"
             data-aos-duration="1400"
           >
+              <div
+              className="experience-content"
+              style={{
+                // borderBottom: darkMode
+                //   ? "1px solid rgb(64 64 64)"
+                //   : "1px solid #f2f2f2",
+                borderTop: darkMode
+                  ? "1px solid rgb(64 64 64)"
+                  : "1px solid #f2f2f2",
+              }}
+            >
+              <div className="flex justify-between max-xl:flex-col">
+                <figure className="max-xl:flex max-xl:items-center max-xl:justify-center max-xl:mb-4 max-xl:hidden">
+                  <img
+                    src="/img/lm-logo.jpg"
+                    alt="리더마인 로고"
+                    style={{
+                      boxShadow: darkMode
+                        ? "10px 10px #333"
+                        : "10px 10px #f5f5f5",
+                      border: darkMode ? "1px solid #333" : "1px solid #f5f5f5",
+                    }}
+                    className="rounded-[10px] w-9/12"
+                  />
+                </figure>
+                <div className="max-w-80">
+                  <span className="block text-xl font-extrabold mb-4">
+                    리더마인
+                  </span>
+                  <span className="block">2024.04. ~ 2025.03.</span>
+                  <span className="block mb-4 max-xl:mb-8">
+                    개발팀 - 프론트엔드, 퍼블리셔
+                  </span>
+                  <span className="min-w-80 max-xl:min-w-full max-xl:block max-xl:mb-6">
+                    리더마인은 카페24, 샵바이 등 SaaS형 커머스 솔루션을 기반으로 쇼핑몰 구축 및 운영을 지원하는 에이전시입니다. 또한, API 연동과 미들웨어 구축을 통해 백오피스(BO) 서비스까지 통합 제공하고 있습니다.
+                  </span>
+                </div>
+                <ul className="dot mb-1 max-w-96 w-auto">
+                  <li>카페24를 사용한 퍼블리싱 및 고객사 사이트 유지보수</li>
+                  <li>반응형 웹 개발 및 크로스 브라우징 호환성 테스트</li>
+                  <li>재사용이 가능한 UI컴포넌트 설계 및 개발</li>
+                  <li>
+                    사이트의 SEO를 향상시키기 위해 오픈 그래프 메타데이터를 설정
+                  </li>
+                  <li>Netlify를 사용하여 정적 웹 페이지 배포 작업</li>
+                  <li>Github을 기반으로 하는 소스 코드 및 버전 관리</li>
+                  <li>Notion을 통한 개발 문서 관리</li>
+                </ul>
+              </div>
+            </div>
             <div
               className="experience-content"
               style={{
