@@ -66,13 +66,9 @@ const Experience: React.FC = () => {
                   </span>
                 </div>
                 <ul className="dot mb-1 max-w-96 w-auto">
-                  <li>카페24를 사용한 퍼블리싱 및 고객사 사이트 유지보수</li>
-                  <li>반응형 웹 개발 및 크로스 브라우징 호환성 테스트</li>
-                  <li>재사용이 가능한 UI컴포넌트 설계 및 개발</li>
-                  <li>
-                    사이트의 SEO를 향상시키기 위해 오픈 그래프 메타데이터를 설정
-                  </li>
-                  <li>Netlify를 사용하여 정적 웹 페이지 배포 작업</li>
+                  <li>카페24를 사용한 쇼핑몰 구축 및 유지보수</li>
+                  <li>샵바이 API를 이용한 쇼핑몰 구축 및 유지보수</li>
+                  <li>API 연동과 미들웨어 구축을 통해 백오피스(BO) 서비스</li>
                   <li>Github을 기반으로 하는 소스 코드 및 버전 관리</li>
                   <li>Notion을 통한 개발 문서 관리</li>
                 </ul>

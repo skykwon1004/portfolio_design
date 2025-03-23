@@ -32,13 +32,13 @@ const Skill = () => {
                   React
                 </span>
                 <span className="block flex gap-3 items-center mb-2">
-                  <img src="/img/skill-logo-02.png" alt="Redux 로고" />
-                  Redux
+                  <img src="/img/skill-logo-17.png" alt="Recoil 로고" />
+                  Recoil
                 </span>
-                <span className="block flex gap-3 items-center mb-2">
+                {/* <span className="block flex gap-3 items-center mb-2">
                   <img src="/img/skill-logo-03.png" alt="TypeScript 로고" />
                   TypeScript
-                </span>
+                </span> */}
                 <span className="block flex gap-3 items-center mb-2">
                   <img src="/img/skill-logo-04.png" alt="JavaScript 로고" />
                   JavaScript
@@ -102,12 +102,12 @@ const Skill = () => {
                 GitHub
               </span>
               <span className="block flex gap-3 items-center mb-2">
-                <img src="/img/skill-logo-15.png" alt="Notion 로고" />
-                Notion
-              </span>
-              <span className="block flex gap-3 items-center mb-2">
                 <img src="/img/skill-logo-16.png" alt="Swagger 로고" />
                 Swagger
+              </span>
+              <span className="block flex gap-3 items-center mb-2">
+                <img src="/img/skill-logo-15.png" alt="Notion 로고" />
+                Notion
               </span>
             </div>
           </div>

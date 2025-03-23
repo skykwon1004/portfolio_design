@@ -2,6 +2,7 @@ interface ModalContent {
   title: string;
   date: string;
   team: string;
+  contribution: string;
   description: string;
   link: string;
   features: string[];
@@ -13,6 +14,7 @@ interface ModalContent {
 }
 
 interface Project {
+  company: string;
   title: string;
   description: string;
   link: string;
@@ -24,19 +26,22 @@ interface Project {
 }
 
 const projectData: Project[] = [
+  // 닥포
   {
+    company:"(주)리더마인",
     title: "닥터포헤어",
     description:
-      "빅데이터를 분석하여 최적의 수익 실현 타이밍에 매매를 도와주는 인공지능 서비스 웹사이트 입니다.",
+      "닥터포헤어 쇼핑몰은 카페24 솔루션을 기반으로 구축되었으며, 백오피스를 통해 다양한 부가 서비스를 제공합니다.",
     link: "https://drforhair2024.cafe24.com/skin-skin2",
     image: "/img/drfor_01.jpg",
     gifImage: "/img/aat_01_g.gif",
     technologies: ["팀", "카페24"," Html", "SCSS", "Javascript"],
     contribution: ["프론트엔드", "퍼블리싱"],
     modalContent: {
-      title: "샹프리",
+      title: "닥터포헤어",
       date: "작업기간 : 2024.6. ~ 2024.7",
-      team: "팀 구성 : 프론트엔드 1명, 디자이너 1명, 기획자 1명",
+      team: "팀 구성 : 프론트엔드 2명, 디자이너 2명, 기획자 1명",
+      contribution:"기여도 : 50%",
       description:
         "백엔드와의 협업을 경험하면서 ESLint, Prettier, Git 등을 활용하여 프론트엔드와 백엔드 간의 코드 품질을 유지하고 협업 시 발생할 수 있는 문제에 대비하는 경험을 할 수 있었습니다. TypeScript를 사용하여 더욱 견고한 코드베이스를 구축하고, 타입 시스템을 통해 버그를 사전에 방지하고자 노력했습니다. 또한 프로젝트의 복잡한 구조로 인해 Redux Toolkit 라이브러리를 도입하여 상태 관리를 보다 효율적으로 처리했습니다.",
       link: "https://drforhair2024.cafe24.com/skin-skin2",
@@ -80,64 +85,51 @@ const projectData: Project[] = [
       ],
     },
   },
+  // 농심티비
   {
+    company:"(주)리더마인",
     title: "농심TV(농심몰)",
     description:
       "빅데이터를 분석하여 최적의 수익 실현 타이밍에 매매를 도와주는 인공지능 서비스 웹사이트 입니다.",
     link: "https://m.nongshimmall.com/nongshimTV",
     image: "/img/tv_01.jpg",
     gifImage: "/img/aat_01_g.gif",
-    technologies: ["팀", "카페24"," Html", "SCSS", "Javascript"],
+    technologies: ["팀", "카페24"," Html", "CSS", "Javascript"],
     contribution: ["프론트엔드", "퍼블리싱"],
     modalContent: {
       title: "농심TV(농심몰)",
       date: "작업기간 : 2024.6. ~ 2024.7",
       team: "팀 구성 : 프론트엔드 3명, 디자이너 1명, 기획자 1명",
+      contribution:"기여도 : 50%",
       description:
-        "백엔드와의 협업을 경험하면서 ESLint, Prettier, Git 등을 활용하여 프론트엔드와 백엔드 간의 코드 품질을 유지하고 협업 시 발생할 수 있는 문제에 대비하는 경험을 할 수 있었습니다. TypeScript를 사용하여 더욱 견고한 코드베이스를 구축하고, 타입 시스템을 통해 버그를 사전에 방지하고자 노력했습니다. 또한 프로젝트의 복잡한 구조로 인해 Redux Toolkit 라이브러리를 도입하여 상태 관리를 보다 효율적으로 처리했습니다.",
+        "농심TV 백오피스 데이터를 연동하여, 자사몰에 유튜브 형태의 동영상 콘텐츠 페이지를 구현했습니다. 숏츠 및 일반 영상 지원, 댓글/좋아요 기능, 정렬 필터 등 다양한 사용자 인터랙션을 개발하였습니다.",
       link: "https://m.nongshimmall.com/nongshimTV",
       github: "",
       features: [
-        "JWT 토큰을 이용해서 로그인 인증 구현",
-        "로그인 여부에 따른 리다이렉트 구현",
-        "회원가입/로그인시 유효성 검사 기능 구현",
-        "Axios를 사용하여 API 요청에 대한 응답 처리",
-        "데이터 시각화를 위한 대시보드, 차트 기능 구현",
-        "게시판 리스트 및 검색 기능 구현",
-        "페이지네이션 구현",
-        "Redux-toolkit을 활용한 전역 상태관리" /*  */,
-        "SCSS를 사용하여 스타일을 적용",
-        "반응형 웹 개발 및 크로스 브라우징 개발",
+        "유투브, 비메오 영상타입에 따른 컨트롤 구현",
+        "댓글 쓰기 기능 구현",
+        "좋아요 기능 구현 및 비회원시 로그인 화면으로 리다이렉트 구현",
+        "추천 상품 기능 구현",
+        "공유 기능 구현",
+        "카테고리 구조 구현",
+        "정렬기능 구현"
       ],
       skill: ["Html", "SCSS", "JavaScript"],
       screen: [
-        "로그인",
-        "입금신청 대시보드",
-        "그래프 대시보드",
-        "트리구조 대시보드",
-        "게시판",
-        "반응형",
+        "",
       ],
       image: [
-        "/img/aat_01_g.gif",
-        "/img/aat_02_g.gif",
-        "/img/aat_03.jpg",
-        "/img/aat_07.jpg",
-        "/img/aat_05.jpg",
-        "/img/aat_13.jpg",
+        // "/img/aat_01_g.gif",
       ],
       screenText: [
-        "<react-hook-form> 라이브러리를 사용하여 <유효성 검사>를 하였고, <로그인 여부에 따라 자동으로 리다이렉트>되도록 구현했습니다.",
-        "현재 자산의 입금범위에 따른 등급 변화를 <그래프로 시각화>하여 미리 보여주는 UI/UX를 구현했습니다.",
-        "원형 그래프를 구현하기 위해 <RadialChart> 라이브러리를 활용하였고, 현재 회원 등급과 다음 등급까지 필요한 남은 USDT를 보여주는 <대시보드를 구현>했습니다.",
-        "<react-d3-tree> 라이브러리를 활용하여 추천 등록 내역을 한 번에 보기 위한 <트리 구조를 구현>했습니다.",
-        "게시판에서 사용자가 원하는 <데이터를 검색>할 수 있도록 구현하고, 검색 결과를 페이지별로 나누어 표시할 수 있는 <페이지네이션을 구현>했습니다.",
-        "<반응형 웹 개발>과 <크로스 브라우징>으로 개발하였습니다.",
+        // "<react-hook-form> 라이브러리를 사용하여 <유효성 검사>를 하였고, <로그인 여부에 따라 자동으로 리다이렉트>되도록 구현했습니다.",
       ],
     },
   },
+  // 진로토닉몰
   {
-    title: "진로토닉몰",
+    company:"(주)리더마인",
+    title: "하이트 진로토닉몰",
     description:
       "빅데이터를 분석하여 최적의 수익 실현 타이밍에 매매를 도와주는 인공지능 서비스 웹사이트 입니다.",
     link: "https://www.jinrotonic.com",
@@ -149,6 +141,7 @@ const projectData: Project[] = [
       title: "농심TV(농심몰)",
       date: "작업기간 : 2024.6. ~ 2024.7",
       team: "팀 구성 : 프론트엔드 3명, 디자이너 1명, 기획자 1명",
+      contribution:"기여도 : 25%",
       description:
         "백엔드와의 협업을 경험하면서 ESLint, Prettier, Git 등을 활용하여 프론트엔드와 백엔드 간의 코드 품질을 유지하고 협업 시 발생할 수 있는 문제에 대비하는 경험을 할 수 있었습니다. TypeScript를 사용하여 더욱 견고한 코드베이스를 구축하고, 타입 시스템을 통해 버그를 사전에 방지하고자 노력했습니다. 또한 프로젝트의 복잡한 구조로 인해 Redux Toolkit 라이브러리를 도입하여 상태 관리를 보다 효율적으로 처리했습니다.",
       link: "https://www.jinrotonic.com",
@@ -192,7 +185,9 @@ const projectData: Project[] = [
       ],
     },
   },
+  // 샹프리
   {
+    company:"(주)리더마인",
     title: "샹프리",
     description:
       "빅데이터를 분석하여 최적의 수익 실현 타이밍에 매매를 도와주는 인공지능 서비스 웹사이트 입니다.",
@@ -205,6 +200,7 @@ const projectData: Project[] = [
       title: "샹프리",
       date: "작업기간 : 2024.6. ~ 2024.7",
       team: "팀 구성 : 프론트엔드 1명, 디자이너 1명, 기획자 1명",
+      contribution:"기여도 : 100%",
       description:
         "백엔드와의 협업을 경험하면서 ESLint, Prettier, Git 등을 활용하여 프론트엔드와 백엔드 간의 코드 품질을 유지하고 협업 시 발생할 수 있는 문제에 대비하는 경험을 할 수 있었습니다. TypeScript를 사용하여 더욱 견고한 코드베이스를 구축하고, 타입 시스템을 통해 버그를 사전에 방지하고자 노력했습니다. 또한 프로젝트의 복잡한 구조로 인해 Redux Toolkit 라이브러리를 도입하여 상태 관리를 보다 효율적으로 처리했습니다.",
       link: "https://shangpree.co.kr/",
@@ -248,7 +244,9 @@ const projectData: Project[] = [
       ],
     },
   },
+  // AAT
   {
+    company:"(주)에이아이댑스",
     title: "AAT",
     description:
       "빅데이터를 분석하여 최적의 수익 실현 타이밍에 매매를 도와주는 인공지능 서비스 웹사이트 입니다.",
@@ -261,6 +259,7 @@ const projectData: Project[] = [
       title: "AAT",
       date: "작업기간 : 2023.11. ~ 개발중",
       team: "팀 구성 : 프론트엔드 1명, 백엔드 1명, 디자이너 1명, 기획자 2명",
+      contribution:"기여도 : 100%",
       description:
         "백엔드와의 협업을 경험하면서 ESLint, Prettier, Git 등을 활용하여 프론트엔드와 백엔드 간의 코드 품질을 유지하고 협업 시 발생할 수 있는 문제에 대비하는 경험을 할 수 있었습니다. TypeScript를 사용하여 더욱 견고한 코드베이스를 구축하고, 타입 시스템을 통해 버그를 사전에 방지하고자 노력했습니다. 또한 프로젝트의 복잡한 구조로 인해 Redux Toolkit 라이브러리를 도입하여 상태 관리를 보다 효율적으로 처리했습니다.",
       link: "",
@@ -304,7 +303,9 @@ const projectData: Project[] = [
       ],
     },
   },
+  // 팻케어랩
   {
+    company:"(주)에이아이댑스",
     title: "PetCare Lab",
     description:
       "스마트 배변판으로 반려동물의 소변검사를 통해 집에서 건강상태를 손쉽게 진단할 수 있는 펫케어 서비스 소개 웹사이트 입니다.",
@@ -317,6 +318,7 @@ const projectData: Project[] = [
       title: "PetCare Lab",
       date: "작업기간 : 2023.6. ~ 2023.6. (2주)",
       team: "팀 구성 : 프론트엔드 1명, 디자이너 1명, 기획자 1명",
+      contribution:"기여도 : 100%",
       description:
         "원페이지 스크롤 형태의 플랫폼 소개 웹사이트 입니다. react-intl 라이브러리를 사용하여 다국어 서비스를 구현해 볼 수 있었습니다. 또한 react-slick 라이브러리와 AOS 라이브러리를 사용하여 다양한 동적인 요소를 구현했습니다. github와 연동되는 호스팅 플랫폼 Netlify를 활용하여 웹사이트를 손쉽게 배포하고 유지 보수할 수 있었습니다.",
       link: "https://petcarelab.net/",
@@ -354,7 +356,9 @@ const projectData: Project[] = [
       ],
     },
   },
+  // 에이아이댑스
   {
+    company:"(주)에이아이댑스",
     title: "Ai Dapps",
     description:
       "분산 클라우드 기반의 서비스 플랫폼 기업 에이아이댑스의 공식 웹사이트 입니다.",
@@ -367,6 +371,54 @@ const projectData: Project[] = [
       title: "Ai Dapps",
       date: "작업기간 : 유지보수 상시",
       team: "팀 구성 : 프론트엔드 1명, 디자이너 1명, 기획자 1명",
+      contribution:"기여도 : 100%",
+      description:
+        "그누보드를 활용하여 개발한 멀티페이지 홈페이지의 유지보수를 담당하였습니다. 처음에는 한국어 버전만 존재했으나, 영어 버전 사이트도 추가하여 다국어 서비스를 제공할 수 있도록 구현하였습니다. Swiper 라이브러리를 활용하여 슬라이드를 구현하였고, AOS라이브러리를 활용하여 스크롤 높이에 반응하는 동적인 동작을 구현했습니다.",
+      link: "https://ai-dapps.com/",
+      github: "",
+      features: [
+        "그누보드를 사용하여 다국어 구현(KOR, ENG)",
+        "그누보드를 사용하여 멀티페이지 홈페이지 제작",
+        "게시판에 최신 글이 자동으로 업로드되게 구현",
+        "Swiper 라이브러리를 활용하여 슬라이드 구현",
+        "AOS을 활용한 스크롤 애니메이션 구현",
+        "사이드 네비게이션 바 구현",
+        "반응형 웹 개발 및 크로스 브라우징 개발",
+      ],
+      skill: ["HTML", "CSS", "JavaScript", "그누보드"],
+      screen: ["다국어 서비스", "게시판", "AOS", "슬라이드", "반응형"],
+      image: [
+        "/img/aidapps_02.jpg",
+        "/img/aidapps_08.jpg",
+        "/img/aidapps_09_g.gif",
+        "/img/aidapps_11_g.gif",
+        "/img/aidapps_06.jpg",
+      ],
+      screenText: [
+        "<그누보드로 다국어(KOR, ENG)> 페이지 기능 구현했습니다.",
+        "<게시판>에 최신 글이 자동으로 업로드되게 구현했습니다.",
+        "<AOS> 라이브러리를 활용하여 스크롤 높이에 따른 <동적 동작>을 구현했습니다.",
+        "<Swiper> 라이브러리를 활용하여 <슬라이드> 동작을 구현했습니다.",
+        "<반응형 웹 개발>과 <크로스 브라우징>으로 개발하였습니다.",
+      ],
+    },
+  },
+  // ETC
+  {
+    company:"(주)리더마인",
+    title: "ETC",
+    description:
+      "프로모션 및 이벤트 페이지입니다.",
+    link: "https://ai-dapps.com/",
+    image: "/img/event_01.jpg",
+    gifImage: "/img/aidapps_09_g.gif",
+    technologies: ["팀", "그누보드", "다국어", "반응형"],
+    contribution: ["퍼블리싱"],
+    modalContent: {
+      title: "Ai Dapps",
+      date: "작업기간 : 유지보수 상시",
+      team: "팀 구성 : 프론트엔드 1명, 디자이너 1명, 기획자 1명",
+      contribution:"기여도 : 100%",
       description:
         "그누보드를 활용하여 개발한 멀티페이지 홈페이지의 유지보수를 담당하였습니다. 처음에는 한국어 버전만 존재했으나, 영어 버전 사이트도 추가하여 다국어 서비스를 제공할 수 있도록 구현하였습니다. Swiper 라이브러리를 활용하여 슬라이드를 구현하였고, AOS라이브러리를 활용하여 스크롤 높이에 반응하는 동적인 동작을 구현했습니다.",
       link: "https://ai-dapps.com/",

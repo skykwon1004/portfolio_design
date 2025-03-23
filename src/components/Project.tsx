@@ -79,6 +79,7 @@ const Project = () => {
                       className="project-text-box"
                       onClick={() => handleModalOpen(index)}
                     >
+                      <div className="mb-[12px]">{item.company}</div>
                       <strong className="text-4xl font-bold block mb-4 max-md:text-2xl">
                         {item.title}
                       </strong>

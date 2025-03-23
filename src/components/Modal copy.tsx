@@ -98,9 +98,6 @@ const Modal: React.FC<ModalProps> = ({
               <span className="block mb-1 font-semibold">
                 {projectData[activeProjectIndex]?.modalContent?.date}
               </span>
-              <span className="block mb-1 font-semibold">
-                {projectData[activeProjectIndex]?.modalContent?.contribution}
-              </span>
               <span className="block mb-12 font-semibold">
                 {projectData[activeProjectIndex]?.modalContent?.team}
               </span>
