@@ -16,15 +16,15 @@ const Modal: React.FC<ModalProps> = ({
   projectData,
   activeProjectIndex,
 }) => {
-  const [activeTab, setActiveTab] = useState<string>("screen1");
+  // const [activeTab, setActiveTab] = useState<string>("screen1");
 
   // const handleTabChange = (tab: string) => {
   //   setActiveTab(tab);
   // };
 
-  useEffect(() => {
-    setActiveTab("screen1");
-  }, [showModal]);
+  // useEffect(() => {
+  //   setActiveTab("screen1");
+  // }, [showModal]);
 
   if (!showModal || activeProjectIndex === -1) {
     return null;
