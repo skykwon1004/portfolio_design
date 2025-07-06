@@ -18,9 +18,9 @@ const Modal: React.FC<ModalProps> = ({
 }) => {
   const [activeTab, setActiveTab] = useState<string>("screen1");
 
-  const handleTabChange = (tab: string) => {
-    setActiveTab(tab);
-  };
+  // const handleTabChange = (tab: string) => {
+  //   setActiveTab(tab);
+  // };
 
   useEffect(() => {
     setActiveTab("screen1");
@@ -111,7 +111,7 @@ const Modal: React.FC<ModalProps> = ({
             </div>
 
             <div className="flex flex-col gap-2">
-              {projectData[activeProjectIndex]?.modalContent?.image.map((imgSrc, index) => (
+              {projectData[activeProjectIndex]?.modalContent?.image.map((imgSrc: string, index: number) => (
                 <img
                   key={index}
                   src={imgSrc}

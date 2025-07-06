@@ -11,6 +11,7 @@ interface Project {
   image: string;
   gifImage: string;
   technologies: string[];
+  link: string;
   modalContent: ModalContent;
 }
 
@@ -23,6 +24,7 @@ const projectData: Project[] = [
     image: "/img/pro01_01.jpg",
     gifImage: "/img/aat_01_g.gif",
     technologies: ["홈페이지 디자인", "반응형 디자인"],
+    link: "",
     modalContent: {
       title: "WEB ∙ UIUX",
       description:
@@ -48,6 +50,7 @@ const projectData: Project[] = [
     image: "/img/pro01_01.jpg",
     gifImage: "/img/aat_01_g.gif",
     technologies: ["배너 디자인", "상세페이지 디자인"],
+    link: "",
     modalContent: {
       title: "컨텐츠 디자인",
       description:
@@ -70,6 +73,7 @@ const projectData: Project[] = [
     image: "/img/pro01_01.jpg",
     gifImage: "/img/aat_01_g.gif",
     technologies: ["전단지 디자인", "X 배너 디자인", "그래픽 디자인"],
+    link: "",
     modalContent: {
       title: "편집 디자인",
       description:
