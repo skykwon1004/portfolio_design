@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
+import React from "react";
 import { IoIosClose, IoIosLink, IoLogoGithub } from "react-icons/io";
 import useDarkModeStore from "../zustand/useDarkModeStore";
 
