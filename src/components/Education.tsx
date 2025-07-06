@@ -24,7 +24,7 @@ const Education = () => {
               Education
             </h2>
             <p className="mb-16 text-xl max-md:text-lg max-md:mb-10">
-              개발자 양성과정을 수료했습니다.
+              웹디자인 및 퍼블리셔 & 프론트엔드 양성과정을 수료했습니다.
             </p>
           </div>
           <div
@@ -33,7 +33,7 @@ const Education = () => {
             data-aos-duration="1400"
           >
             <div className="education-content-left flex-1">
-              <img src="/img/e-bg-01.jpg" alt="컴퓨터 코딩 화면" />
+              <img src="/img/e-bg-02.jpg" alt="프로토타입 이미지" />
             </div>
             <div className="education-content-right flex-1 flex flex-col justify-center">
               <ul
@@ -62,7 +62,14 @@ const Education = () => {
                   상태 관리를 위한 Redux와 Context를 학습
                 </li>
               </ul>
-              <ul className="dot">
+              <ul
+                className="mb-10 dot max-md:mb-5"
+                style={{
+                  borderBottom: darkMode
+                    ? "1px solid rgb(64 64 64)"
+                    : "1px solid #ddd",
+                }}
+              >
                 <span className="block text-gray-400 font-light">
                   그린컴퓨터아카데미 (2017.12 ~ 2018.04)
                 </span>
@@ -86,6 +93,17 @@ const Education = () => {
                 <li className="block">
                   반응형 웹 구현 및 포트폴리오 제작 실습
                 </li>
+              </ul>
+              <ul className="dot">
+                <span className="block text-gray-400 font-light">
+                  경성대학교 4년제 (2008.03 ~ 2013.02)
+                </span>
+                <strong className="block text-lg mb-4">
+                  의상학과 졸업
+                </strong>
+                <li className="block">디자인 감각 및 트렌드 이해</li>
+                <li className="block">색채 및 디자인 역사의 이해</li>
+                <li className="block">상품기획(MD), 유통 및 소비자 트렌드 분석 학습</li>
               </ul>
             </div>
           </div>

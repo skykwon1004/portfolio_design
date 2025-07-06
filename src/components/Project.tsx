@@ -65,9 +65,6 @@ const Project = () => {
                   data-aos="fade-up"
                   data-aos-duration="1400"
                 >
-                  <figure className="project-img-box">
-                    <img src={item.image} alt={item.title} className="" />
-                  </figure>
                   <div
                     className="project-text-box-link"
                     style={{
@@ -79,28 +76,11 @@ const Project = () => {
                       className="project-text-box"
                       onClick={() => handleModalOpen(index)}
                     >
-                      <div className="mb-[12px]">{item.company}</div>
                       <strong className="text-4xl font-bold block mb-4 max-md:text-2xl">
                         {item.title}
                       </strong>
-                      <p className="mb-8 min-h-[74px]">{item.description}</p>
-                      <ul className="flex gap-2 text-gray-500 font-medium mb-2 max-md:grid max-md:grid-cols-2">
-                        {item.contribution.map(
-                          (contribution, contributionIndex) => (
-                            <li
-                              key={contributionIndex}
-                              className="bg-gray-100 px-2 py-0.5 rounded"
-                              style={{
-                                backgroundColor: darkMode ? "#1f1f1f" : "",
-                                color: darkMode ? "rgb(209 213 219)" : "",
-                              }}
-                            >
-                              {contribution}
-                            </li>
-                          )
-                        )}
-                      </ul>
-                      <div className="min-h-[98px]">
+                      <p className="mb-8">{item.description}</p>
+                      <div className="min-h-24">
                         <ul className="flex gap-2 text-gray-500 font-medium mb-8 max-md:grid max-md:grid-cols-2 flex-wrap">
                           {item.technologies.map((tech, techIndex) => (
                             <li
@@ -131,9 +111,9 @@ const Project = () => {
                             className="btn-link"
                             target="_blank"
                           >
-                            <button className="btn">
+                            {/* <button className="btn">
                               Go Site <IoIosArrowRoundForward />
-                            </button>
+                            </button> */}
                           </a>
                         )}
                       </div>

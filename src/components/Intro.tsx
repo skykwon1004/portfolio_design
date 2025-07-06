@@ -20,9 +20,13 @@ const Intro = () => {
             <span className="box-02 text-lg mb-32"></span>
             <div className="text-wapper">
               <p className="font-light text-xl max-md:text-base text-center max-w-screen-sm">
-                웹디자이너 경험과 프론트엔드 개발 경험을 바탕으로{" "}
+                {/* 웹디자이너 경험과 퍼블리셔 경험을 바탕으로{" "}
                 <b className="font-semibold">한 번 더 들여다보게 만드는</b>{" "}
-                매력적인 서비스를 만들겠습니다.
+                매력적인 서비스를 만들겠습니다. */}
+                <b className="font-semibold">
+                  한 번 더 들여다보게 만드는 쇼핑 경험,
+                </b>{" "}
+                  실제 운영으로 검증된 웹디자인을 합니다.
               </p>
             </div>
           </div>
@@ -30,29 +34,24 @@ const Intro = () => {
             <div className="flow-container">
               <div className="flow-text">
                 <div className="flow-wrap">
-                  FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
-                  개발자 사용자 인터페이스/사용자 경험
+                  Web Designer Publisher UI/UX &emsp; 웹디자이너 퍼블리셔 사용자 인터페이스/사용자 경험
                 </div>
                 <div className="flow-wrap">
-                  FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
-                  개발자 사용자 인터페이스/사용자 경험
+                  Web Designer Publisher UI/UX &emsp; 웹디자이너 퍼블리셔 사용자 인터페이스/사용자 경험
                 </div>
                 <div className="flow-wrap">
-                  FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
-                  개발자 사용자 인터페이스/사용자 경험
+                  Web Designer Publisher UI/UX &emsp; 웹디자이너 퍼블리셔 사용자 인터페이스/사용자 경험
                 </div>
                 <div className="flow-wrap">
-                  FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
-                  개발자 사용자 인터페이스/사용자 경험
+                  Web Designer Publisher UI/UX &emsp; 웹디자이너 퍼블리셔 사용자 인터페이스/사용자 경험
                 </div>
                 <div className="flow-wrap">
+                  Web Designer Publisher UI/UX &emsp; 웹디자이너 퍼블리셔 사용자 인터페이스/사용자 경험
+                </div>
+                {/* <div className="flow-wrap">
                   FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
                   개발자 사용자 인터페이스/사용자 경험
-                </div>
-                <div className="flow-wrap">
-                  FrontEnd Publisher Developer UI/UX &emsp; 프론트엔드 퍼블리셔
-                  개발자 사용자 인터페이스/사용자 경험
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

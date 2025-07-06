@@ -35,7 +35,7 @@ const Contact = () => {
                 }}
               >
                 <strong className="text-5xl block mb-2 max-md:text-2xl">
-                  Contact & Links
+                  Contact Me
                 </strong>
                 <strong className="text-5xl max-md:text-2xl">Thank You!</strong>
               </div>
@@ -52,7 +52,7 @@ const Contact = () => {
                 <span className="block mb-2">
                   Email : skykwon1004@gmail.com
                 </span>
-                <span className="block">
+                {/* <span className="block">
                   Github :{" "}
                   <a
                     href="https://github.com/skykwon1004"
@@ -61,7 +61,7 @@ const Contact = () => {
                   >
                     https://github.com/skykwon1004
                   </a>
-                </span>
+                </span> */}
               </div>
             </div>
           </div>

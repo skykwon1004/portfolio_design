@@ -240,6 +240,7 @@ button.burger.burger2.dark span:before {
   width: 40px;
   height: 40px;
   background: #f8d10a;
+  /* background: #0066ff; */
   border-radius: 50%;
   z-index: 1;
 }
@@ -251,6 +252,7 @@ button.burger.burger2.dark span:before {
   width: 90px;
   height: 90px;
   background: #f8d10a;
+  /* background: #0066ff; */
   border-radius: 50%;
   opacity: 0.5;
   animation: scale-up 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
@@ -297,6 +299,7 @@ button.burger.burger2.dark span:before {
   position: absolute;
   bottom: 0;
   background: #f8d10a;
+  /* background: #0066ff; */
   width: 100%;
   color: rgb(23 23 23);
 }
@@ -427,7 +430,8 @@ button.burger.burger2.dark span:before {
 
 .project-text-box-link {
   display: block;
-  border-radius: 0 0 30px 30px;
+  /* border-radius: 0 0 30px 30px; */
+  border-radius: 30px;
   background: #fff;
   cursor: pointer;
 }
@@ -508,8 +512,8 @@ button.burger.burger2.dark span:before {
 
 .close {
   position: fixed;
-  top: 60px;
-  right: 180px;
+  top: 20px;
+  right: 120px;
   font-size: 80px;
   cursor: pointer;
   opacity: 0.5;
@@ -518,7 +522,7 @@ button.burger.burger2.dark span:before {
 .link-wapper {
   position: fixed;
   bottom: 50px;
-  right: 180px;
+  right: 120px;
   cursor: pointer;
   opacity: 0.5;
 }
@@ -536,16 +540,22 @@ button.burger.burger2.dark span:before {
   border-radius: 50%;
 }
 
+.modal-project-item-img-top {
+  width: 100%;
+  /* border-radius: 20px; */
+  margin: 0 auto;
+}
+
 .modal-project-item-img {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   width: 80%;
   margin: 0 auto;
 }
 
-.modal-desc {
+/* .modal-desc {
   border-bottom: 1px solid #ddd;
   position: relative;
-}
+} */
 
 .tab {
   outline: 1px solid rgb(228, 228, 228);
@@ -592,12 +602,14 @@ button.burger.burger2.dark span:before {
 }
 
 .education-content-left>img {
-  height: 500px;
+  /* height: 500px; */
+  height: 700px;
   overflow: hidden;
   object-fit: cover;
 }
 
-.education-content-right>ul:nth-child(1) {
+.education-content-right>ul:nth-child(1),
+.education-content-right>ul:nth-child(2) {
   padding: 0 0 40px 0;
 }
 
@@ -728,7 +740,8 @@ button.burger.burger2.dark span:before {
 
   .project-text-box-link {
     display: block;
-    border-radius: 0 0 20px 20px;
+    /* border-radius: 0 0 20px 20px; */
+    border-radius: 20px;
     background: #fff;
     cursor: pointer;
     width: 100%;
@@ -862,7 +875,7 @@ button.burger.burger2.dark span:before {
   }
 
   .modal-desc {
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
     padding: 60px 20px;
     position: relative;
   }
