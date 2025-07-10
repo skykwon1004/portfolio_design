@@ -58,6 +58,7 @@ const projectData: Project[] = [
       link: "https://top-star.co.kr/",
       image: [
         "/img/pro01_09.jpg",
+        "/img/pro01_16.jpg",
         "/img/pro01_10.jpg",
         "/img/pro01_14.jpg",
         "/img/pro01_12.jpg",

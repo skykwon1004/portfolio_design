@@ -97,10 +97,10 @@ const Skill = () => {
                 <img src="/img/skill-logo-14.png" alt="GitHub 로고" />
                 GitHub
               </span>
-              <span className="block flex gap-3 items-center mb-2">
+              {/* <span className="block flex gap-3 items-center mb-2">
                 <img src="/img/skill-logo-16.png" alt="Swagger 로고" />
                 Swagger
-              </span>
+              </span> */}
               <span className="block flex gap-3 items-center mb-2">
                 <img src="/img/skill-logo-15.png" alt="Notion 로고" />
                 Notion

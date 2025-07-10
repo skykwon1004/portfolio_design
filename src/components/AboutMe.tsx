@@ -21,11 +21,14 @@ const AboutMe = () => {
               backgroundColor: darkMode ? "rgb(51, 51, 51)" : "#f9f9f9",
             }}
           >
-            <figure className="me flex-1 max-xl:w-5/12 max-md:w-9/12 max-xl:pt-12 max-md:pt-10">
+            {/* <figure className="me flex-1 max-xl:w-5/12 max-md:w-9/12 max-xl:pt-12 max-md:pt-10">
               <img src="/img/me.jpg" alt="" className="grayscale" />
+            </figure> */}
+            <figure className="me flex-1 max-xl:w-5/12 max-md:w-9/12 max-xl:pt-12 max-md:pt-10">
+              <img src="/img/me-02.jpg" alt="" className="" />
             </figure>
             <div className="flex-[1.8_1.8_0%] max-xl:flex-1">
-              <p className="text-lg px-10 max-xl:py-12 max-xl:text-base max-md:px-7 max-md:py-10">
+              <p className="text-lg px-20 max-xl:py-12 max-xl:text-base max-md:px-7 max-md:py-10">
                 {/* 2018년부터 <b>탑스타에서 웹디자인과 퍼블리싱</b>을 경험했습니다.
                 카페24을 활용하여 퍼블리싱과 자사 사이트 운영을 맡았습니다.
                 키치&영 컨셉으로 홈페이지를 리뉴얼 한 뒤 20~30대 연령층의 유입을
