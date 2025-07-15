@@ -61,7 +61,7 @@ const Experience: React.FC = () => {
                   
                   <span className="block">2024.04. ~ 2025.03.</span>
                   <span className="block mb-4 max-xl:mb-8">
-                    개발팀 - 프론트엔드, 퍼블리셔
+                    개발팀 - 퍼블리셔, 프론트엔드
                   </span>
                   <span className="min-w-80 max-xl:min-w-full max-xl:block max-xl:mb-6">
                     카페24·샵바이 기반의 커머스 솔루션을 활용해 쇼핑몰 구축부터 유지보수까지 전반적인 운영을 담당했습니다.
@@ -113,7 +113,7 @@ const Experience: React.FC = () => {
                   </span>
                   <span className="block">2023.04. ~ 2023.12.</span>
                   <span className="block mb-4 max-xl:mb-8">
-                    개발팀 - 퍼블리셔
+                    개발팀 - 웹디자이너, 퍼블리셔
                   </span>
                   <span className="min-w-80 max-xl:min-w-full max-xl:block max-xl:mb-6">
                     분산 클라우드를 기반으로 다양한 서비스 플랫폼 웹사이트의 퍼블리싱과 유지보수를 담당했습니다.
