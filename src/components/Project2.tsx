@@ -3,9 +3,10 @@ import { Element } from "react-scroll";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import useDarkModeStore from "../zustand/useDarkModeStore";
 import Modal from "./Modal";
-import projectData from "./projectData";
+import projectData2 from "./projectData2";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Modal2 from "./Modal2";
 
 const Project = () => {
   const { darkMode } = useDarkModeStore();
@@ -37,7 +38,7 @@ const Project = () => {
   };
 
   return (
-    <Element name="project">
+    <Element name="project2">
       <div
         className="project"
         style={{
@@ -47,14 +48,14 @@ const Project = () => {
         <div className="project-wapper inner">
           <div>
             <h2 className="text-5xl font-bold mb-4 max-md:text-4xl max-md:mb-2">
-              Design Project
+              Publishing Project
             </h2>
             <p className="mb-16 text-xl max-md:text-lg max-md:mb-10">
-              디자인 작업 프로젝트 입니다.
+              메인, 이벤트 페이지 퍼블리싱 작업 입니다.
             </p>
           </div>
           <div className="project-content-wapper max-w-full grid grid-cols-3 gap-[30px]">
-            {projectData.map(
+            {projectData2.map(
               (
                 item,
                 index // 변경
@@ -65,8 +66,11 @@ const Project = () => {
                   data-aos="fade-up"
                   data-aos-duration="1400"
                 >
+                  <figure className="project-img-box">
+                    <img src={item.image} alt={item.title} className="" />
+                  </figure>
                   <div
-                    className="project-text-box-link"
+                    className="project-text-box-link2"
                     style={{
                       backgroundColor: darkMode ? "rgba(51, 51, 51, 1)" : "",
                     }}
@@ -76,11 +80,28 @@ const Project = () => {
                       className="project-text-box"
                       onClick={() => handleModalOpen(index)}
                     >
+                      <div className="mb-[12px]">{item.company}</div>
                       <strong className="text-4xl font-bold block mb-4 max-md:text-2xl">
                         {item.title}
                       </strong>
-                      <p className="mb-8">{item.description}</p>
-                      <div className="min-h-24">
+                      <p className="mb-8 min-h-[74px]">{item.description}</p>
+                      <ul className="flex gap-2 text-gray-500 font-medium mb-2 max-md:grid max-md:grid-cols-2">
+                        {item.contribution.map(
+                          (contribution, contributionIndex) => (
+                            <li
+                              key={contributionIndex}
+                              className="bg-gray-100 px-2 py-0.5 rounded"
+                              style={{
+                                backgroundColor: darkMode ? "#1f1f1f" : "",
+                                color: darkMode ? "rgb(209 213 219)" : "",
+                              }}
+                            >
+                              {contribution}
+                            </li>
+                          )
+                        )}
+                      </ul>
+                      <div className="min-h-[98px]">
                         <ul className="flex gap-2 text-gray-500 font-medium mb-8 max-md:grid max-md:grid-cols-2 flex-wrap">
                           {item.technologies.map((tech, techIndex) => (
                             <li
@@ -111,9 +132,9 @@ const Project = () => {
                             className="btn-link"
                             target="_blank"
                           >
-                            {/* <button className="btn">
+                            <button className="btn">
                               Go Site <IoIosArrowRoundForward />
-                            </button> */}
+                            </button>
                           </a>
                         )}
                       </div>
@@ -126,10 +147,10 @@ const Project = () => {
         </div>
       </div>
       {showModal && activeProjectIndex !== -1 && (
-        <Modal
+        <Modal2
           showModal={showModal}
           handleModalClose={handleModalClose}
-          projectData={projectData}
+          projectData2={projectData2}
           activeProjectIndex={activeProjectIndex}
           darkMode={darkMode}
         />

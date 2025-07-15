@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Project from "./components/Project";
+import Project2 from "./components/Project2";
 import ScrollTop from "./components/ScrollTop";
 import Skill from "./components/Skill";
 import useDarkModeStore from "./zustand/useDarkModeStore";
@@ -29,6 +30,7 @@ const App: React.FC = () => {
         <AboutMe />
         <Experience />
         <Project />
+        <Project2 />
         <Skill />
         <Education />
         <Contact />
