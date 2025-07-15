@@ -50,7 +50,7 @@ const Project = () => {
               Design Project
             </h2>
             <p className="mb-16 text-xl max-md:text-lg max-md:mb-10">
-              디자인 작업 프로젝트 입니다.
+              디자인 작업 입니다.
             </p>
           </div>
           <div className="project-content-wapper max-w-full grid grid-cols-3 gap-[30px]">
