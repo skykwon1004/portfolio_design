@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
+import React from "react";
 import { IoIosClose, IoIosLink, IoLogoGithub } from "react-icons/io";
 import useDarkModeStore from "../zustand/useDarkModeStore";
 
@@ -16,15 +17,15 @@ const Modal2: React.FC<ModalProps> = ({
   projectData2,
   activeProjectIndex,
 }) => {
-  const [activeTab, setActiveTab] = useState<string>("screen1");
+  // const [activeTab, setActiveTab] = useState<string>("screen1");
 
-  const handleTabChange = (tab: string) => {
-    setActiveTab(tab);
-  };
+  // const handleTabChange = (tab: string) => {
+  //   setActiveTab(tab);
+  // };
 
-  useEffect(() => {
-    setActiveTab("screen1");
-  }, [showModal]);
+  // useEffect(() => {
+  //   setActiveTab("screen1");
+  // }, [showModal]);
 
   if (!showModal || activeProjectIndex === -1) {
     return null;
