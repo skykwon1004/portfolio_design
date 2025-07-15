@@ -27,8 +27,7 @@ const projectData: Project[] = [
     link: "",
     modalContent: {
       title: "WEB ∙ UIUX",
-      description:
-        "",
+      description: [],
       link: "https://petcarelab.net/",
       image: [
         "/img/pro01_01.jpg",
