@@ -23,7 +23,7 @@ const projectData: Project[] = [
       "WEB 반응형 디자인",
     image: "/img/pro01_01.jpg",
     gifImage: "/img/aat_01_g.gif",
-    technologies: ["홈페이지 디자인", "반응형 디자인"],
+    technologies: ["홈페이지 디자인", "반응형 디자인", "퍼블리셔"],
     link: "",
     modalContent: {
       title: "WEB ∙ UIUX",
@@ -39,6 +39,7 @@ const projectData: Project[] = [
         "/img/pro01_06.jpg",
         "/img/pro01_07.jpg",
         "/img/pro01_08.jpg",
+        "/img/pro01_15.jpg",
       ],
     },
   },
@@ -49,7 +50,7 @@ const projectData: Project[] = [
       "온라인 배너 & 상세페이지",
     image: "/img/pro01_01.jpg",
     gifImage: "/img/aat_01_g.gif",
-    technologies: ["배너 디자인", "상세페이지 디자인"],
+    technologies: ["배너 디자인","이벤트 배너 디자인", "상세페이지 디자인", "이미지 보정"],
     link: "",
     modalContent: {
       title: "컨텐츠 디자인",
@@ -59,8 +60,11 @@ const projectData: Project[] = [
       image: [
         "/img/pro01_09.jpg",
         "/img/pro01_16.jpg",
+        "/img/pro01_17.jpg",
+        "/img/pro01_18.jpg",
         "/img/pro01_10.jpg",
         "/img/pro01_14.jpg",
+        "/img/pro01_19.jpg",
         "/img/pro01_12.jpg",
         "/img/pro01_13.jpg",
       ],
@@ -68,12 +72,12 @@ const projectData: Project[] = [
   },
   // 편집 디자인
   {
-    title: "편집 & 그래픽 디자인",
+    title: "편집 디자인",
     description:
-      "전단지 & X 배너 디자인 & 그래픽 디자인",
+      "전단지 & X 배너 디자인",
     image: "/img/pro01_01.jpg",
     gifImage: "/img/aat_01_g.gif",
-    technologies: ["전단지 디자인", "X 배너 디자인", "그래픽 디자인"],
+    technologies: ["전단지 디자인", "X 배너 디자인"],
     link: "",
     modalContent: {
       title: "편집 디자인",
@@ -81,8 +85,7 @@ const projectData: Project[] = [
         "",
       link: "",
       image: [
-        "/img/pro01_11.jpg",
-        "/img/pro01_15.jpg",
+        "/img/pro01_11.jpg"
       ],
     },
   },
