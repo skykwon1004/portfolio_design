@@ -514,7 +514,7 @@ button.burger.burger2.dark span:before {
 .close {
   position: fixed;
   top: 20px;
-  right: 120px;
+  right: 80px;
   font-size: 80px;
   cursor: pointer;
   opacity: 0.5;
