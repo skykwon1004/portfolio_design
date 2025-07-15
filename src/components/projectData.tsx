@@ -1,6 +1,6 @@
 interface ModalContent {
   title: string;
-  description: string;
+  description: [string, string][];
   link: string;
   image: string[];
 }
@@ -21,8 +21,8 @@ const projectData: Project[] = [
     title: "WEB ∙ UIUX",
     description:
       "WEB 반응형 디자인",
-    image: "/img/pro01_01.jpg",
-    gifImage: "/img/aat_01_g.gif",
+    image: "",
+    gifImage: "",
     technologies: ["홈페이지 디자인", "반응형 디자인", "퍼블리셔"],
     link: "",
     modalContent: {
@@ -48,14 +48,13 @@ const projectData: Project[] = [
     title: "컨텐츠 디자인",
     description:
       "온라인 배너 & 상세페이지",
-    image: "/img/pro01_01.jpg",
-    gifImage: "/img/aat_01_g.gif",
+    image: "",
+    gifImage: "",
     technologies: ["배너 디자인","이벤트 배너 디자인", "상세페이지 디자인", "이미지 보정"],
     link: "",
     modalContent: {
       title: "컨텐츠 디자인",
-      description:
-        "",
+      description:[],
       link: "https://top-star.co.kr/",
       image: [
         "/img/pro01_09.jpg",
@@ -75,17 +74,40 @@ const projectData: Project[] = [
     title: "편집 디자인",
     description:
       "전단지 & X 배너 디자인",
-    image: "/img/pro01_01.jpg",
-    gifImage: "/img/aat_01_g.gif",
+    image: "",
+    gifImage: "",
     technologies: ["전단지 디자인", "X 배너 디자인"],
     link: "",
     modalContent: {
       title: "편집 디자인",
-      description:
-        "",
+      description:[],
       link: "",
       image: [
         "/img/pro01_11.jpg"
+      ],
+    },
+  },
+  // 이벤트 페이지 퍼블리싱
+  {
+    title: "이벤트 페이지 개발",
+    description:
+      "이벤트 페이지 퍼블리싱",
+    image: "",
+    gifImage: "",
+    technologies: ["이벤트 페이지 개발", "프로모션", "퍼블리싱", "협업"],
+    link: "",
+    modalContent: {
+      title: "이벤트 페이지 개발",
+      description: [
+        ["- 아윤채 여름 이벤트 페이지 퍼블리싱", "https://ayunche.com/campaign/2024summer/event.html"],
+        ["- 아윤채 신제품 이벤트 페이지 퍼블리싱", "https://ayunche.com/campaign/procare/event.html"],
+        ["- 농심몰 2주년 이벤트 페이지 퍼블리싱", "https://nsmall2022.cafe24.com/skin-skin2/event/2nd/event_2nd.html"],
+        ["- 닥터포헤어 리뉴얼 메인페이지 퍼블리싱", "https://drforhair2024.cafe24.com/skin-skin2"],
+        ["- 진로토닉몰 이벤트 게시판 퍼블리싱", "https://www.jinrotonic.com/jintini-magazine?boardNo=279889"],
+      ],
+      link: "",
+      image: [
+        "/img/pro01_20.jpg"
       ],
     },
   },

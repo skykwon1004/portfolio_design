@@ -111,19 +111,50 @@ const Modal: React.FC<ModalProps> = ({
               </strong>
             </div>
 
-            <div className="flex flex-col gap-2">
-              {projectData[activeProjectIndex]?.modalContent?.image.map((imgSrc: string, index: number) => (
-                <img
-                  key={index}
-                  src={imgSrc}
-                  alt={`프로젝트 이미지 ${index + 1}`}
-                  style={{
-                    border: darkMode
-                      ? "1px solid rgb(64 64 64)"
-                      : "1px solid rgb(231, 231, 231)",
-                  }}
-                />
-              ))}
+            {projectData[activeProjectIndex]?.modalContent?.image.length > 0 && (
+              <div className="flex flex-col gap-2">
+                {projectData[activeProjectIndex]?.modalContent?.image.map((imgSrc: string, index: number) => (
+                  imgSrc && ( // 빈 문자열이 아닌 경우에만 렌더링
+                    <img
+                      key={index}
+                      src={imgSrc}
+                      alt={`프로젝트 이미지 ${index + 1}`}
+                      style={{
+                        border: darkMode
+                          ? "1px solid rgb(64 64 64)"
+                          : "1px solid rgb(231, 231, 231)",
+                      }}
+                    />
+                  )
+                ))}
+              </div>
+            )}
+
+            <div
+              className="modal-desc mt-10 text-xl font-medium max-md:text-lg max-xl:py-[6%] max-xl:px-[10%]"
+              style={{
+                borderBottom: darkMode ? "1px solid rgb(64 64 64)" : "",
+              }}
+            >
+              {Array.isArray(projectData[activeProjectIndex]?.modalContent?.description[0]) ? (
+                projectData[activeProjectIndex]?.modalContent?.description.map(
+                  ([text, link]: [string, string], idx: number) => (
+                    <div key={idx} className="mb-8">
+                      <p>{text}</p>
+                      <a
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 underline mt-1 inline-block"
+                      >
+                        {link}
+                      </a>
+                    </div>
+                  )
+                )
+              ) : (
+                <p>{projectData[activeProjectIndex]?.modalContent?.description}</p>
+              )}
             </div>
 
             {/* <div className="flex flex-col gap-2 ">
