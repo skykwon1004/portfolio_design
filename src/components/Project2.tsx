@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import useDarkModeStore from "../zustand/useDarkModeStore";
-import Modal from "./Modal";
 import projectData2 from "./projectData2";
 import AOS from "aos";
 import "aos/dist/aos.css";
