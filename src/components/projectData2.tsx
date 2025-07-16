@@ -147,7 +147,7 @@ const projectData2: Project[] = [
     company:"(주)리더마인",
     title: "아윤채몰",
     description:
-      "카페24를 활용한 농심몰 쇼핑몰 유지보수 작업 입니다.",
+      "카페24를 활용한 아윤채몰 쇼핑몰 유지보수 작업 입니다.",
     link: "https://ayunche.com/campaign/2024summer/event.html",
     image: "/img/ayunche_01.png",
     gifImage: "",
