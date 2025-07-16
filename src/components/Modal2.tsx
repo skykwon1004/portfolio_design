@@ -144,7 +144,7 @@ const Modal2: React.FC<ModalProps> = ({
             </p> */}
             <div className="modat-content-list mt-14 mb-14 px-[5%] max-xl:px-[5%]">
               <strong className="block text-2xl font-black mb-4">
-                주요기능 및 특징
+                주요기능 및 특징
               </strong>
               <ul className="dot">
                 {projectData2[activeProjectIndex]?.modalContent?.features.map(
