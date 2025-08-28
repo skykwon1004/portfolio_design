@@ -24,7 +24,7 @@ const Intro = () => {
                 <b className="font-semibold">한 번 더 들여다보게 만드는</b>{" "}
                 매력적인 서비스를 만들겠습니다. */}
                 <b className="font-semibold">
-                  한 번 더 들여다보게 만드는 쇼핑 경험,
+                  한 번 더 들여다보게 만드는 경험,
                 </b>{" "}
                   실제 운영으로 검증된 웹디자인을 합니다.
               </p>
