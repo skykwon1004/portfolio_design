@@ -62,6 +62,7 @@ const projectData: Project[] = [
         "/img/pro01_18.jpg",
         "/img/pro01_10.jpg",
         "/img/pro01_14.jpg",
+        "/img/pro01_24.jpg",
         "/img/pro01_19.jpg",
         "/img/pro01_12.jpg",
         "/img/pro01_13.jpg",
